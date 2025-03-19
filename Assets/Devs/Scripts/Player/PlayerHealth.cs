@@ -9,7 +9,8 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] Image healthBar;
     [SerializeField] Image ghostBar;
 
-
+    [SerializeField] GameObject player; //Used for the Death
+    [SerializeField] GameObject deathUI; //UI to enable on Death
 
     float displayedHealth;
 
@@ -65,19 +66,15 @@ public class PlayerHealth : MonoBehaviour
         ghostTimer = 1f;
         displayedHealth -= Amount;
         displayedHealth = Mathf.Clamp(displayedHealth, 0, maxHealth);
+        if(displayedHealth <= 0 && deathUI.activeInHierarchy == false)
+        {
+            PlayerDeath();
+        }
     }
 
-    /*
-     IEnumerator ApplyhealthAnim(bool Toggle)
+    void PlayerDeath()
     {
-        if (Toggle) //Heal Animation
-        {
-
-        }
-        else
-        {
-
-        }
+        player.SetActive(false);
+        deathUI.SetActive(true);
     }
-    */
 }
