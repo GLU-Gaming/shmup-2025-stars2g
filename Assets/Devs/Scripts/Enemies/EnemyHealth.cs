@@ -14,6 +14,8 @@ public class EnemyHealth : MonoBehaviour
 
     GameObject root;
 
+    public bool invincible = false;
+
     float displayedHealth;
 
     float ghostTimer; //Timer for the ghost bar to disappear
@@ -65,13 +67,16 @@ public class EnemyHealth : MonoBehaviour
 
     public void DamageEnemy(float amount)
     {
-        ghostTimer = 0.3f;
-        displayedHealth -= amount;
-        displayedHealth = Mathf.Clamp(displayedHealth, 0, maxHealth);
-        InstantiateSparks();
-        if (displayedHealth <= 0)
+        if (!invincible)
         {
-            EnemyDeath();
+            ghostTimer = 0.3f;
+            displayedHealth -= amount;
+            displayedHealth = Mathf.Clamp(displayedHealth, 0, maxHealth);
+            InstantiateSparks();
+            if (displayedHealth <= 0)
+            {
+                EnemyDeath();
+            }
         }
     }
 
@@ -85,6 +90,9 @@ public class EnemyHealth : MonoBehaviour
     {
         GameObject sparksInstance = Instantiate(sparksPrefab, enemyModel.transform);
         sparksInstance.transform.localPosition = new Vector3(0, 0, -1.25f);
+        sparksInstance.transform.parent = null;
+        sparksInstance.transform.localScale = new Vector3(0.75f,0.75f,0.75f);
         sparksInstance.transform.rotation = Quaternion.Euler(0, 0, 0);
+
     }
 }

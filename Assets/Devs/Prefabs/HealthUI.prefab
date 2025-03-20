@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 511671365598745890}
   - component: {fileID: 2780235212825718199}
   - component: {fileID: 6143225143235213495}
+  - component: {fileID: 972415916552393852}
   m_Layer: 0
   m_Name: HealthUI
   m_TagString: Untagged
@@ -102,7 +103,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3232815874249064263}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 1
@@ -200,6 +201,18 @@ MonoBehaviour:
   DEBUG_Value: 0
   DEBUG_Heal: 0
   DEBUG_Damage: 0
+--- !u!114 &972415916552393852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3232815874249064263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 891013e835949184086057574e873b3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4060298311175319204
 GameObject:
   m_ObjectHideFlags: 0
