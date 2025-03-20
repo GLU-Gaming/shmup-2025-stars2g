@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 9199394535948797167}
   - component: {fileID: 1807702644329429289}
   - component: {fileID: 2255592096778294453}
+  - component: {fileID: 3514021458759390916}
   m_Layer: 0
   m_Name: PlaceHolderBullet
-  m_TagString: Untagged
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,3 +152,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: 1, y: 1, z: 0}
   speed: 30
+--- !u!114 &3514021458759390916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8729587556061913894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0cdad5fa6905344f9974633b81a17a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DamageToDeal: 10

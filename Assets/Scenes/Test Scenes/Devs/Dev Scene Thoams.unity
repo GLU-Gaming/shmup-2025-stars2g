@@ -651,7 +651,7 @@ GameObject:
   m_Component:
   - component: {fileID: 352549627}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1429,6 +1429,7 @@ GameObject:
   - component: {fileID: 870968287}
   - component: {fileID: 870968286}
   - component: {fileID: 870968285}
+  - component: {fileID: 870968288}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1525,6 +1526,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 870968283}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &870968288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870968283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 299939752b8bea64e82cd18c18f3b1a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &885566443
 GameObject:
   m_ObjectHideFlags: 0
@@ -1740,6 +1753,7 @@ GameObject:
   - component: {fileID: 1115552982}
   - component: {fileID: 1115552981}
   - component: {fileID: 1115552980}
+  - component: {fileID: 1115552983}
   m_Layer: 0
   m_Name: HealthUI
   m_TagString: Untagged
@@ -1830,6 +1844,28 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1115552983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115552978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0490d4f9b362b44a89caec3774b095, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  healthBar: {fileID: 1392543015}
+  ghostBar: {fileID: 1898977982}
+  enemyModel: {fileID: 870968283}
+  sparksPrefab: {fileID: 1005145827766128761, guid: 675a2c07be0c9cf46a6b1b9b2c8bb258, type: 3}
+  explosionPrefab: {fileID: 1005145827766128761, guid: c4d264d7b8cdcb04396006345b24b000, type: 3}
+  DEBUGGING: 0
+  DEBUG_Value: 0
+  DEBUG_Heal: 0
+  DEBUG_Damage: 0
 --- !u!1 &1215198278
 GameObject:
   m_ObjectHideFlags: 0
@@ -2784,10 +2820,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: b1fad59a4b3a71249b7e580eadd21bf8, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
