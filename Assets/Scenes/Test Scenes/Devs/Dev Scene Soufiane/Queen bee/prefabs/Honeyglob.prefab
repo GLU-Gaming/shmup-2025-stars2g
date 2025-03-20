@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1471549682561843455}
   - component: {fileID: 147694056608172385}
   - component: {fileID: 631763261417711433}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Honeyglob part (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 2358959211688281886}
   - component: {fileID: 490761919178230358}
   - component: {fileID: 4663140417498548927}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Honeyglob part
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 5720384827358032482}
   - component: {fileID: 5375054025725510551}
   - component: {fileID: 2576085588868733065}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Honeyglob part (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,7 +269,8 @@ GameObject:
   - component: {fileID: 2561071470879472498}
   - component: {fileID: 5406020359287753784}
   - component: {fileID: 3357541357813661529}
-  m_Layer: 0
+  - component: {fileID: 9082232726315425492}
+  m_Layer: 7
   m_Name: Honeyglob
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -344,3 +345,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 54
   m_CollisionDetection: 0
+--- !u!114 &9082232726315425492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7697890358432094510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c9026d06650ca4aaaea0ff88df69d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  direction: {x: 0, y: 0, z: 0}
+  DamageToDeal: 1
