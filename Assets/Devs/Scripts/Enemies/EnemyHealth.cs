@@ -12,7 +12,7 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] GameObject sparksPrefab; //Prefab of the ParticleSystem
     [SerializeField] GameObject explosionPrefab; //Used on Death
 
-    GameObject Root;
+    GameObject root;
 
     float displayedHealth;
 
@@ -26,7 +26,7 @@ public class EnemyHealth : MonoBehaviour
     private void Start()
     {
         displayedHealth = maxHealth;
-        Root = transform.root.gameObject;
+        root = transform.root.gameObject;
     }
 
     private void Update()
@@ -78,7 +78,7 @@ public class EnemyHealth : MonoBehaviour
     void EnemyDeath()
     {
         Instantiate(explosionPrefab, enemyModel.transform.position, Quaternion.identity);
-        Destroy(Root);
+        Destroy(root);
     }
 
     void InstantiateSparks()
