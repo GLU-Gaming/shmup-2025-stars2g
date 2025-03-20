@@ -63,7 +63,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void DamagePlayer(float Amount)
     {
-        ghostTimer = 1f;
+        ghostTimer = .7f;
         displayedHealth -= Amount;
         displayedHealth = Mathf.Clamp(displayedHealth, 0, maxHealth);
         if(displayedHealth <= 0 && deathUI.activeInHierarchy == false)
