@@ -119,6 +119,23 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &43887568 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 858084067811754942, guid: 1192936bbafb4c04485391bdbb8df0ff, type: 3}
+  m_PrefabInstance: {fileID: 5163445939536361901}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &43887571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43887568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d393e863a1c4a484c967deb468d06910, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &203844586
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,10 +470,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3036275455795604478, guid: 1192936bbafb4c04485391bdbb8df0ff, type: 3}
-      propertyPath: m_Name
-      value: queen bee head sprite
-      objectReference: {fileID: 0}
     - target: {fileID: 4632319849838169668, guid: 1192936bbafb4c04485391bdbb8df0ff, type: 3}
       propertyPath: m_Resource
       value: 
@@ -476,7 +489,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 858084067811754942, guid: 1192936bbafb4c04485391bdbb8df0ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 43887571}
   m_SourcePrefab: {fileID: 100100000, guid: 1192936bbafb4c04485391bdbb8df0ff, type: 3}
 --- !u!198 &5163445939536361902 stripped
 ParticleSystem:
