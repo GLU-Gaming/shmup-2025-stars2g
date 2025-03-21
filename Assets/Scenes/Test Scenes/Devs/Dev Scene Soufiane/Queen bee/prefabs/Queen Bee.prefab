@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2533875555195613214}
   - component: {fileID: 4317526759207457030}
   - component: {fileID: 5982035567309232472}
+  - component: {fileID: 4424263177940044018}
   m_Layer: 0
   m_Name: Queen Bee
   m_TagString: Untagged
@@ -54,6 +55,18 @@ MonoBehaviour:
   moveSpeed: 0.5
   moveAmount: 0.1
 --- !u!114 &5982035567309232472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858084067811754942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d393e863a1c4a484c967deb468d06910, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4424263177940044018
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5162,7 +5175,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4771222454638717765}
-  - {fileID: 6709763725917026595}
   m_Father: {fileID: 6975459961494718419}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8028179745294838093
@@ -5196,7 +5208,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 1903775033fabbb4a93fba3cac03cd38, type: 3}
   m_Resource: {fileID: 8300000, guid: 1903775033fabbb4a93fba3cac03cd38, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.736
+  m_Volume: 0.353
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5322,12 +5334,12 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ba6ff993e8d9ae74aa0059b75e593a62, type: 3}
-  m_Resource: {fileID: 8300000, guid: ba6ff993e8d9ae74aa0059b75e593a62, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ea79cfe9f2032d346af3e344cdb432dc, type: 3}
+  m_Resource: {fileID: 8300000, guid: ea79cfe9f2032d346af3e344cdb432dc, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -5527,7 +5539,8 @@ Transform:
   m_LocalPosition: {x: -6.71, y: -5.19, z: 0}
   m_LocalScale: {x: 0.48, y: 0.48, z: 0.48}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6709763725917026595}
   m_Father: {fileID: 5466745932954536128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 5.05}
 --- !u!212 &2200485535245106345
@@ -5655,7 +5668,7 @@ GameObject:
   - component: {fileID: 6709763725917026595}
   - component: {fileID: 2360308474380956796}
   - component: {fileID: 8937519559706493164}
-  - component: {fileID: 7855528052488132908}
+  - component: {fileID: 3406344551907457028}
   m_Layer: 0
   m_Name: Honey Blast Attack
   m_TagString: Untagged
@@ -5671,12 +5684,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6831280522360910901}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.18301246, y: -0.6830125, z: 0.1830123, w: 0.68301314}
-  m_LocalPosition: {x: -8.44, y: -6.18, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.15274446, y: -0.690412, z: 0.1527443, w: 0.69041264}
+  m_LocalPosition: {x: -3.7717273, y: -1.7372377, z: 0}
+  m_LocalScale: {x: 2.0833337, y: 2.0833333, z: 2.0833335}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5466745932954536128}
+  m_Father: {fileID: 4771222454638717765}
   m_LocalEulerAnglesHint: {x: 30, y: -90, z: 0}
 --- !u!198 &2360308474380956796
 ParticleSystem:
@@ -5814,7 +5827,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 20
+      scalar: 2
       minScalar: 2
       maxCurve:
         serializedVersion: 2
@@ -6625,7 +6638,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 3
-        scalar: 25
+        scalar: 30
         minScalar: 15
         maxCurve:
           serializedVersion: 2
@@ -10536,7 +10549,7 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!114 &7855528052488132908
+--- !u!114 &3406344551907457028
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10545,7 +10558,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6831280522360910901}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e97fb1b3ed5835546a9e4c73f521ff54, type: 3}
+  m_Script: {fileID: 11500000, guid: da3d4833428828e45b786cb19519fed1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7960769604084867579

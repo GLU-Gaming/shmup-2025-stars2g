@@ -33,7 +33,6 @@ public class QueenBeebehaviour : MonoBehaviour
 
     void Update()
     {
-        if (state == "Idle")
         {
             float newY = baseY + Mathf.Sin(Time.time * floatSpeed) * floatAmount;
             transform.position = new Vector3(0, newY, 0);

@@ -15,15 +15,15 @@ public class HoneyBlastAttackPosition : MonoBehaviour
     {
         if (queenBeebehaviour != null && queenBeebehaviour.state == "HoneyAttack")
         {
-            transform.localRotation = Quaternion.Euler(-25.8f, 0, 0);
+            transform.localRotation = Quaternion.Euler(24.95f, -90, 0);
         }
         else if (queenBeebehaviour != null && queenBeebehaviour.state == "Idle")
         {
-            transform.localRotation = Quaternion.Euler(30f, 0, 0);
+            transform.localRotation = Quaternion.Euler(24.95f, -90, 0);
         }
         else if (queenBeebehaviour != null && queenBeebehaviour.state == "Summon")
         {
-            transform.localRotation = Quaternion.Euler(30f, 0, 0);
+            transform.localRotation = Quaternion.Euler(24.95f, -90, 0);
         }
     }
 }

@@ -44,6 +44,8 @@ public class QueenBeeBottomAnimation : MonoBehaviour
         else if (queenBeebehaviour.state != "HoneyAttack")
         {
             hasAttacked = false;
+
+
         }
 
         if (queenBeebehaviour != null && queenBeebehaviour.state == "Idle")
@@ -62,10 +64,19 @@ public class QueenBeeBottomAnimation : MonoBehaviour
 
             transform.localRotation = Quaternion.Euler(0, 0, angle);
         }
+        if (queenBeebehaviour != null && queenBeebehaviour.state == "HoneyAttack")
+        {
+            wiggleTime += Time.deltaTime * 80f;
+
+            float angle = Mathf.Sin(wiggleTime) * 0.25f;
+
+            transform.localRotation = Quaternion.Euler(0, 0, angle);
+        }
     }
 
     void PerformHoneyAttack()
     {
+
         if (honeyBlastAttack != null)
         {
             honeyBlastAttack.Play();

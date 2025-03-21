@@ -6,24 +6,22 @@ public class HoneyglobProjectile : MonoBehaviour
     Rigidbody rb;
     public Vector3 direction;
     [SerializeField] float DamageToDeal = 1;
+    public float movespeed;
+    public float jumppower;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        movespeed = Random.Range(-3f, -10f);
+        jumppower = Random.Range(4f, 15f);
+        rb.AddForce( new Vector3(movespeed, jumppower, 0f) , ForceMode.Impulse);
     }
 
     void Update()
     {
-        rb.linearVelocity = direction * speed;
-        if (transform.position.x > 25)
+
+        if (transform.position.y < -15)
         {
             Destroy(gameObject, 0.2f);
-        }
-
-        // Rotate based on angle of movement, only on the Z-axis
-        if (direction != Vector3.zero)
-        {
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //No idea how it works exactly but it does the angling :thumbsup:
-            transform.rotation = Quaternion.Euler(0, 0, angle);
         }
     }
 

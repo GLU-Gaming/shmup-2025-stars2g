@@ -17,15 +17,7 @@ public class QueenBeeBottomSprite : MonoBehaviour
         {
             transform.localRotation = Quaternion.Euler(0, 0, -52.74f);
         }
-        else if (queenBeebehaviour != null && queenBeebehaviour.state == "Idle")
-        {
-            transform.localRotation = Quaternion.Euler(0, 0, 5.05f);
-        }
-        else if (queenBeebehaviour != null && queenBeebehaviour.state == "Summon")
-        {
-            transform.localRotation = Quaternion.Euler(0, 0, 5.05f);
-        }
-        else if (queenBeebehaviour != null && queenBeebehaviour.state == "Laser")
+        else
         {
             transform.localRotation = Quaternion.Euler(0, 0, 5.05f);
         }
