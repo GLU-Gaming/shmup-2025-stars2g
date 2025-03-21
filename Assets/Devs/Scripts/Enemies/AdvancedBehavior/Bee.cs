@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using DG.Tweening;
 
-public class Mosquito : MonoBehaviour
+public class Bee : MonoBehaviour
 {
     [SerializeField] EntryType entryType;
     [SerializeField] float aimOffsetZ;
