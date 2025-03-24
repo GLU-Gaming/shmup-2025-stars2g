@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.UIElements;
 
 public class Mosquito : MonoBehaviour
 {
@@ -10,8 +11,13 @@ public class Mosquito : MonoBehaviour
     [SerializeField] EntryType entryType;
     [SerializeField] float aimOffsetZ;
     [SerializeField] EnemyHealth Health;
-
+    [SerializeField] GameObject LaserPrefab;
     [SerializeField] float LookSpeed;
+    [SerializeField] ParticleSystem ChargeParts;
+
+    float actualSpeed;
+
+    [SerializeField] float laserOffsetRotation = 90;
 
     GameObject Offset;
     GameObject player;
@@ -51,14 +57,14 @@ public class Mosquito : MonoBehaviour
                 transform.DORotate(new Vector3(0, 0, 5), RotateTime).SetEase(Ease.OutBack);
                 yield return new WaitForSeconds(0.4f);
                 Health.invincible = false;
-                yield return new WaitForSeconds(RotateTime -0.4f);
+                yield return new WaitForSeconds(RotateTime - 0.4f);
 
                 break;
             case EntryType.top:
                 transform.position = new Vector3(Random.Range(hozAxes.x, hozAxes.y), 17, 0);
                 break;
             case EntryType.edge:
-                
+
                 transform.position = new Vector3(28, Random.Range(verticalAxes.x, verticalAxes.y), 0);
                 transform.rotation = Quaternion.Euler(0, 0, 20);
                 transform.DOMoveX(Random.Range(hozAxes.x, hozAxes.y), 2f).SetEase(Ease.OutBack);
@@ -68,14 +74,33 @@ public class Mosquito : MonoBehaviour
                 yield return new WaitForSeconds(1.6f);
                 break;
         }
-        Charging = true;
-        
-        // Calculate the target position beyond the player
-        Vector3 directionToPlayer = (player.transform.position - transform.position).normalized;
-        Vector3 targetPosition = player.transform.position + directionToPlayer * 50f; // Move 5 units beyond the player
-        // Move towards the target position
-        float distanceToTarget = (targetPosition - transform.position).magnitude;
+        while (true)
+        {
+            actualSpeed = LookSpeed;
+            Charging = true;
+            ChargeParts.Play();
+            yield return new WaitForSeconds(Random.Range(2f,4f));
+            actualSpeed = 1;
+            ChargeParts.Stop();
+            StartCoroutine(Firelaser());
+            yield return new WaitForSeconds(1f);
+            transform.DOMove(new Vector3(Random.Range(hozAxes.x, hozAxes.y), Random.Range(verticalAxes.x, verticalAxes.y), 0), 0.5f).SetEase(Ease.OutQuad);
+            yield return new WaitForSeconds(0.5f);
+        }
 
+
+        
+    }
+
+    IEnumerator Firelaser()
+    {
+        LaserPrefab.SetActive(true);
+        LaserPrefab.transform.localScale = new Vector3(0, 1.45f, 0);
+        LaserPrefab.transform.DOScale(new Vector3(0.005f, 1.45f, 0.005f), .5f);
+        yield return new WaitForSeconds(0.5f);
+        LaserPrefab.transform.DOScale(new Vector3(0, 1.45f, 0), .5f);
+        yield return new WaitForSeconds(0.5f);
+        LaserPrefab.SetActive(false);
     }
 
     private void FixedUpdate()
@@ -86,7 +111,7 @@ public class Mosquito : MonoBehaviour
             Vector3 direction = player.transform.position - Offset.transform.position;
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             Quaternion targetRotation = Quaternion.Euler(0, 0, angle + aimOffsetZ);
-            Offset.transform.rotation = Quaternion.Slerp(Offset.transform.rotation, targetRotation, Time.deltaTime * LookSpeed);
+            Offset.transform.rotation = Quaternion.Slerp(Offset.transform.rotation, targetRotation, Time.deltaTime * actualSpeed);
         }
     }
 }
