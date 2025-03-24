@@ -15,3 +15,5 @@ MonoBehaviour:
   bulletTypes:
   - bulletName: BASIC
     bulletPrefab: {fileID: 8729587556061913894, guid: e037431c46faefe46b8f733e9fbf7d1f, type: 3}
+  - bulletName: SPLIT
+    bulletPrefab: {fileID: 8729587556061913894, guid: e037431c46faefe46b8f733e9fbf7d1f, type: 3}

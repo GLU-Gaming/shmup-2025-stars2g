@@ -19,8 +19,7 @@ public class PlayerAttack : MonoBehaviour
     {
         SwitchBullet(0); //Default bullet
     }
-
-    void Update()
+    void FixedUpdate()
     {
         rateAccordingToTime = 1 / fireRate;
 
@@ -31,7 +30,7 @@ public class PlayerAttack : MonoBehaviour
         }
         else if (fireTimer > 0)
         {
-            fireTimer -= Time.deltaTime;
+            fireTimer -= Time.fixedDeltaTime;
         }
     }
 
@@ -48,6 +47,14 @@ public class PlayerAttack : MonoBehaviour
             case "basic":
                 GameObject firedbullet = Instantiate(activeBullet, firePoint.position, firePoint.rotation);
                 firedbullet.GetComponent<BasicBullet>().direction = new Vector3(1,0,0);
+                break;
+            case "split":
+                GameObject firedbullet1 = Instantiate(activeBullet, firePoint.position, firePoint.rotation);
+                firedbullet1.GetComponent<BasicBullet>().direction = new Vector3(1, 0, 0);
+                GameObject firedbullet2 = Instantiate(activeBullet, firePoint.position, firePoint.rotation);
+                firedbullet2.GetComponent<BasicBullet>().direction = new Vector3(1, .1f, 0);
+                GameObject firedbullet3 = Instantiate(activeBullet, firePoint.position, firePoint.rotation);
+                firedbullet3.GetComponent<BasicBullet>().direction = new Vector3(1, -.1f, 0);
                 break;
                 //cases should be lowercase
         }

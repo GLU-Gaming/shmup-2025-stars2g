@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using DG.Tweening;
 
-public class Mosquito : MonoBehaviour
+public class Bee : MonoBehaviour
 {
     [SerializeField] EntryType entryType;
     [SerializeField] float aimOffsetZ;
@@ -70,10 +70,10 @@ public class Mosquito : MonoBehaviour
         Offset.transform.rotation = Quaternion.Euler(0, 0, angle + aimOffsetZ);
         // Calculate the target position beyond the player
         Vector3 directionToPlayer = (player.transform.position - transform.position).normalized;
-        Vector3 targetPosition = player.transform.position + directionToPlayer * 25f; // Move 5 units beyond the player
+        Vector3 targetPosition = player.transform.position + directionToPlayer * 50f; // Move 5 units beyond the player
         // Move towards the target position
         float distanceToTarget = (targetPosition - transform.position).magnitude;
-        float moveDuration = distanceToTarget / 40f; // Adjust speed as needed
+        float moveDuration = distanceToTarget / 50f; // Adjust speed as needed
         void Num()
         {
             StartCoroutine(CompleteNum());
