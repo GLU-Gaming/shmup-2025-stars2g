@@ -14,6 +14,7 @@ public class QueenBeeBottomAnimation : MonoBehaviour
     public float spreadAngle = 30f;
     private float attackStartTime = 0f;
     private bool positionChanged = false;
+    float fireTimer;
 
     private QueenBeebehaviour queenBeebehaviour;
     private AudioSource audioSource;
@@ -34,10 +35,14 @@ public class QueenBeeBottomAnimation : MonoBehaviour
                 positionChanged = true;
             }
 
-            if (!hasAttacked && Time.time >= attackStartTime + 1f)
+            if (!hasAttacked && fireTimer <= 0)
             {
                 PerformHoneyAttack();
                 hasAttacked = true;
+            }
+            else if (fireTimer > 0)
+            {
+                fireTimer -= Time.fixedDeltaTime;
             }
         }
 

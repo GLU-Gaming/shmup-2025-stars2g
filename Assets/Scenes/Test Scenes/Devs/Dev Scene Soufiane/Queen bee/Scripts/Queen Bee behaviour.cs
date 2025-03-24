@@ -14,9 +14,9 @@ public class QueenBeebehaviour : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating(nameof(ChangeState), stateChangeInterval, stateChangeInterval);
         baseY = transform.position.y;
         randomOffset = Random.Range(0f, 100f);
+        InvokeRepeating(nameof(ChangeState), stateChangeInterval, stateChangeInterval);
     }
 
     void ChangeState()
@@ -29,14 +29,20 @@ public class QueenBeebehaviour : MonoBehaviour
 
         state = newState;
         Debug.Log("New State: " + state);
+
+        float newInterval = (state == "Laser") ? 6f : 3.5f;
+
+        if (newInterval != stateChangeInterval)
+        {
+            stateChangeInterval = newInterval;
+            CancelInvoke(nameof(ChangeState));
+            InvokeRepeating(nameof(ChangeState), stateChangeInterval, stateChangeInterval);
+        }
     }
 
     void Update()
     {
-        {
-            float newY = baseY + Mathf.Sin(Time.time * floatSpeed) * floatAmount;
-            transform.position = new Vector3(0, newY, 0);
-        }
+        float newY = baseY + Mathf.Sin(Time.time * floatSpeed) * floatAmount;
+        transform.position = new Vector3(0, newY, 0);
     }
 }
-
