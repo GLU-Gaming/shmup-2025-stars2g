@@ -2,11 +2,13 @@ using UnityEngine;
 
 public class LaserAttack : MonoBehaviour
 {
-    public float disappearTime = 1.5f;
-    [SerializeField] float DamageToDeal = 35;
+    public float disappearTime = 1.4f;
+    private QueenBeebehaviour queenBeebehaviour;
+    private QueenBeeChargeLaser queenBeeChargeLaser;
     void Start()
     {
-        disappearTime -= Time.deltaTime;
+        queenBeeChargeLaser = FindFirstObjectByType<QueenBeeChargeLaser>();
+        queenBeebehaviour = FindFirstObjectByType<QueenBeebehaviour>();
     }
 
     void FixedUpdate()
@@ -15,20 +17,14 @@ public class LaserAttack : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
+        if (queenBeebehaviour != null && queenBeebehaviour.state == "Laser" && queenBeeChargeLaser.hasPlayed == true)
         {
-            GameObject root = other.transform.root.gameObject;
-            GameObject healthUI = root.transform.Find("HealthUI").gameObject;
-            PlayerHealth playerHealth = healthUI.GetComponent<PlayerHealth>();
-
-            if (playerHealth != null)
-            {
-                // Apply damage to the player
-                playerHealth.DamagePlayer(DamageToDeal);
-            }
+            disappearTime -= Time.deltaTime;
         }
-    }
+        if (queenBeebehaviour != null && queenBeebehaviour.state != "Laser")
+        {
+            disappearTime = 1.4f;
+        }
+
+        }
 }

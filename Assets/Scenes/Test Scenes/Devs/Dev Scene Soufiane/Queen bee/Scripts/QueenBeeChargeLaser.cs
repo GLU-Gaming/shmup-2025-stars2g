@@ -8,6 +8,7 @@ public class QueenBeeChargeLaser : MonoBehaviour
     public ParticleSystem LaserCharge;
     public Transform spawnPoint;
     private bool hasAttacked = false;
+    public bool hasPlayed = false;
     private float fireTimer = 2.4f;
 
     void Start()
@@ -20,19 +21,20 @@ public class QueenBeeChargeLaser : MonoBehaviour
     {
         if (queenBeebehaviour != null && queenBeebehaviour.state == "Laser")
         {
-            if (!LaserCharge.isPlaying)
+            if (!LaserCharge.isPlaying && hasPlayed == false)
             {
                 LaserCharge.Play();
             }
 
-            if (audioSource != null && !audioSource.isPlaying)
+            if (audioSource != null && !audioSource.isPlaying && hasPlayed == false)
             {
                 audioSource.Play();
+                hasPlayed = true;
             }
 
             fireTimer -= Time.fixedDeltaTime;
 
-            if (!hasAttacked && fireTimer <= 0)
+            if (hasAttacked == false && fireTimer <= 0)
             {
                 if (LaserPrefab != null && spawnPoint != null)
                 {

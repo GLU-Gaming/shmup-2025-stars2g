@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 6104106892767580055}
   - component: {fileID: 5341202937598336973}
   - component: {fileID: 8049059890022284668}
-  - component: {fileID: 2507142368750827941}
+  - component: {fileID: 8355031326904674763}
+  - component: {fileID: 1394887437010583311}
   m_Layer: 0
   m_Name: Laser
   m_TagString: Untagged
@@ -178,7 +179,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2507142368750827941
+--- !u!114 &8355031326904674763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729807390283649553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d44e1db68eddf341b9f288a4cd33723, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isContinuous: 1
+  damageToDeal: 35
+--- !u!114 &1394887437010583311
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -190,8 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d94b225b21eb888498f0216854c2495f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  disappearTime: 1.5
-  DamageToDeal: 5
+  disappearTime: 1.4
 --- !u!1 &4442503148989747527
 GameObject:
   m_ObjectHideFlags: 0
