@@ -11,8 +11,8 @@ public class HoneyglobProjectile : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        movespeed = Random.Range(-3f, -10f);
-        jumppower = Random.Range(4f, 15f);
+        movespeed = Random.Range(-6f, -20f);
+        jumppower = Random.Range(8f, 30f);
         rb.AddForce( new Vector3(movespeed, jumppower, 0f) , ForceMode.Impulse);
     }
 

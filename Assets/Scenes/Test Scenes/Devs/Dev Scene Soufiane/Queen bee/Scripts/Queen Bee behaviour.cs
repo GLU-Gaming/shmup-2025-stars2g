@@ -3,7 +3,7 @@ using UnityEngine;
 public class QueenBeebehaviour : MonoBehaviour
 {
     [SerializeField] public string state = "Idle";
-    private string[] states = { "Idle", "HoneyAttack", "Summoning", "Laser" };
+    private string[] states = { "Idle", "HoneyAttack", "Summoning", /*"Laser"*/ };
     public float stateChangeInterval = 3f;
     public float floatSpeed = 1f;
     public float floatAmount = 0.2f;
@@ -43,6 +43,6 @@ public class QueenBeebehaviour : MonoBehaviour
     void Update()
     {
         float newY = baseY + Mathf.Sin(Time.time * floatSpeed) * floatAmount;
-        transform.position = new Vector3(0, newY, 0);
+        transform.position = new Vector3(4.28f, newY, 0);
     }
 }

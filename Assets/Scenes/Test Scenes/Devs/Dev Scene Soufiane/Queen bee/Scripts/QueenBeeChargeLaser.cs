@@ -21,17 +21,20 @@ public class QueenBeeChargeLaser : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (queenBeebehaviour != null && queenBeebehaviour.state == "Laser")
+        if (queenBeebehaviour.state == "Laser" && !hasAttacked && fireTimer >= 0)
         {
-            if (LaserCharge != null && !LaserCharge.isPlaying && hasPlayed == false)
+            if (!hasPlayed)
             {
-                LaserCharge.Play();
-                hasPlayed = true;
-            }
+                if (LaserCharge != null && hasPlayed == false)
+                {
+                    LaserCharge.Play();
+                }
 
-            if (audioSource != null && !audioSource.isPlaying && hasPlayed == false)
-            {
-                audioSource.Play();
+                if (audioSource != null && hasPlayed == false)
+                {
+                    audioSource.Play();
+                }
+
                 hasPlayed = true;
             }
 
@@ -45,17 +48,18 @@ public class QueenBeeChargeLaser : MonoBehaviour
         else
         {
             fireTimer = 2.4f;
+            hasPlayed = false;
         }
     }
 
-    IEnumerator FireLaser()
+IEnumerator FireLaser()
     {
         laserPrefab.SetActive(true);
         laserPrefab.transform.localScale = new Vector3(0, 1.45f, 0);
         laserPrefab.transform.DOScale(new Vector3(0.020f, 1.45f, 0.005f), .5f);
         yield return new WaitForSeconds(1.4f);
         laserPrefab.transform.DOScale(new Vector3(0, 1.45f, 0), .5f);
-        yield return new WaitForSeconds(1.4f);
+        yield return new WaitForSeconds(5f);
         laserPrefab.SetActive(false);
         hasAttacked = false;
     }
