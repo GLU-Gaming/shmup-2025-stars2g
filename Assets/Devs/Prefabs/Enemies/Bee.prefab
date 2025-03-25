@@ -121,6 +121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d44e1db68eddf341b9f288a4cd33723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isContinuous: 0
+  damageToDeal: 10
 --- !u!1 &2617106153034790163
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,7 +171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entryType: 0
   aimOffsetZ: 0
-  Health: {fileID: 2312024931019151436}
+  health: {fileID: 2312024931019151436}
 --- !u!1 &4075706274767420434
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,6 +215,10 @@ PrefabInstance:
     - target: {fileID: 3232815874249064263, guid: b68030b893d34e347871568d734b3070, type: 3}
       propertyPath: m_Name
       value: HealthUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 6143225143235213495, guid: b68030b893d34e347871568d734b3070, type: 3}
+      propertyPath: maxHealth
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6143225143235213495, guid: b68030b893d34e347871568d734b3070, type: 3}
       propertyPath: enemyModel

@@ -5007,10 +5007,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entryType: 0
   aimOffsetZ: 0
-  Health: {fileID: 2874688584415208942}
-  LaserPrefab: {fileID: 1159694955317999853}
-  LookSpeed: 5
-  ChargeParts: {fileID: 4724279786830307893}
+  health: {fileID: 2874688584415208942}
+  laserPrefab: {fileID: 1159694955317999853}
+  lookSpeed: 5
+  chargeParts: {fileID: 4724279786830307893}
   laserOffsetRotation: -86.95
 --- !u!1 &3668592984195576283
 GameObject:
@@ -5280,6 +5280,10 @@ PrefabInstance:
     - target: {fileID: 3232815874249064263, guid: b68030b893d34e347871568d734b3070, type: 3}
       propertyPath: m_Name
       value: HealthUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 6143225143235213495, guid: b68030b893d34e347871568d734b3070, type: 3}
+      propertyPath: maxHealth
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 6143225143235213495, guid: b68030b893d34e347871568d734b3070, type: 3}
       propertyPath: enemyModel
