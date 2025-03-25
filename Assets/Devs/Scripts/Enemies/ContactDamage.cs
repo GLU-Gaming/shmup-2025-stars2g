@@ -40,7 +40,6 @@ public class ContactDamage : MonoBehaviour
             else
             {
                 hit = true;
-                print("Hitting");
             }
         }
     }
@@ -50,7 +49,6 @@ public class ContactDamage : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             hit = false;
-            print("I |I II I_");
         }
     }
 }
