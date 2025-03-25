@@ -4,7 +4,7 @@ public class QueenBeebehaviour : MonoBehaviour
 {
     [SerializeField] public string state = "Idle";
     private string[] states = { "Idle", "HoneyAttack", "Summoning", "Laser" };
-    public float stateChangeInterval = 3.5f;
+    public float stateChangeInterval = 3f;
     public float floatSpeed = 1f;
     public float floatAmount = 0.2f;
     public float moveSpeed = 0.5f;
@@ -30,7 +30,7 @@ public class QueenBeebehaviour : MonoBehaviour
         state = newState;
         Debug.Log("New State: " + state);
 
-        float newInterval = (state == "Laser") ? 6f : 3.5f;
+        float newInterval = (state == "Laser") ? 6f : 3f;
 
         if (newInterval != stateChangeInterval)
         {
