@@ -1,16 +1,27 @@
+using TMPro;
+using UnityEditor;
 using UnityEngine;
+
 
 public class ScoreSystem : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    /*
+     NOG TOE TE VOEGEN:
+    POWERUPS DIE WORDEN OPGESLAGEN OM AAN DE SCORE TOE TE VOEGEN MAAR IS NU NOG NIET NODIG
+     */
+    public int Score;
+    [SerializeField] TMP_Text scoreText;
+    [SerializeField] string scorePrefix = "Score";
+
+
+    public void AddScore(int ScoreToAdd)
     {
-        
+        Score += ScoreToAdd;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        scoreText.text = scorePrefix + ": " + Score;
     }
 }

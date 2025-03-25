@@ -176,6 +176,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35c21ab3f24158e4390fd80da9d63bc8, type: 3}
+--- !u!114 &160376143 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5843914588929246320, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
+  m_PrefabInstance: {fileID: 5987223857807743439}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &191574299 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2879032452446162350, guid: a81995bbf15cc87489c39d0f45fee55b, type: 3}
@@ -886,6 +897,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fcc7160b936d254996aa96324395805, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Score: 0
+  scoreText: {fileID: 160376143}
+  scorePrefix: Score
 --- !u!4 &1658180642
 Transform:
   m_ObjectHideFlags: 0
@@ -1415,6 +1429,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2185068292488731700, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 474.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2185068292488731700, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -507.7
+      objectReference: {fileID: 0}
     - target: {fileID: 2277735925278694846, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
       propertyPath: player
       value: 
@@ -1423,6 +1445,10 @@ PrefabInstance:
       propertyPath: deathUI
       value: 
       objectReference: {fileID: 191574299}
+    - target: {fileID: 3398962562084711366, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
+      propertyPath: m_Name
+      value: Score
+      objectReference: {fileID: 0}
     - target: {fileID: 5316724414076798844, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
       propertyPath: m_Name
       value: UI
@@ -1500,10 +1526,6 @@ PrefabInstance:
     - target: {fileID: 1330309722793386361, guid: 73f0c58706f440248bf12d8dac9bbb32, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4017493590264960943, guid: 73f0c58706f440248bf12d8dac9bbb32, type: 3}
-      propertyPath: fireRate
-      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6813039873375660515, guid: 73f0c58706f440248bf12d8dac9bbb32, type: 3}
       propertyPath: m_LocalPosition.x
