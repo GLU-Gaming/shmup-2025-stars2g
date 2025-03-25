@@ -23,12 +23,5 @@ public class Finish : MonoBehaviour
             controller.enabled = false;
         }
     }
-
-    public void RestartGame()
-    {
-        Time.timeScale = 1f;
-        UnityEngine.SceneManagement.SceneManager.LoadScene(
-            UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
-    }
 }
 
