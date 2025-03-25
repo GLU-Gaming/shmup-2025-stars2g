@@ -1,10 +1,12 @@
+using System.Collections;
 using UnityEngine;
+using DG.Tweening;
 
 public class QueenBeeChargeLaser : MonoBehaviour
 {
     private QueenBeebehaviour queenBeebehaviour;
     private AudioSource audioSource;
-    public GameObject LaserPrefab;
+    public GameObject laserPrefab;
     public ParticleSystem LaserCharge;
     public Transform spawnPoint;
     private bool hasAttacked = false;
@@ -21,9 +23,10 @@ public class QueenBeeChargeLaser : MonoBehaviour
     {
         if (queenBeebehaviour != null && queenBeebehaviour.state == "Laser")
         {
-            if (!LaserCharge.isPlaying && hasPlayed == false)
+            if (LaserCharge != null && !LaserCharge.isPlaying && hasPlayed == false)
             {
                 LaserCharge.Play();
+                hasPlayed = true;
             }
 
             if (audioSource != null && !audioSource.isPlaying && hasPlayed == false)
@@ -34,20 +37,27 @@ public class QueenBeeChargeLaser : MonoBehaviour
 
             fireTimer -= Time.fixedDeltaTime;
 
-            if (hasAttacked == false && fireTimer <= 0)
+            if (!hasAttacked && fireTimer <= 0)
             {
-                if (LaserPrefab != null && spawnPoint != null)
-                {
-                    Instantiate(LaserPrefab, spawnPoint.position, Quaternion.identity);
-                }
-
-                hasAttacked = true;
+                StartCoroutine(FireLaser());
             }
         }
-        else if (queenBeebehaviour.state != "Laser")
+        else
         {
-            hasAttacked = false;
             fireTimer = 2.4f;
         }
     }
+
+    IEnumerator FireLaser()
+    {
+        laserPrefab.SetActive(true);
+        laserPrefab.transform.localScale = new Vector3(0, 1.45f, 0);
+        laserPrefab.transform.DOScale(new Vector3(0.020f, 1.45f, 0.005f), .5f);
+        yield return new WaitForSeconds(1.4f);
+        laserPrefab.transform.DOScale(new Vector3(0, 1.45f, 0), .5f);
+        yield return new WaitForSeconds(1.4f);
+        laserPrefab.SetActive(false);
+        hasAttacked = false;
+    }
 }
+
