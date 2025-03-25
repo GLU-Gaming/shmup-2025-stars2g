@@ -6,6 +6,11 @@ public class Finish : MonoBehaviour
     public GameObject winUI;
     public GameObject player;
 
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -16,7 +21,7 @@ public class Finish : MonoBehaviour
 
     public void PlayerWin()
     {
-        Instantiate(winUI);
+        winUI.SetActive(true);
         Time.timeScale = 0f;
         if (player.TryGetComponent<PlayerMovement>(out var controller))
         {
