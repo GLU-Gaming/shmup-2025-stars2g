@@ -61,7 +61,7 @@ public class QueenBeeBottomAnimation : MonoBehaviour
 
             transform.localRotation = Quaternion.Euler(0, 0, angle);
 
-            transform.localPosition = new Vector3(7.06f, 5.12f, 0);
+            transform.localPosition = new Vector3(7.37f, 5.12f, 0);
         }
         if (queenBeebehaviour != null && queenBeebehaviour.state == "Summoning")
         {
@@ -71,7 +71,7 @@ public class QueenBeeBottomAnimation : MonoBehaviour
 
             transform.localRotation = Quaternion.Euler(0, 0, angle);
 
-            transform.localPosition = new Vector3(7.06f, 5.12f, 0);
+            transform.localPosition = new Vector3(7.37f, 5.12f, 0);
         }
         if (queenBeebehaviour != null && queenBeebehaviour.state == "Laser")
         {
@@ -81,7 +81,7 @@ public class QueenBeeBottomAnimation : MonoBehaviour
 
             transform.localRotation = Quaternion.Euler(0, 0, angle);
 
-            transform.localPosition = new Vector3(7.06f, 5.12f, 0);
+            transform.localPosition = new Vector3(7.37f, 5.12f, 0);
         }
         if (queenBeebehaviour != null && queenBeebehaviour.state == "HoneyAttack")
         {
