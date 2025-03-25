@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using System.Net.Sockets;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -12,6 +13,14 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] GameObject sparksPrefab; //Prefab of the ParticleSystem
     [SerializeField] GameObject explosionPrefab; //Used on Death
 
+
+    [Header("Score System")]
+    [SerializeField] int scoreValue = 100; //score to give
+    [SerializeField] float Multiplier = 1; //Multiplier for the score
+
+    ScoreSystem scoreSystem; //referenced
+    //------------------------------------------
+
     GameObject root;
 
     public bool invincible = false;
@@ -19,6 +28,8 @@ public class EnemyHealth : MonoBehaviour
     float displayedHealth;
 
     float ghostTimer; //Timer for the ghost bar to disappear
+
+    bool hit = false; //Used to check if the enemy has been hit
 
     [Header("DEBUG ONLY")]
     [SerializeField] bool DEBUGGING = false;
@@ -29,6 +40,7 @@ public class EnemyHealth : MonoBehaviour
     {
         displayedHealth = maxHealth;
         root = transform.root.gameObject;
+        scoreSystem = GameObject.FindFirstObjectByType<ScoreSystem>();
     }
 
     private void Update()
@@ -59,6 +71,20 @@ public class EnemyHealth : MonoBehaviour
         healthBar.DOFillAmount(displayedHealth / maxHealth, 0.5f);
     }
 
+    private void FixedUpdate()
+    {
+        if (hit)
+        {
+            DecreaseMultiplier(); //Slowly Decreases the amount of score you get based on how long you take to kill the enemy
+        }
+    }
+
+    void DecreaseMultiplier()
+    {
+        Multiplier -= 0.001f;
+        Multiplier = Mathf.Clamp(Multiplier, .2f, 1);
+    }
+
     public void HealEnemy(float amount)
     {
         displayedHealth += amount;
@@ -73,6 +99,7 @@ public class EnemyHealth : MonoBehaviour
             displayedHealth -= amount;
             displayedHealth = Mathf.Clamp(displayedHealth, 0, maxHealth);
             InstantiateSparks();
+            hit = true;
             if (displayedHealth <= 0)
             {
                 EnemyDeath();
@@ -82,6 +109,7 @@ public class EnemyHealth : MonoBehaviour
 
     void EnemyDeath()
     {
+        scoreSystem.AddScore((int)(scoreValue * Multiplier));
         Instantiate(explosionPrefab, enemyModel.transform.position, Quaternion.identity);
         Destroy(root);
     }
