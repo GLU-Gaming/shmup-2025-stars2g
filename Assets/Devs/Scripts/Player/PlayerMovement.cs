@@ -11,6 +11,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float rotationAngle;
     [SerializeField] Transform objectToRotate;
 
+    [Header("Visual Effects")]
+    [SerializeField] ParticleSystem trail; //the thruster Effect
+
     //Hidden Requirements
     Rigidbody rb;
 
@@ -36,5 +39,13 @@ public class PlayerMovement : MonoBehaviour
 
         rb.AddForce(MoveDirection * AppliedSpeed);
         rb.linearVelocity = Vector3.ClampMagnitude(rb.linearVelocity, AppliedSpeed); //Prevents Strafing (increasing speed by moving diagonally)
+
+        if(HozInput < 0)
+        {
+            trail.Stop();
+        } else
+        {
+            trail.Play();
+        }
     }
 }
