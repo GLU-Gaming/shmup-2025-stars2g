@@ -60,6 +60,8 @@ public class QueenBeeBottomAnimation : MonoBehaviour
             float angle = Mathf.Sin(wiggleTime) * wiggleAngle;
 
             transform.localRotation = Quaternion.Euler(0, 0, angle);
+
+            transform.localPosition = new Vector3(7.06f, 5.12f, 0);
         }
         if (queenBeebehaviour != null && queenBeebehaviour.state == "Summoning")
         {
@@ -68,6 +70,18 @@ public class QueenBeeBottomAnimation : MonoBehaviour
             float angle = Mathf.Sin(wiggleTime) * wiggleAngle;
 
             transform.localRotation = Quaternion.Euler(0, 0, angle);
+
+            transform.localPosition = new Vector3(7.06f, 5.12f, 0);
+        }
+        if (queenBeebehaviour != null && queenBeebehaviour.state == "Laser")
+        {
+            wiggleTime += Time.deltaTime * wiggleSpeed;
+
+            float angle = Mathf.Sin(wiggleTime) * wiggleAngle;
+
+            transform.localRotation = Quaternion.Euler(0, 0, angle);
+
+            transform.localPosition = new Vector3(7.06f, 5.12f, 0);
         }
         if (queenBeebehaviour != null && queenBeebehaviour.state == "HoneyAttack")
         {
@@ -76,6 +90,8 @@ public class QueenBeeBottomAnimation : MonoBehaviour
             float angle = Mathf.Sin(wiggleTime) * 0.25f;
 
             transform.localRotation = Quaternion.Euler(0, 0, angle);
+
+            transform.localPosition = new Vector3(8.5f, 3.89f, 0);
         }
     }
 

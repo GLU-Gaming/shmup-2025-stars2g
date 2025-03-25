@@ -15,11 +15,11 @@ public class QueenBeeBottomSprite : MonoBehaviour
     {
         if (queenBeebehaviour != null && queenBeebehaviour.state == "HoneyAttack")
         {
-            transform.localRotation = Quaternion.Euler(0, 0, -52.74f);
+            transform.localRotation = Quaternion.Euler(-135.7f, -90, 0);
         }
         else
         {
-            transform.localRotation = Quaternion.Euler(0, 0, 5.05f);
+            transform.localRotation = Quaternion.Euler(-90, -90, 0);
         }
     }
 }
