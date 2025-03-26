@@ -89,10 +89,10 @@ public class Mosquito : MonoBehaviour
     IEnumerator FireLaser()
     {
         laserPrefab.SetActive(true);
-        laserPrefab.transform.localScale = new Vector3(0, 1.45f, 0);
-        laserPrefab.transform.DOScale(new Vector3(0.005f, 1.45f, 0.005f), .5f);
+        laserPrefab.transform.localScale = new Vector3(0, 1.25f, 0);
+        laserPrefab.transform.DOScale(new Vector3(0.001f, 1.25f, 0.001f), .5f);
         yield return new WaitForSeconds(0.5f);
-        laserPrefab.transform.DOScale(new Vector3(0, 1.45f, 0), .5f);
+        laserPrefab.transform.DOScale(new Vector3(0, 1.25f, 0), .5f);
         yield return new WaitForSeconds(0.5f);
         laserPrefab.SetActive(false);
     }

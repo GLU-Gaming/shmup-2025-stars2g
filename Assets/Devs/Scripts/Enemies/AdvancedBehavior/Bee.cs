@@ -6,6 +6,7 @@ public class Bee : MonoBehaviour
     [SerializeField] EntryType entryType;
     [SerializeField] float aimOffsetZ;
     [SerializeField] EnemyHealth health;
+    [SerializeField] float speed = 50f;
 
     GameObject offset;
     GameObject player;
@@ -70,7 +71,7 @@ public class Bee : MonoBehaviour
         Vector3 targetPosition = player.transform.position + directionToPlayer * 50f; // Move 5 units beyond the player
         // Move towards the target position
         float distanceToTarget = (targetPosition - transform.position).magnitude;
-        float moveDuration = distanceToTarget / 50f; // Adjust speed as needed
+        float moveDuration = distanceToTarget / speed; // Adjust speed as needed
         void Num()
         {
             StartCoroutine(CompleteNum());

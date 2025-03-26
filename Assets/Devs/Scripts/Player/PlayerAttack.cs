@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     [SerializeField] Transform firePoint;
-    [SerializeField] float fireRate = 5; // Per Second
+    public float fireRate = 5; // Per Second
 
     [SerializeField] BulletIndex bulletIndex;
 

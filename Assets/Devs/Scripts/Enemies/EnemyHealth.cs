@@ -81,7 +81,7 @@ public class EnemyHealth : MonoBehaviour
 
     void DecreaseMultiplier()
     {
-        Multiplier -= 0.001f;
+        Multiplier -= 0.0001f;
         Multiplier = Mathf.Clamp(Multiplier, .2f, 1);
     }
 
