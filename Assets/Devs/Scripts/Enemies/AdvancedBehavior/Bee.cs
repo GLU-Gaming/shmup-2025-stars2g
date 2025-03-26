@@ -50,6 +50,15 @@ public class Bee : MonoBehaviour
                 break;
             case EntryType.top:
                 transform.position = new Vector3(Random.Range(hozAxes.x, hozAxes.y), 17, 0);
+                transform.rotation = Quaternion.Euler(0, 0, -20);
+                float height2 = Random.Range(-10, 10);
+                float distanceToFly2 = Mathf.Abs(-15 - height2);
+                float rotateTime2 = (Random.Range(1.5f, 1.7f) * (distanceToFly2 / 10));
+                transform.DOMoveY(height2, (Random.Range(1.4f, 1.7f) * (distanceToFly2 / 10))).SetEase(Ease.OutBack);
+                transform.DORotate(new Vector3(0, 0, 5), rotateTime2).SetEase(Ease.OutBack);
+                yield return new WaitForSeconds(0.4f);
+                health.invincible = false;
+                yield return new WaitForSeconds(rotateTime2 - 0.4f);
                 break;
             case EntryType.edge:
                 transform.position = new Vector3(28, Random.Range(verticalAxes.x, verticalAxes.y), 0);
