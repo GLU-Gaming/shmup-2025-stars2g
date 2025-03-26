@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: 5406020359287753784}
   - component: {fileID: 3357541357813661529}
   - component: {fileID: 9082232726315425492}
+  - component: {fileID: 4269217619154019310}
   m_Layer: 7
   m_Name: Honeyglob
   m_TagString: Untagged
@@ -287,7 +288,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.029573545, z: -1.9280956}
-  m_LocalScale: {x: 1.77, y: 1.77, z: 1.77}
+  m_LocalScale: {x: 5.8, y: 5.8, z: 5.8}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2358959211688281886}
@@ -362,3 +363,17 @@ MonoBehaviour:
   DamageToDeal: 1
   movespeed: -3
   jumppower: 4
+--- !u!114 &4269217619154019310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7697890358432094510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d44e1db68eddf341b9f288a4cd33723, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isContinuous: 0
+  damageToDeal: 3

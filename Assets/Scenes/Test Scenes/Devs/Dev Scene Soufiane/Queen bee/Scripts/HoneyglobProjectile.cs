@@ -31,11 +31,12 @@ public class HoneyglobProjectile : MonoBehaviour
         {
             GameObject root = other.transform.root.gameObject;
             GameObject healthUI = root.transform.Find("HealthUI").gameObject;
+            GameObject playerMovement = root.transform.Find("playerMovement").gameObject;
             PlayerHealth playerHealth = healthUI.GetComponent<PlayerHealth>();
+            /*PlayerMovement playerMovement = .GetComponent<PlayerMovement>();*/
 
             if (playerHealth != null)
             {
-                // Apply damage to the player
                 playerHealth.DamagePlayer(DamageToDeal);
             }
             Destroy(gameObject);

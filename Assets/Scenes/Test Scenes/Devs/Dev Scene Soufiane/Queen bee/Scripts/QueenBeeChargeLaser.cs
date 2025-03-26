@@ -5,63 +5,93 @@ using DG.Tweening;
 public class QueenBeeChargeLaser : MonoBehaviour
 {
     private QueenBeebehaviour queenBeebehaviour;
-    private AudioSource audioSource;
+    private AudioSource chargeAudioSource;
+    private AudioSource blastAudioSource;
     public GameObject laserPrefab;
+    private CapsuleCollider laserCollider;
     public ParticleSystem LaserCharge;
     public Transform spawnPoint;
     private bool hasAttacked = false;
-    public bool hasPlayed = false;
+    private bool hasPlayed = false;
     private float fireTimer = 2.4f;
 
     void Start()
     {
         queenBeebehaviour = FindFirstObjectByType<QueenBeebehaviour>();
-        audioSource = GetComponent<AudioSource>();
+        AudioSource[] audioSources = GetComponents<AudioSource>();
+        if (audioSources.Length >= 2)
+        {
+            chargeAudioSource = audioSources[0];  // First AudioSource = charge sound
+            blastAudioSource = audioSources[1];   // Second AudioSource = blast sound
+        }
+
+        // Get the CapsuleCollider component from the laserPrefab
+        if (laserPrefab != null)
+        {
+            laserCollider = laserPrefab.GetComponent<CapsuleCollider>();
+            if (laserCollider != null)
+            {
+                laserCollider.enabled = false; // Start disabled
+            }
+        }
     }
 
     void FixedUpdate()
     {
-        if (queenBeebehaviour.state == "Laser" && !hasAttacked && fireTimer >= 0)
+        if (queenBeebehaviour.state == "Laser" && !hasAttacked)
         {
+            fireTimer -= Time.fixedDeltaTime;
+
             if (!hasPlayed)
             {
-                if (LaserCharge != null && hasPlayed == false)
+                hasPlayed = true; // Ensure it plays only once
+                if (LaserCharge != null)
                 {
                     LaserCharge.Play();
                 }
-
-                if (audioSource != null && hasPlayed == false)
+                if (chargeAudioSource != null)
                 {
-                    audioSource.Play();
+                    chargeAudioSource.Play();
                 }
-
-                hasPlayed = true;
             }
 
-            fireTimer -= Time.fixedDeltaTime;
-
-            if (!hasAttacked && fireTimer <= 0)
+            if (fireTimer <= 0)
             {
                 StartCoroutine(FireLaser());
+                hasAttacked = true; // Prevent multiple shots
             }
         }
-        else
+        else if (queenBeebehaviour.state != "Laser")
         {
+            // Reset when the state changes
             fireTimer = 2.4f;
             hasPlayed = false;
+            hasAttacked = false;
         }
     }
 
-IEnumerator FireLaser()
+    IEnumerator FireLaser()
     {
         laserPrefab.SetActive(true);
-        laserPrefab.transform.localScale = new Vector3(0, 1.45f, 0);
-        laserPrefab.transform.DOScale(new Vector3(0.020f, 1.45f, 0.005f), .5f);
+
+        if (laserCollider != null)
+            laserCollider.enabled = true; // Enable the collider
+
+        laserPrefab.transform.localScale = new Vector3(0, 0.2f, 0);
+        laserPrefab.transform.DOScale(new Vector3(0.020f, 0.2f, 0.005f), .5f);
+
+        if (blastAudioSource != null)
+            blastAudioSource.Play();
+
         yield return new WaitForSeconds(1.4f);
-        laserPrefab.transform.DOScale(new Vector3(0, 1.45f, 0), .5f);
+
+        laserPrefab.transform.DOScale(new Vector3(0, 0.2f, 0), .5f);
+
         yield return new WaitForSeconds(5f);
+
+        if (laserCollider != null)
+            laserCollider.enabled = false; // Disable the collider
+
         laserPrefab.SetActive(false);
-        hasAttacked = false;
     }
 }
-
