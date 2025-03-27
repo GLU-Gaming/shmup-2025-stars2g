@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3430380478287261684
+--- !u!1 &4337934907743265050
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,24 +8,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4303346641976428429}
-  - component: {fileID: 8271724964945478437}
-  - component: {fileID: 5223846241680944791}
-  - component: {fileID: 6022524893839895607}
+  - component: {fileID: 2060563903840573834}
+  - component: {fileID: 2484469700464114787}
+  - component: {fileID: 2818518121566587564}
+  - component: {fileID: 1303361704171380693}
   m_Layer: 0
-  m_Name: slowed
+  m_Name: triplefire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &4303346641976428429
+--- !u!224 &2060563903840573834
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3430380478287261684}
+  m_GameObject: {fileID: 4337934907743265050}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -38,21 +38,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 485.6, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &8271724964945478437
+--- !u!222 &2484469700464114787
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3430380478287261684}
+  m_GameObject: {fileID: 4337934907743265050}
   m_CullTransparentMesh: 1
---- !u!114 &5223846241680944791
+--- !u!114 &2818518121566587564
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3430380478287261684}
+  m_GameObject: {fileID: 4337934907743265050}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '!HONEYBOUND 4.38'
+  m_text: '!SPREADCORE 4.38'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9de0e32d5301a0a4fb69444cc62308b0, type: 2}
   m_sharedMaterial: {fileID: -7203772268703769880, guid: 9de0e32d5301a0a4fb69444cc62308b0, type: 2}
@@ -75,8 +75,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278219775
-  m_fontColor: {r: 1, g: 0.45081472, b: 0, a: 1}
+    rgba: 4285523711
+  m_fontColor: {r: 1, g: 0.90078723, b: 0.435849, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -137,13 +137,13 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &6022524893839895607
+--- !u!114 &1303361704171380693
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3430380478287261684}
+  m_GameObject: {fileID: 4337934907743265050}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 423a2d5a33d25c94581cb0c032f1161c, type: 3}

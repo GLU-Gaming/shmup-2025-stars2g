@@ -9,17 +9,33 @@ public class slowed : MonoBehaviour
 
     PlayerMovement Plr;
 
-    float Timer;
+    public float Timer;
     float ticks;
 
     private string originalText = "!HONEYBOUND";
 
     private void Start()
     {
+        //PERFORM PRECHECK TO MAKE SURE NOTHING STACKS
+        var existingSlow = GameObject.FindFirstObjectByType<slowed>();
+        int tries = 10;
+        while (existingSlow != null && existingSlow.gameObject == this.gameObject && tries > 0)
+        {
+            existingSlow = GameObject.FindFirstObjectByType<slowed>();
+            tries -= 1;
+        }
+        if (existingSlow != null)
+        {
+            existingSlow.Timer = effectDuration;
+            Destroy(gameObject);
+        }
+
         effectText = GetComponent<TMP_Text>();
         effectText.text = originalText;
         Timer = effectDuration;
         Plr = GameObject.FindFirstObjectByType<PlayerMovement>();
+        transform.parent = GameObject.Find("EffectList").transform;
+        transform.localScale = Vector3.one;
     }
 
     private void Update()

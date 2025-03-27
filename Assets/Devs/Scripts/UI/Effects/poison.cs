@@ -11,7 +11,7 @@ public class poison : MonoBehaviour
 
     PlayerHealth playerHealth;
 
-    float Timer;
+    public float Timer;
     float ticks;
 
 
@@ -25,11 +25,27 @@ public class poison : MonoBehaviour
 
     private void Start()
     {
+        //PERFORM PRECHECK TO MAKE SURE NOTHING STACKS
+        var existingPoison = GameObject.FindFirstObjectByType<poison>();
+        int tries = 10;
+        while (existingPoison != null && existingPoison.gameObject == this.gameObject && tries > 0)
+        {
+            existingPoison = GameObject.FindFirstObjectByType<poison>();
+            tries -= 1;
+        }
+        if (existingPoison != null)
+        {
+            existingPoison.Timer = poisonDuration;
+            Destroy(gameObject);
+        }
+
         poisonText = GetComponent<TMP_Text>();
         poisonText.text = originalText;
         ticks = TickInterval;
         Timer = poisonDuration;
         playerHealth = GameObject.FindFirstObjectByType<PlayerHealth>();
+        transform.parent = GameObject.Find("EffectList").transform;
+        transform.localScale = Vector3.one;
     }
 
     private void Update()

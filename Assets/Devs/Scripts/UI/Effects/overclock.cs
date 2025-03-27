@@ -9,18 +9,33 @@ public class overclock : MonoBehaviour
 
     PlayerAttack playerAttack;
 
-    float Timer;
+    public float Timer;
     float ticks;
 
     private string originalText = "!OVERCLOCK";
 
     private void Start()
     {
+        //PERFORM PRECHECK TO MAKE SURE NOTHING STACKS
+        var existingOverclock = GameObject.FindFirstObjectByType<overclock>();
+        int tries = 10;
+        while (existingOverclock != null && existingOverclock.gameObject == this.gameObject && tries > 0)
+        {
+            existingOverclock = GameObject.FindFirstObjectByType<overclock>();
+            tries -= 1;
+        }
+        if (existingOverclock != null)
+        {
+            existingOverclock.Timer = effectDuration;
+            Destroy(gameObject);
+        }
         effectText = GetComponent<TMP_Text>();
         effectText.text = originalText;
         Timer = effectDuration;
         playerAttack = GameObject.FindFirstObjectByType<PlayerAttack>();
         OldFirerate = playerAttack.fireRate;
+        transform.parent = GameObject.Find("EffectList").transform;
+        transform.localScale = Vector3.one;
     }
 
     float OldFirerate;
