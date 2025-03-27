@@ -3,7 +3,7 @@ using UnityEngine;
 using DG.Tweening;
 public class Bee : MonoBehaviour
 {
-    [SerializeField] EntryType entryType;
+    public EntryType entryType;
     [SerializeField] float aimOffsetZ;
     [SerializeField] EnemyHealth health;
     [SerializeField] float speed = 50f;
@@ -16,11 +16,12 @@ public class Bee : MonoBehaviour
     Vector2 verticalAxes = new Vector2(-11, 13);
 
     bool charging;
-    private enum EntryType
+    public enum EntryType
     {
         bottom,
         top,
-        edge
+        edge,
+        onTheSpot
     }
 
     private void Start()
@@ -68,6 +69,12 @@ public class Bee : MonoBehaviour
                 yield return new WaitForSeconds(0.4f);
                 health.invincible = false;
                 yield return new WaitForSeconds(1.6f);
+                break;
+            case EntryType.onTheSpot:
+                transform.DOMove(new Vector3(transform.position.x + Random.Range(-7.5f,-3), transform.position.y + Random.Range(-7.5f, 7.5f), 0), 1f).SetEase(Ease.OutQuad);
+                yield return new WaitForSeconds(.5f);
+                health.invincible = false;
+                yield return new WaitForSeconds(.5f);
                 break;
         }
         charging = true;
