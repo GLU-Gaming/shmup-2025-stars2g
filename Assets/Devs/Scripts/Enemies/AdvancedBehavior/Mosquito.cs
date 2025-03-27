@@ -26,12 +26,6 @@ public class Mosquito : MonoBehaviour
     Vector2 verticalAxes = new Vector2(-11, 13);
 
     bool charging;
-    public enum EntryType
-    {
-        bottom,
-        top,
-        edge
-    }
 
     private void Start()
     {
