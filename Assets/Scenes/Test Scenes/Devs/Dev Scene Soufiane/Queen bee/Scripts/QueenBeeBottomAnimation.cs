@@ -44,18 +44,41 @@ public class QueenBeeBottomAnimation : MonoBehaviour
             {
                 fireTimer -= Time.fixedDeltaTime;
             }
-        }
+        }   else if (queenBeebehaviour.state == "EnragedHoneyAttack")
+        {
+            if (!positionChanged)
+            {
+                attackStartTime = Time.time;
+                positionChanged = true;
+            }
 
-        else if (queenBeebehaviour.state != "HoneyAttack")
+            if (!hasAttacked && fireTimer <= 0)
+            {
+                EnragedHoneyAttack();
+                hasAttacked = true;
+            }
+            else if (fireTimer > 0)
+            {
+                fireTimer -= Time.fixedDeltaTime;
+            }
+        }   else if (queenBeebehaviour.state != "HoneyAttack" && queenBeebehaviour.state != "EnragedHoneyAttack")
         {
             hasAttacked = false;
-
-
         }
 
         if (queenBeebehaviour != null && queenBeebehaviour.state == "Idle")
         {
             wiggleTime += Time.deltaTime * wiggleSpeed;
+
+            float angle = Mathf.Sin(wiggleTime) * wiggleAngle;
+
+            transform.localRotation = Quaternion.Euler(0, 0, angle);
+
+            transform.localPosition = new Vector3(7.37f, 5.12f, 0);
+        }
+        if (queenBeebehaviour != null && queenBeebehaviour.state == "EnragedIdle")
+        {
+            wiggleTime += Time.deltaTime * 1.1f;
 
             float angle = Mathf.Sin(wiggleTime) * wiggleAngle;
 
@@ -73,6 +96,16 @@ public class QueenBeeBottomAnimation : MonoBehaviour
 
             transform.localPosition = new Vector3(7.37f, 5.12f, 0);
         }
+        if (queenBeebehaviour != null && queenBeebehaviour.state == "EnragedSummoning")
+        {
+            wiggleTime += Time.deltaTime * 1.1f;
+
+            float angle = Mathf.Sin(wiggleTime) * wiggleAngle;
+
+            transform.localRotation = Quaternion.Euler(0, 0, angle);
+
+            transform.localPosition = new Vector3(7.37f, 5.12f, 0);
+        }
         if (queenBeebehaviour != null && queenBeebehaviour.state == "Laser")
         {
             wiggleTime += Time.deltaTime * wiggleSpeed;
@@ -83,7 +116,27 @@ public class QueenBeeBottomAnimation : MonoBehaviour
 
             transform.localPosition = new Vector3(7.37f, 5.12f, 0);
         }
+        if (queenBeebehaviour != null && queenBeebehaviour.state == "EnragedLaser")
+        {
+            wiggleTime += Time.deltaTime * 1.1f;
+
+            float angle = Mathf.Sin(wiggleTime) * wiggleAngle;
+
+            transform.localRotation = Quaternion.Euler(0, 0, angle);
+
+            transform.localPosition = new Vector3(7.37f, 5.12f, 0);
+        }
         if (queenBeebehaviour != null && queenBeebehaviour.state == "HoneyAttack")
+        {
+            wiggleTime += Time.deltaTime * 80f;
+
+            float angle = Mathf.Sin(wiggleTime) * 0.25f;
+
+            transform.localRotation = Quaternion.Euler(0, 0, angle);
+
+            transform.localPosition = new Vector3(8.5f, 3.89f, 0);
+        }
+        if (queenBeebehaviour != null && queenBeebehaviour.state == "EnragedHoneyAttack")
         {
             wiggleTime += Time.deltaTime * 80f;
 
@@ -103,21 +156,36 @@ public class QueenBeeBottomAnimation : MonoBehaviour
             honeyBlastAttack.Play();
         }
 
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 5; i++)
         {
             ShootHoneyGlob(i);
         }
     }
-    void ShootHoneyGlob(int index)
-    {
-        audioSource.Play();
-        if (honeyGlobPrefab == null || spawnPoint == null) return;
-        GameObject honeyGlob = Instantiate(honeyGlobPrefab, spawnPoint.position, Quaternion.identity);
-        Rigidbody rb = honeyGlob.GetComponent<Rigidbody>();
 
-        if (rb != null)
+    void EnragedHoneyAttack()
+    {
+
+        if (honeyBlastAttack != null)
         {
-            float angleOffset = ((index - 1) * spreadAngle) / 2f;
+            honeyBlastAttack.Play();
+        }
+
+        for (int i = 0; i < 16; i++)
+        {
+            ShootHoneyGlob(i);
         }
     }
-}
+
+    void ShootHoneyGlob(int index)
+        {
+            audioSource.Play();
+            if (honeyGlobPrefab == null || spawnPoint == null) return;
+            GameObject honeyGlob = Instantiate(honeyGlobPrefab, spawnPoint.position, Quaternion.identity);
+            Rigidbody rb = honeyGlob.GetComponent<Rigidbody>();
+
+            if (rb != null)
+            {
+                float angleOffset = ((index - 1) * spreadAngle) / 2f;
+            }
+        }
+    }
