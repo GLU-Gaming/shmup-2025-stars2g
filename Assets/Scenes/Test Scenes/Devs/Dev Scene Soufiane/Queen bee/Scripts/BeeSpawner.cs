@@ -2,16 +2,13 @@ using UnityEngine;
 
 public class BeeSpawner : MonoBehaviour
 {
-    public GameObject objectToSpawn;
-    public float spawnInterval = 0.5f;
+    public GameObject objectToSpawn; //dependant on bee coding
+    float spawnInterval;
     private float lastSpawnTime;
     public float movementInterval = 0.01f;
     private float lastMoveTime;
     private QueenBeebehaviour queenBeebehaviour;
     private QueenBeeHeadAnimation queenBeeHeadAnimation;
-
-    private int spawnCount = 0;
-    private const int maxSpawnCount = 3;
 
     private void Start()
     {
@@ -27,24 +24,51 @@ public class BeeSpawner : MonoBehaviour
             lastMoveTime = Time.time;
         }
 
-        if (queenBeebehaviour.state == "Summoning" && spawnCount == maxSpawnCount)
-        {
-            spawnCount = 0;
-        }
-
-        if (Time.time >= lastSpawnTime + spawnInterval && queenBeebehaviour.state == "Summoning" && spawnCount < maxSpawnCount)
+        if (Time.time >= lastSpawnTime + spawnInterval && queenBeebehaviour.state == "Summoning")
         {
             SpawnObject();
+            lastSpawnTime = 1f;
+            lastSpawnTime = Time.time;
+        }
+
+        if (Time.time >= lastSpawnTime + spawnInterval && queenBeebehaviour.state == "EnragedSummoning")
+        {
+            EnragedSpawnObject();
+            lastSpawnTime = 0.4f;
             lastSpawnTime = Time.time;
         }
     }
 
     void SpawnObject()
     {
-        if (objectToSpawn != null && queenBeebehaviour.state == "Summoning" && maxSpawnCount <= 3)
+        if (queenBeebehaviour.state == "Summoning" && queenBeeHeadAnimation.hasAttacked == false)
         {
-            Instantiate(objectToSpawn, transform.position, transform.rotation);
-            spawnCount = +3;
+            for (int i = 0; i < 3; i++)
+            {
+                GameObject Bee = Instantiate(objectToSpawn, transform.position, transform.rotation);
+                Bee beeScript = Bee.GetComponent<Bee>();
+                if (beeScript != null)
+                {
+                    beeScript.entryType = global::EntryType.onTheSpot;
+                }
+            }
+            queenBeeHeadAnimation.hasAttacked = true;
+        }
+    }
+    void EnragedSpawnObject()
+    {
+        if (queenBeebehaviour.state == "EnragedSummoning" && queenBeeHeadAnimation.hasAttacked == false)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                GameObject Bee = Instantiate(objectToSpawn, transform.position, transform.rotation);
+                Bee beeScript = Bee.GetComponent<Bee>();
+                if (beeScript != null)
+                {
+                    beeScript.entryType = global::EntryType.onTheSpot;
+                }
+            }
+            queenBeeHeadAnimation.hasAttacked = true;
         }
     }
 
