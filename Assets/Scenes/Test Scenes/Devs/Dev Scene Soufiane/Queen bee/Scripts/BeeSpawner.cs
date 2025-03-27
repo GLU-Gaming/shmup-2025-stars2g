@@ -52,7 +52,6 @@ public class BeeSpawner : MonoBehaviour
                     beeScript.entryType = global::EntryType.onTheSpot;
                 }
             }
-            queenBeeHeadAnimation.hasAttacked = true;
         }
     }
     void EnragedSpawnObject()
@@ -68,7 +67,6 @@ public class BeeSpawner : MonoBehaviour
                     beeScript.entryType = global::EntryType.onTheSpot;
                 }
             }
-            queenBeeHeadAnimation.hasAttacked = true;
         }
     }
 
