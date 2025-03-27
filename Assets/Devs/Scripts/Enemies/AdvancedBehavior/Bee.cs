@@ -34,6 +34,7 @@ public class Bee : MonoBehaviour
     IEnumerator Animate()
     {
         // Entry Animation
+        yield return new WaitForSeconds(0.1f);
         offset.transform.localRotation = Quaternion.Euler(0, 0, -180);
         switch (entryType)
         {
