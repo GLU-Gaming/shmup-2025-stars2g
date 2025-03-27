@@ -1,6 +1,14 @@
 using System.Collections;
 using UnityEngine;
 using DG.Tweening;
+
+public enum EntryType
+{
+    bottom,
+    top,
+    edge,
+    onTheSpot
+}
 public class Bee : MonoBehaviour
 {
     public EntryType entryType;
@@ -16,13 +24,7 @@ public class Bee : MonoBehaviour
     Vector2 verticalAxes = new Vector2(-11, 13);
 
     bool charging;
-    public enum EntryType
-    {
-        bottom,
-        top,
-        edge,
-        onTheSpot
-    }
+
 
     private void Start()
     {
@@ -34,6 +36,7 @@ public class Bee : MonoBehaviour
     IEnumerator Animate()
     {
         // Entry Animation
+        yield return new WaitForSeconds(0.1f);
         offset.transform.localRotation = Quaternion.Euler(0, 0, -180);
         switch (entryType)
         {
