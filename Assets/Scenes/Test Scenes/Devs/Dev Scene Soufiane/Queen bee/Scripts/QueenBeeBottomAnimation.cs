@@ -170,7 +170,7 @@ public class QueenBeeBottomAnimation : MonoBehaviour
             honeyBlastAttack.Play();
         }
 
-        for (int i = 0; i < 16; i++)
+        for (int i = 0; i < 14; i++)
         {
             ShootHoneyGlob(i);
         }

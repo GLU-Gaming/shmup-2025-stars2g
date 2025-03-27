@@ -453,27 +453,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6438523239578805916, guid: 27f044a973a05ee4880a8ad019d573bd, type: 3}
   m_PrefabInstance: {fileID: 987151495050071637}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &979193066
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 979193059}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.4854861, y: 1.6966016, z: 3.239289}
-  m_Center: {x: -1.9255708, y: 6.0009828, z: 1.1196451}
 --- !u!1 &1160382595 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1330309722793386361, guid: 73f0c58706f440248bf12d8dac9bbb32, type: 3}
@@ -683,25 +662,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2595752995153993928, guid: 27f044a973a05ee4880a8ad019d573bd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7.68
-      objectReference: {fileID: 0}
     - target: {fileID: 6438523239578805916, guid: 27f044a973a05ee4880a8ad019d573bd, type: 3}
       propertyPath: m_Name
       value: Queen Bee
-      objectReference: {fileID: 0}
-    - target: {fileID: 6909604440540724085, guid: 27f044a973a05ee4880a8ad019d573bd, type: 3}
-      propertyPath: m_Size.y
-      value: 17.128557
-      objectReference: {fileID: 0}
-    - target: {fileID: 6909604440540724085, guid: 27f044a973a05ee4880a8ad019d573bd, type: 3}
-      propertyPath: m_Center.x
-      value: -1.4677163
-      objectReference: {fileID: 0}
-    - target: {fileID: 6909604440540724085, guid: 27f044a973a05ee4880a8ad019d573bd, type: 3}
-      propertyPath: m_Center.y
-      value: -3.505081
       objectReference: {fileID: 0}
     - target: {fileID: 8185466370526041404, guid: 27f044a973a05ee4880a8ad019d573bd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -746,10 +709,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6438523239578805916, guid: 27f044a973a05ee4880a8ad019d573bd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 979193066}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27f044a973a05ee4880a8ad019d573bd, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
