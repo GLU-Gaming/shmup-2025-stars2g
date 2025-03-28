@@ -55,7 +55,7 @@ public class QueenBeeChargeLaser : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (queenBeebehaviour.state == "Laser" && !hasAttacked)
+        if (queenBeebehaviour.state == "Laser" && !hasAttacked && queenBeebehaviour.isDying == false)
         {
             fireTimer -= Time.fixedDeltaTime;
             StartCoroutine(LaserIndicator());
@@ -79,7 +79,7 @@ public class QueenBeeChargeLaser : MonoBehaviour
                 hasAttacked = true; // Prevent multiple shots
             }
         }
-        if (queenBeebehaviour.state == "EnragedLaser" && !hasAttacked)
+        if (queenBeebehaviour.state == "EnragedLaser" && !hasAttacked && queenBeebehaviour.isDying == false)
         {
             fireTimer -= Time.fixedDeltaTime;
             StartCoroutine(EnragedLaserIndicator());
@@ -103,7 +103,7 @@ public class QueenBeeChargeLaser : MonoBehaviour
                 hasAttacked = true; // Prevent multiple shots
             }
         }
-        else if (queenBeebehaviour.state != "Laser" && queenBeebehaviour.state != "EnragedLaser")
+        else if (queenBeebehaviour.state != "Laser" && queenBeebehaviour.state != "EnragedLaser" && queenBeebehaviour.isDying == false)
         {
             // Reset when the state changes
             fireTimer = 2.4f;
@@ -138,26 +138,43 @@ public class QueenBeeChargeLaser : MonoBehaviour
     }
     IEnumerator EnragedFireLaser()
     {
+        laserPrefab.SetActive(true);
         laserPrefab2.SetActive(true);
         laserPrefab3.SetActive(true);
+
         if (laserCollider2 != null)
             laserCollider2.enabled = true;
-            laserCollider3.enabled = true; // Enable the colliders
+            laserCollider3.enabled = true;
+
         laserPrefab2.transform.localScale = new Vector3(0, 0.2f, 0);
         laserPrefab2.transform.DOScale(new Vector3(0.025f, 0.2f, 0.005f), .5f);
         laserPrefab3.transform.localScale = new Vector3(0, 0.2f, 0);
         laserPrefab3.transform.DOScale(new Vector3(0.025f, 0.2f, 0.005f), .5f);
         if (blastAudioSource != null)
             blastAudioSource.Play();
+
         yield return new WaitForSeconds(1.4f);
         laserPrefab2.transform.DOScale(new Vector3(0, 0.2f, 0), .5f);
         laserPrefab3.transform.DOScale(new Vector3(0, 0.2f, 0), .5f);
-        yield return new WaitForSeconds(0.3f);
+
+        laserPrefab.transform.DOScale(new Vector3(0.025f, 0.2f, 0.005f), .5f);
+        laserCollider.enabled = true;
+        if (blastAudioSource != null)
+            blastAudioSource.Play();
         if (laserCollider2 != null)
             laserCollider2.enabled = false;
             laserCollider3.enabled = false;
         laserPrefab2.SetActive(false);
         laserPrefab3.SetActive(false);
+
+        yield return new WaitForSeconds(1.4f);
+        laserPrefab.transform.DOScale(new Vector3(0f, 0.2f, 0f), .5f);
+
+        yield return new WaitForSeconds(0.3f);
+        if (laserCollider != null)
+            laserCollider.enabled = false;
+            laserPrefab.SetActive(false);
+
     }
 
     IEnumerator LaserIndicator()
@@ -172,17 +189,29 @@ public class QueenBeeChargeLaser : MonoBehaviour
     }
     IEnumerator EnragedLaserIndicator()
     {
+
         laserIndicator2.SetActive(true);
+        laserIndicator3.SetActive(true);
+
+        laserIndicator.transform.localScale = new Vector3(0, 0.2f, 0);
         laserIndicator2.transform.localScale = new Vector3(0, 0.2f, 0);
         laserIndicator2.transform.DOScale(new Vector3(0.002f, 0.2f, 0.005f), .5f);
-        laserIndicator3.SetActive(true);
         laserIndicator3.transform.localScale = new Vector3(0, 0.2f, 0);
         laserIndicator3.transform.DOScale(new Vector3(0.002f, 0.2f, 0.005f), .5f);
+
         yield return new WaitForSeconds(2.4f);
+        laserIndicator.SetActive(true);
+        laserIndicator.transform.DOScale(new Vector3(0.002f, 0.2f, 0.005f), .5f);
+
         laserIndicator2.transform.DOScale(new Vector3(0, 0.2f, 0), .5f);
         laserIndicator3.transform.DOScale(new Vector3(0, 0.2f, 0), .5f);
-        yield return new WaitForSeconds(0.3f);
+
+        yield return new WaitForSeconds(1.4f);
         laserIndicator2.SetActive(false);
         laserIndicator3.SetActive(false);
+        laserIndicator.transform.DOScale(new Vector3(0, 0.2f, 0), .5f);
+        
+        yield return new WaitForSeconds(0.3f);
+        laserIndicator.SetActive(false);
     }
 }
