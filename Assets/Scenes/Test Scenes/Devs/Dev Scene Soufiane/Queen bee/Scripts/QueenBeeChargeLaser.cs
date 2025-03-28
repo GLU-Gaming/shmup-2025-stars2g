@@ -120,14 +120,14 @@ public class QueenBeeChargeLaser : MonoBehaviour
             laserCollider.enabled = true; // Enable the collider
 
         laserPrefab.transform.localScale = new Vector3(0, 0.2f, 0);
-        laserPrefab.transform.DOScale(new Vector3(0.025f, 0.2f, 0.005f), .5f);
+        laserPrefab.transform.DOScale(new Vector3(0.025f, 0.2f, 0.005f), .3f);
 
         if (blastAudioSource != null)
             blastAudioSource.Play();
 
         yield return new WaitForSeconds(1.4f);
 
-        laserPrefab.transform.DOScale(new Vector3(0, 0.2f, 0), .5f);
+        laserPrefab.transform.DOScale(new Vector3(0, 0.2f, 0), .3f);
 
         yield return new WaitForSeconds(0.3f);
 
@@ -147,17 +147,17 @@ public class QueenBeeChargeLaser : MonoBehaviour
             laserCollider3.enabled = true;
 
         laserPrefab2.transform.localScale = new Vector3(0, 0.2f, 0);
-        laserPrefab2.transform.DOScale(new Vector3(0.025f, 0.2f, 0.005f), .5f);
+        laserPrefab2.transform.DOScale(new Vector3(0.025f, 0.2f, 0.005f), .3f);
         laserPrefab3.transform.localScale = new Vector3(0, 0.2f, 0);
-        laserPrefab3.transform.DOScale(new Vector3(0.025f, 0.2f, 0.005f), .5f);
+        laserPrefab3.transform.DOScale(new Vector3(0.025f, 0.2f, 0.005f), .3f);
         if (blastAudioSource != null)
             blastAudioSource.Play();
 
         yield return new WaitForSeconds(1.4f);
-        laserPrefab2.transform.DOScale(new Vector3(0, 0.2f, 0), .5f);
-        laserPrefab3.transform.DOScale(new Vector3(0, 0.2f, 0), .5f);
+        laserPrefab2.transform.DOScale(new Vector3(0, 0.2f, 0), .3f);
+        laserPrefab3.transform.DOScale(new Vector3(0, 0.2f, 0), .3f);
 
-        laserPrefab.transform.DOScale(new Vector3(0.025f, 0.2f, 0.005f), .5f);
+        laserPrefab.transform.DOScale(new Vector3(0.025f, 0.2f, 0.005f), .3f);
         laserCollider.enabled = true;
         if (blastAudioSource != null)
             blastAudioSource.Play();
@@ -168,7 +168,7 @@ public class QueenBeeChargeLaser : MonoBehaviour
         laserPrefab3.SetActive(false);
 
         yield return new WaitForSeconds(1.4f);
-        laserPrefab.transform.DOScale(new Vector3(0f, 0.2f, 0f), .5f);
+        laserPrefab.transform.DOScale(new Vector3(0f, 0.2f, 0f), .3f);
 
         yield return new WaitForSeconds(0.3f);
         if (laserCollider != null)

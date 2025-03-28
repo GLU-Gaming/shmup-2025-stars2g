@@ -376,5 +376,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isContinuous: 0
   damageToDeal: 2
-  ApplyDebuff: 0
+  ApplyDebuff: 1
   debuff: 2
