@@ -5,8 +5,9 @@ using System.Collections;
 public class slowed : MonoBehaviour
 {
     [SerializeField] TMP_Text effectText;
-    [SerializeField] float effectDuration = 5f;
+    public float effectDuration = 5f;
 
+    EffectManager effectManager;
     PlayerMovement Plr;
 
     public float Timer;
@@ -16,26 +17,13 @@ public class slowed : MonoBehaviour
 
     private void Start()
     {
-        //PERFORM PRECHECK TO MAKE SURE NOTHING STACKS
-        var existingSlow = GameObject.FindFirstObjectByType<slowed>();
-        int tries = 10;
-        while (existingSlow != null && existingSlow.gameObject == this.gameObject && tries > 0)
-        {
-            existingSlow = GameObject.FindFirstObjectByType<slowed>();
-            tries -= 1;
-        }
-        if (existingSlow != null)
-        {
-            existingSlow.Timer = effectDuration;
-            Destroy(gameObject);
-        }
-
         effectText = GetComponent<TMP_Text>();
         effectText.text = originalText;
         Timer = effectDuration;
         Plr = GameObject.FindFirstObjectByType<PlayerMovement>();
         transform.parent = GameObject.Find("EffectList").transform;
         transform.localScale = Vector3.one;
+        effectManager = GameObject.FindFirstObjectByType<EffectManager>();
     }
 
     private void Update()
@@ -44,6 +32,7 @@ public class slowed : MonoBehaviour
         if (Timer <= 0)
         {
             Plr.speedModifier = 1;
+            effectManager.DisableEffect(2);
             Destroy(gameObject);
         }
         else

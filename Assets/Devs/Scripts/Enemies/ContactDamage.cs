@@ -5,10 +5,9 @@ public class ContactDamage : MonoBehaviour
     [SerializeField] bool isContinuous = false; // Allows for continuous contact damage, like on a laser.
     [SerializeField] float damageToDeal = 10;
     [SerializeField] bool ApplyDebuff;
-    [SerializeField] EffectType debuff;
+    [SerializeField, Range(0, 2)] int DebuffType;
 
     PlayerHealth playerHealth;
-
 
     bool hit = false;
     float coolDownTime = 0f;
@@ -40,7 +39,7 @@ public class ContactDamage : MonoBehaviour
                 playerHealth.DamagePlayer(damageToDeal); // Since the player is not directly linked to the health.
                 if (ApplyDebuff)
                 {
-                    GameObject.FindFirstObjectByType<EffectManager>().ApplyEffect(debuff);
+                    GameObject.FindFirstObjectByType<EffectManager>().ApplyEffect(DebuffType);
                 }
             }
             else
