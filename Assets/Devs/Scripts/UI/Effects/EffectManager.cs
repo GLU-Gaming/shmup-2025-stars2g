@@ -1,55 +1,79 @@
 using UnityEngine;
-
-public enum EffectType
-{
-    Poison,
-    Overclock,
-    Slow
-}
+using System;
+using System.Collections.Generic;
 
 public class EffectManager : MonoBehaviour
 {
-    [SerializeField] GameObject poisonEffectPrefab;
-    [SerializeField] GameObject overclockEffectPrefab;
-    [SerializeField] GameObject slowEffectPrefab;
+    [SerializeField] List<Effect> effects;
 
-    bool isPoisoned = false;
-    bool isOverclock = false;
-    bool isSlowed = false;
-
-    poison poisonEffect;
-    overclock clockEffect;
-    slowed slowEffect;
-
-    public void ApplyEffect(EffectType type)
+    [System.Serializable]
+    public class Effect
     {
-        switch(type)
+        public GameObject effect;
+        public bool Triggered;
+    }
+
+
+    #region ugly code
+    poison poisonScript;
+    overclock clockScript;
+    slowed slowScript;
+    #endregion
+
+    public void ApplyEffect(int type)
+    {
+        switch (type)
         {
-            case EffectType.Poison:
-                if (isPoisoned)
+            case 0:
+                if (effects[0].Triggered == false)
                 {
-                    GameObject FX1 = Instantiate(poisonEffectPrefab);
-                    poisonEffect = FX1.GetComponent<poison>();
-                    isPoisoned = true;
+                    GameObject Poison = Instantiate(effects[0].effect);
+                    poisonScript = Poison.GetComponent<poison>();
+                    effects[0].Triggered = true;
                 } else
                 {
-                    poisonEffect.Timer = 5;
+                    poisonScript.Timer = poisonScript.poisonDuration;
                 }
                     break;
-            case EffectType.Overclock:
-                if (isOverclock)
+            case 1:
+                if (effects[1].Triggered == false)
                 {
-                    GameObject FX1 = Instantiate(poisonEffectPrefab);
-                    poisonEffect = FX1.GetComponent<poison>();
-                    isOverclock = true;
+                    GameObject overClock = Instantiate(effects[0].effect);
+                    clockScript = overClock.GetComponent<overclock>();
+                    effects[1].Triggered = true;
                 }
                 else
                 {
-                    poisonEffect.Timer = 5;
+                    clockScript.Timer = clockScript.effectDuration;
                 }
                 break;
-            case EffectType.Slow:
-                isSlowed = true;
+            case 2:
+                if(effects[2].Triggered == false)
+                {
+                    GameObject slow = Instantiate(effects[2].effect);
+                    slowScript = slow.GetComponent<slowed>();
+                    effects[2].Triggered = true;
+                }
+                else
+                {
+                    slowScript.Timer = slowScript.effectDuration;
+                }
+                break;
+        }
+    }
+
+    public void DisableEffect(int type)
+    {
+        switch (type)
+        {
+            case 0:
+                poisonScript = null;
+                break;
+            case 1:
+                clockScript = null;
+                break;
+            case 2:
+                slowScript = null;
                 break;
         }
     }

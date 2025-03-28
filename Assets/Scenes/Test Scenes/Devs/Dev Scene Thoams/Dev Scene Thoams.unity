@@ -1417,6 +1417,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7633597707657642651, guid: 35c21ab3f24158e4390fd80da9d63bc8, type: 3}
+      propertyPath: DebuffType
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2817,7 +2821,7 @@ MonoBehaviour:
   isContinuous: 0
   damageToDeal: 10
   ApplyDebuff: 0
-  debuff: 0
+  DebuffType: 0
 --- !u!114 &5290012530479603735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2935,8 +2939,35 @@ PrefabInstance:
     - {fileID: 4236968220740151752, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
     - {fileID: 7400830386714293840, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5058344257838637791, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5987223857807743441}
   m_SourcePrefab: {fileID: 100100000, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
+--- !u!1 &5987223857807743440 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5058344257838637791, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
+  m_PrefabInstance: {fileID: 5987223857807743439}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5987223857807743441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5987223857807743440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef084db98ff74d84eaeb7d54beda32cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effects:
+  - effect: {fileID: 9051734113160865456, guid: c86d484c0fc979845bfaba5f7293ce84, type: 3}
+    Triggered: 0
+  - effect: {fileID: 6016414117271505280, guid: 1fde925dc323d3d41aadfad9c3fb0095, type: 3}
+    Triggered: 0
+  - effect: {fileID: 3430380478287261684, guid: 9db2b9bf074f4ae4fbdbb463b288ba31, type: 3}
+    Triggered: 0
 --- !u!1 &6130119664333055133
 GameObject:
   m_ObjectHideFlags: 0

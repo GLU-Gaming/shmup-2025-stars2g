@@ -5,8 +5,9 @@ using System.Collections;
 public class overclock : MonoBehaviour
 {
     [SerializeField] TMP_Text effectText;
-    [SerializeField] float effectDuration = 5f;
+    public float effectDuration = 5f;
 
+    EffectManager effectManager;
     PlayerAttack playerAttack;
 
     public float Timer;
@@ -16,19 +17,6 @@ public class overclock : MonoBehaviour
 
     private void Start()
     {
-        //PERFORM PRECHECK TO MAKE SURE NOTHING STACKS
-        var existingOverclock = GameObject.FindFirstObjectByType<overclock>();
-        int tries = 10;
-        while (existingOverclock != null && existingOverclock.gameObject == this.gameObject && tries > 0)
-        {
-            existingOverclock = GameObject.FindFirstObjectByType<overclock>();
-            tries -= 1;
-        }
-        if (existingOverclock != null)
-        {
-            existingOverclock.Timer = effectDuration;
-            Destroy(gameObject);
-        }
         effectText = GetComponent<TMP_Text>();
         effectText.text = originalText;
         Timer = effectDuration;
@@ -36,6 +24,7 @@ public class overclock : MonoBehaviour
         OldFirerate = playerAttack.fireRate;
         transform.parent = GameObject.Find("EffectList").transform;
         transform.localScale = Vector3.one;
+        effectManager = GameObject.FindFirstObjectByType<EffectManager>();
     }
 
     float OldFirerate;
@@ -46,6 +35,7 @@ public class overclock : MonoBehaviour
         if (Timer <= 0)
         {
             playerAttack.fireRate = OldFirerate;
+            effectManager.DisableEffect(1);
             Destroy(gameObject);
         }
         else
