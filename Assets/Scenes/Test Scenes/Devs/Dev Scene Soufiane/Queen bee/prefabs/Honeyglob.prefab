@@ -360,7 +360,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   direction: {x: 0, y: 0, z: 0}
-  DamageToDeal: 1
   movespeed: -3
   jumppower: 4
 --- !u!114 &4269217619154019310
@@ -377,3 +376,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isContinuous: 0
   damageToDeal: 2
+  ApplyDebuff: 0
+  debuff: 2

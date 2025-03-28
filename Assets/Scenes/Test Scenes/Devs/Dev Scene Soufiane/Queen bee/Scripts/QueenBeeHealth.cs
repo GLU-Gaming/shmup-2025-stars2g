@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 using System.Net.Sockets;
+using System.Collections;
 
 public class QueenBeeHealth : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class QueenBeeHealth : MonoBehaviour
     [SerializeField] GameObject bossModel; //Used for the Death
     [SerializeField] GameObject sparksPrefab; //Prefab of the ParticleSystem
     [SerializeField] GameObject explosionPrefab; //Used on Death
-
+    [SerializeField] GameObject bigexplosionPrefab;
 
     [Header("Score System")]
     [SerializeField] int scoreValue = 1500; //score to give
@@ -120,13 +121,53 @@ public void DamageEnemy(float amount)
         }
     }
 }
-
-
-
     void EnemyDeath()
     {
+        // NEW: Tell QueenBeeBehaviour to stop attacks
+        QueenBeebehaviour behavior = GetComponent<QueenBeebehaviour>();
+        if (behavior != null)
+        {
+            behavior.TriggerDeath();
+        }
+
+        // Add Score Immediately
         scoreSystem.AddScore((int)(scoreValue * Multiplier));
-        Instantiate(explosionPrefab, bossModel.transform.position, Quaternion.identity);
+
+        // Start Semi-Cutscene
+        StartCoroutine(DeathCutscene());
+    }
+
+
+    IEnumerator DeathCutscene()
+    {
+        float duration = 4f; // Time before final explosion
+        float explosionInterval = 2f; // Time between small explosions
+        float elapsed = 0f;
+
+        // Move the boss down slowly
+        bossModel.transform.DOMoveY(bossModel.transform.position.y - 20f, duration);
+
+        // Add shaking effect
+        bossModel.transform.DOShakePosition(duration, 0.5f, 10, 90, false, true);
+
+        // Spawn small explosions randomly on the boss
+        while (elapsed < duration)
+        {
+            Vector3 randomOffset = new Vector3(
+                Random.Range(-10f, 10f), // Random X
+                Random.Range(-10f, 10f), // Random Y
+                Random.Range(-0f, 0f)  // none for Z
+            );
+
+            Instantiate(explosionPrefab, bossModel.transform.position + randomOffset, Quaternion.identity);
+            elapsed += explosionInterval;
+            yield return new WaitForSeconds(explosionInterval);
+        }
+
+        // Final Big Explosion
+        Instantiate(bigexplosionPrefab, bossModel.transform.position, Quaternion.identity);
+
+        // Destroy the boss
         Destroy(root);
     }
 

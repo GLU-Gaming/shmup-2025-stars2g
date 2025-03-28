@@ -36,6 +36,12 @@ public class QueenBeeHeadAnimation : MonoBehaviour
                 hasAttacked = true;
             }
         }
+        if (queenBeebehaviour != null && queenBeebehaviour.isDying == true)
+        {
+            transform.localRotation = Quaternion.Euler(0, 0, -20.56f);
+            transform.localPosition = new Vector3(1.62f, 3.38f, 0);
+            Screech();
+        }
         else if (queenBeebehaviour.state != "Summoning" && queenBeebehaviour.state != "EnragedSummoning")
         {
             transform.localRotation = Quaternion.Euler(0, 0, 0);
