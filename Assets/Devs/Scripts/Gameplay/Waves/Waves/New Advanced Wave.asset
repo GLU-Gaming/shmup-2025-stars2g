@@ -12,4 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebac7dfd7d1dfb1418f1e5955c76e003, type: 3}
   m_Name: New Advanced Wave
   m_EditorClassIdentifier: 
-  waves: []
+  waveCollection:
+  - enemies:
+    - Type: 0
+      entryType: 0
+      SpawnDelay: 0
+    - Type: 0
+      entryType: 0
+      SpawnDelay: 0
+    waveType: 0
+    waveDelay: 0
+  - enemies: []
+    waveType: 0
+    waveDelay: 0
