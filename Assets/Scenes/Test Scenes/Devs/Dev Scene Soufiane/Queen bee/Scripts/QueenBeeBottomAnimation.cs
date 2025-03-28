@@ -27,7 +27,7 @@ public class QueenBeeBottomAnimation : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (queenBeebehaviour != null && queenBeebehaviour.state == "HoneyAttack" && !hasAttacked)
+        if (queenBeebehaviour != null && queenBeebehaviour.state == "HoneyAttack" && !hasAttacked && queenBeebehaviour.isDying == false)
         {
             if (!positionChanged)
             {
@@ -44,7 +44,7 @@ public class QueenBeeBottomAnimation : MonoBehaviour
             {
                 fireTimer -= Time.fixedDeltaTime;
             }
-        }   else if (queenBeebehaviour.state == "EnragedHoneyAttack")
+        }   else if (queenBeebehaviour.state == "EnragedHoneyAttack" && queenBeebehaviour.isDying == false)
         {
             if (!positionChanged)
             {
@@ -126,7 +126,7 @@ public class QueenBeeBottomAnimation : MonoBehaviour
 
             transform.localPosition = new Vector3(7.37f, 5.12f, 0);
         }
-        if (queenBeebehaviour != null && queenBeebehaviour.state == "HoneyAttack")
+        if (queenBeebehaviour != null && queenBeebehaviour.state == "HoneyAttack" && queenBeebehaviour.isDying == false)
         {
             wiggleTime += Time.deltaTime * 80f;
 
@@ -136,7 +136,7 @@ public class QueenBeeBottomAnimation : MonoBehaviour
 
             transform.localPosition = new Vector3(8.5f, 3.89f, 0);
         }
-        if (queenBeebehaviour != null && queenBeebehaviour.state == "EnragedHoneyAttack")
+        if (queenBeebehaviour != null && queenBeebehaviour.state == "EnragedHoneyAttack" && queenBeebehaviour.isDying == false)
         {
             wiggleTime += Time.deltaTime * 80f;
 

@@ -12,7 +12,7 @@ public class QueenBeebehaviour : MonoBehaviour
     private float baseY;
 
     [SerializeField] private QueenBeeHealth queenBeeHealth;
-    private bool isEnraged = false;
+    public bool isEnraged = false;
     public bool isDying = false;  // NEW: Stops behavior when dying
 
     void Start()
@@ -37,7 +37,7 @@ public class QueenBeebehaviour : MonoBehaviour
         state = newState;
         Debug.Log("New State: " + state);
 
-        stateChangeInterval = isEnraged ? (state == "EnragedLaser" ? 4f : 2f) : (state == "Laser" ? 6f : 3f);
+        stateChangeInterval = isEnraged ? (state == "EnragedLaser" ? 6f : 2f) : (state == "Laser" ? 6f : 3f);
 
         CancelInvoke(nameof(ChangeState));
         InvokeRepeating(nameof(ChangeState), stateChangeInterval, stateChangeInterval);
@@ -62,7 +62,13 @@ public class QueenBeebehaviour : MonoBehaviour
     public void TriggerDeath()
     {
         isDying = true;
+        isEnraged = false;
         state = "cancelattacks";
         CancelInvoke(nameof(ChangeState));
     }
+    public bool IsDying()
+    {
+        return isDying;
+    }
+
 }

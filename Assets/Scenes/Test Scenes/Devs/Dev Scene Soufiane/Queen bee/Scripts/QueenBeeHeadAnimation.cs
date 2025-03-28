@@ -16,7 +16,13 @@ public class QueenBeeHeadAnimation : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (queenBeebehaviour != null && queenBeebehaviour.state == "Summoning" && !hasAttacked)
+        if (queenBeebehaviour.IsDying()) // NEW: If boss is dying, do final screech
+        {
+            PerformScreech();
+            return;
+        }
+
+        if (queenBeebehaviour != null && queenBeebehaviour.state == "Summoning" && !hasAttacked && queenBeebehaviour.isDying == false)
         {
             if (!hasAttacked)
             {
@@ -26,7 +32,7 @@ public class QueenBeeHeadAnimation : MonoBehaviour
                 hasAttacked = true;
             }
         }
-        if (queenBeebehaviour != null && queenBeebehaviour.state == "EnragedSummoning" && !hasAttacked)
+        if (queenBeebehaviour != null && queenBeebehaviour.state == "EnragedSummoning" && !hasAttacked && queenBeebehaviour.isDying == false)
         {
             if (!hasAttacked)
             {
@@ -35,12 +41,6 @@ public class QueenBeeHeadAnimation : MonoBehaviour
                 Screech();
                 hasAttacked = true;
             }
-        }
-        if (queenBeebehaviour != null && queenBeebehaviour.isDying == true)
-        {
-            transform.localRotation = Quaternion.Euler(0, 0, -20.56f);
-            transform.localPosition = new Vector3(1.62f, 3.38f, 0);
-            Screech();
         }
         else if (queenBeebehaviour.state != "Summoning" && queenBeebehaviour.state != "EnragedSummoning")
         {
@@ -49,6 +49,13 @@ public class QueenBeeHeadAnimation : MonoBehaviour
             hasAttacked = false;
         }
     }
+    void PerformScreech()
+    {
+        transform.localRotation = Quaternion.Euler(0, 0, -20.56f);
+        transform.localPosition = new Vector3(1.62f, 3.38f, 0);
+        Screech();
+    }
+
     void Screech()
     {
         audioSource.Play();

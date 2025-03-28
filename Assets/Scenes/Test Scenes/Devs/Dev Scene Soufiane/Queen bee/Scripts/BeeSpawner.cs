@@ -41,7 +41,7 @@ public class BeeSpawner : MonoBehaviour
 
     void SpawnObject()
     {
-        if (queenBeebehaviour.state == "Summoning" && queenBeeHeadAnimation.hasAttacked == false)
+        if (queenBeebehaviour.state == "Summoning" && queenBeeHeadAnimation.hasAttacked == false && queenBeebehaviour.isDying != true)
         {
             for (int i = 0; i < 3; i++)
             {
@@ -56,7 +56,7 @@ public class BeeSpawner : MonoBehaviour
     }
     void EnragedSpawnObject()
     {
-        if (queenBeebehaviour.state == "EnragedSummoning" && queenBeeHeadAnimation.hasAttacked == false)
+        if (queenBeebehaviour.state == "EnragedSummoning" && queenBeeHeadAnimation.hasAttacked == false && queenBeebehaviour.isDying != true)
         {
             for (int i = 0; i < 5; i++)
             {
