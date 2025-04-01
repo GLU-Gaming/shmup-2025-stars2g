@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Production Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/Production Scenes/Menu.unity
+    guid: 43cfd671a95924f4ba481eef4fe097d3
+  - enabled: 1
+    path: Assets/Scenes/Test Scenes/Devs/Dev Scene Thoams/Dev Scene Thoams.unity
+    guid: 4686ad42efad646478864d8f503efb81
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

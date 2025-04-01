@@ -1,14 +1,28 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class DeathUIScreen : MonoBehaviour
 {
+    Transitions Transitions;
 
-    [SerializeField] string MenuName; //Name of the Menu Scene
+    private void Start()
+    {
+        Transitions = GameObject.FindWithTag("Transitionmanager").GetComponent<Transitions>();
+    }
+
+    string MenuName = "Menu"; //Name of the Menu Scene
     [SerializeField] string LevelScene;
     public void RestartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    IEnumerator DoTransit()
+    {
+        Transitions.SetTransition(true);
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene(LevelScene);
     }
 
     public void QuitGame()
@@ -18,6 +32,7 @@ public class DeathUIScreen : MonoBehaviour
 
     public void LevelSelect()
     {
-        SceneManager.LoadScene(LevelScene);
+        SceneManager.LoadScene("Menu");
     }
+
 }

@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 7.38, y: -0.9168358, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.46, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -122,5 +122,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8eab132ec1c6fd4484e2d4f6f83f22a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winUI: {fileID: 5898716994078301409, guid: fc994af825f7ecc45858f61e59c3d40b, type: 3}
+  winUI: {fileID: 0}
   player: {fileID: 0}

@@ -14,14 +14,83 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveCollection:
   - enemies:
+    - Type: 1
+      entryType: 1
+      SpawnDelay: 0
+    - Type: 1
+      entryType: 0
+      SpawnDelay: 0
+    waveType: 0
+    waveDelay: 0.76
+  - enemies:
     - Type: 0
       entryType: 0
       SpawnDelay: 0
     - Type: 0
+      entryType: 1
+      SpawnDelay: 0
+    - Type: 2
       entryType: 0
       SpawnDelay: 0
+    - Type: 2
+      entryType: 1
+      SpawnDelay: 0
+    - Type: 1
+      entryType: 1
+      SpawnDelay: 2
+    - Type: 1
+      entryType: 0
+      SpawnDelay: 2
     waveType: 0
-    waveDelay: 0
-  - enemies: []
+    waveDelay: 0.76
+  - enemies:
+    - Type: 1
+      entryType: 1
+      SpawnDelay: 0
+    - Type: 1
+      entryType: 0
+      SpawnDelay: 0.5
+    - Type: 1
+      entryType: 2
+      SpawnDelay: 1.5
+    - Type: 1
+      entryType: 1
+      SpawnDelay: 2
+    - Type: 0
+      entryType: 2
+      SpawnDelay: 2.1
+    - Type: 0
+      entryType: 2
+      SpawnDelay: 2.2
+    - Type: 0
+      entryType: 2
+      SpawnDelay: 2.3
     waveType: 0
-    waveDelay: 0
+    waveDelay: 0.76
+  - enemies:
+    - Type: 0
+      entryType: 2
+      SpawnDelay: 0
+    - Type: 0
+      entryType: 2
+      SpawnDelay: 0.1
+    - Type: 0
+      entryType: 2
+      SpawnDelay: 0.2
+    - Type: 0
+      entryType: 2
+      SpawnDelay: 0.3
+    - Type: 2
+      entryType: 2
+      SpawnDelay: 1
+    - Type: 2
+      entryType: 2
+      SpawnDelay: 1.1
+    - Type: 2
+      entryType: 2
+      SpawnDelay: 1.2
+    - Type: 2
+      entryType: 2
+      SpawnDelay: 1.2
+    waveType: 0
+    waveDelay: 0.76
