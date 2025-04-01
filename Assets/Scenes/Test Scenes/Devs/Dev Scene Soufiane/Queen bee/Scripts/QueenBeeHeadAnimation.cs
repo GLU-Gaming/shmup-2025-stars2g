@@ -6,41 +6,35 @@ public class QueenBeeHeadAnimation : MonoBehaviour
     private QueenBeebehaviour queenBeebehaviour;
     public ParticleSystem queenBeeScreech;
     private AudioSource audioSource;
+    public GameObject objectToSpawn; //dependant on bee coding
+    public Transform spawnPoint;
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        queenBeebehaviour = FindFirstObjectByType<QueenBeebehaviour>();
     }
 
+    public void AssignBoss(QueenBeebehaviour boss)
+    {
+        queenBeebehaviour = boss;
+    }
 
     void FixedUpdate()
     {
-        if (queenBeebehaviour.IsDying()) // NEW: If boss is dying, do final screech
+        if (queenBeebehaviour == null) return; // Prevent errors if boss isn't found yet
+
+        if (queenBeebehaviour.IsDying())
         {
             PerformScreech();
             return;
         }
 
-        if (queenBeebehaviour != null && queenBeebehaviour.state == "Summoning" && !hasAttacked && queenBeebehaviour.isDying == false)
+        if ((queenBeebehaviour.state == "Summoning" || queenBeebehaviour.state == "EnragedSummoning") && !hasAttacked && !queenBeebehaviour.isDying)
         {
-            if (!hasAttacked)
-            {
-                transform.localRotation = Quaternion.Euler(0, 0, -20.56f);
-                transform.localPosition = new Vector3(1.62f, 3.38f, 0);
-                Screech();
-                hasAttacked = true;
-            }
-        }
-        if (queenBeebehaviour != null && queenBeebehaviour.state == "EnragedSummoning" && !hasAttacked && queenBeebehaviour.isDying == false)
-        {
-            if (!hasAttacked)
-            {
-                transform.localRotation = Quaternion.Euler(0, 0, -20.56f);
-                transform.localPosition = new Vector3(1.62f, 3.38f, 0);
-                Screech();
-                hasAttacked = true;
-            }
+            transform.localRotation = Quaternion.Euler(0, 0, -20.56f);
+            transform.localPosition = new Vector3(1.62f, 3.38f, 0);
+            Screech();
+            hasAttacked = true;
         }
         else if (queenBeebehaviour.state != "Summoning" && queenBeebehaviour.state != "EnragedSummoning")
         {
@@ -49,6 +43,7 @@ public class QueenBeeHeadAnimation : MonoBehaviour
             hasAttacked = false;
         }
     }
+
     void PerformScreech()
     {
         transform.localRotation = Quaternion.Euler(0, 0, -20.56f);
@@ -62,6 +57,44 @@ public class QueenBeeHeadAnimation : MonoBehaviour
         if (queenBeeScreech != null)
         {
             queenBeeScreech.Play();
+            if (queenBeebehaviour.state == "Summoning")
+            {
+                SpawnObject();
+            }
+            if (queenBeebehaviour.state == "EnragedSummoning")
+            {
+                EnragedSpawnObject();
+            }
+        }
+    }
+    void SpawnObject()
+    {
+        if (queenBeebehaviour.state == "Summoning" && hasAttacked == false && queenBeebehaviour.isDying != true)
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                GameObject Bee = Instantiate(objectToSpawn, transform.position, transform.rotation);
+                Bee beeScript = Bee.GetComponent<Bee>();
+                if (beeScript != null)
+                {
+                    beeScript.entryType = global::EntryType.onTheSpot;
+                }
+            }
+        }
+    }
+    void EnragedSpawnObject()
+    {
+        if (queenBeebehaviour.state == "EnragedSummoning" && hasAttacked == false && queenBeebehaviour.isDying != true)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                GameObject Bee = Instantiate(objectToSpawn, transform.position, transform.rotation);
+                Bee beeScript = Bee.GetComponent<Bee>();
+                if (beeScript != null)
+                {
+                    beeScript.entryType = global::EntryType.onTheSpot;
+                }
+            }
         }
     }
 }
