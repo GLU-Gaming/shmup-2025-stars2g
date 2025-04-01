@@ -377,4 +377,4 @@ MonoBehaviour:
   isContinuous: 0
   damageToDeal: 2
   ApplyDebuff: 1
-  debuff: 2
+  DebuffType: 2
