@@ -19,6 +19,7 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] float Multiplier = 1; //Multiplier for the score
 
     ScoreSystem scoreSystem; //referenced
+    WaveReader waveReader; //referenced
     //------------------------------------------
 
     GameObject root;
@@ -41,6 +42,7 @@ public class EnemyHealth : MonoBehaviour
         displayedHealth = maxHealth;
         root = transform.root.gameObject;
         scoreSystem = GameObject.FindFirstObjectByType<ScoreSystem>();
+        waveReader = GameObject.FindFirstObjectByType<WaveReader>();
     }
 
     private void Update()
@@ -111,6 +113,7 @@ public class EnemyHealth : MonoBehaviour
     {
         scoreSystem.AddScore((int)(scoreValue * Multiplier));
         Instantiate(explosionPrefab, enemyModel.transform.position, Quaternion.identity);
+        waveReader.enemiesToKill--;
         Destroy(root);
     }
 
