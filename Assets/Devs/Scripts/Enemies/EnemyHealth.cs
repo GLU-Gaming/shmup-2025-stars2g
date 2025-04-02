@@ -114,7 +114,7 @@ public class EnemyHealth : MonoBehaviour
 
     void EnemyDeath()
     {
-        if (Random.Range(0, 100) < 20)
+        if (Random.Range(0, 100) < 7)
         {
             Instantiate(Powerup(), enemyModel.transform.position, Quaternion.identity);
         }
