@@ -9,6 +9,8 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] Image healthBar;
     [SerializeField] Image ghostBar;
 
+    [SerializeField] DamageIndicator damageIndicator;
+
     [SerializeField] GameObject player; //Used for the Death
     [SerializeField] GameObject deathUI; //UI to enable on Death
 
@@ -63,6 +65,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void DamagePlayer(float Amount)
     {
+        damageIndicator.Damaged();
         ghostTimer = .7f;
         displayedHealth -= Amount;
         displayedHealth = Mathf.Clamp(displayedHealth, 0, maxHealth);

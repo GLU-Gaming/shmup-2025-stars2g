@@ -13,6 +13,9 @@ public class Mosquito : MonoBehaviour
     [SerializeField] GameObject laserPrefab;
     [SerializeField] float lookSpeed;
     [SerializeField] ParticleSystem chargeParts;
+    [SerializeField] GameObject LaserIndicator;
+    Transform IndicatorTrans;
+    SpriteRenderer IndicatorSprite;
 
     float actualSpeed;
 
@@ -29,6 +32,8 @@ public class Mosquito : MonoBehaviour
 
     private void Start()
     {
+        IndicatorTrans = LaserIndicator.transform;
+        IndicatorSprite = LaserIndicator.GetComponent<SpriteRenderer>();
         offset = transform.Find("Offset").gameObject;
         player = GameObject.FindGameObjectWithTag("Player");
         StartCoroutine(Animate());
@@ -79,10 +84,18 @@ public class Mosquito : MonoBehaviour
             actualSpeed = lookSpeed;
             charging = true;
             chargeParts.Play();
-            yield return new WaitForSeconds(Random.Range(2f, 4f));
+            IndicatorTrans.DOScaleX(0.01f, 1f);
+            yield return new WaitForSeconds(Random.Range(2f, 4f) -1);
+            IndicatorSprite.color = new Color(1, 0.05747497f, 0, 0.2117647f);
+            IndicatorSprite.DOColor(new Color(0.01886177f, 1, 0, 0.2117647f), 0.5f);
+            yield return new WaitForSeconds(.5f);
+            IndicatorSprite.color = new Color(1, 0.05747497f, 0, 0.2117647f);
+            IndicatorSprite.DOColor(new Color(0.01886177f, 1, 0, 0.2117647f), 0.5f);
+            yield return new WaitForSeconds(.5f);
             actualSpeed = 1;
             chargeParts.Stop();
             StartCoroutine(FireLaser());
+            IndicatorTrans.DOScaleX(0f, 1f);
             yield return new WaitForSeconds(1f);
             transform.DOMove(new Vector3(Random.Range(hozAxes.x, hozAxes.y), Random.Range(verticalAxes.x, verticalAxes.y), 0), 0.5f).SetEase(Ease.OutQuad);
             yield return new WaitForSeconds(0.5f);
@@ -93,7 +106,7 @@ public class Mosquito : MonoBehaviour
     {
         laserPrefab.SetActive(true);
         laserPrefab.transform.localScale = new Vector3(0, 1.25f, 0);
-        laserPrefab.transform.DOScale(new Vector3(0.001f, 1.25f, 0.001f), .5f);
+        laserPrefab.transform.DOScale(new Vector3(0.001f, 1.25f, 0.001f), .2f);
         yield return new WaitForSeconds(0.5f);
         laserPrefab.transform.DOScale(new Vector3(0, 1.25f, 0), .5f);
         yield return new WaitForSeconds(0.5f);
