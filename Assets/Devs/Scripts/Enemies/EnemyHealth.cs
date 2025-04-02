@@ -13,10 +13,13 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] GameObject sparksPrefab; //Prefab of the ParticleSystem
     [SerializeField] GameObject explosionPrefab; //Used on Death
 
+    [SerializeField] PowerupRegist Powerups;
 
     [Header("Score System")]
     [SerializeField] int scoreValue = 100; //score to give
     [SerializeField] float Multiplier = 1; //Multiplier for the score
+
+    
 
     ScoreSystem scoreSystem; //referenced
     WaveReader waveReader; //referenced
@@ -111,6 +114,10 @@ public class EnemyHealth : MonoBehaviour
 
     void EnemyDeath()
     {
+        if (Random.Range(0, 100) < 7)
+        {
+            Instantiate(Powerup(), enemyModel.transform.position, Quaternion.identity);
+        }
         scoreSystem.AddScore((int)(scoreValue * Multiplier));
         Instantiate(explosionPrefab, enemyModel.transform.position, Quaternion.identity);
         waveReader.enemiesToKill--;
@@ -125,5 +132,10 @@ public class EnemyHealth : MonoBehaviour
         sparksInstance.transform.localScale = new Vector3(0.75f,0.75f,0.75f);
         sparksInstance.transform.rotation = Quaternion.Euler(0, 0, 0);
 
+    }
+
+    GameObject Powerup()
+    {
+        return Powerups.powerups[Random.Range(0, Powerups.powerups.Length)];
     }
 }

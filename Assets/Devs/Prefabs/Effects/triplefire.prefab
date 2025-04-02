@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2060563903840573834}
   - component: {fileID: 2484469700464114787}
   - component: {fileID: 2818518121566587564}
-  - component: {fileID: 1303361704171380693}
+  - component: {fileID: 7561518246864461560}
   m_Layer: 0
   m_Name: triplefire
   m_TagString: Untagged
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &1303361704171380693
+--- !u!114 &7561518246864461560
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,8 +146,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4337934907743265050}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 423a2d5a33d25c94581cb0c032f1161c, type: 3}
+  m_Script: {fileID: 11500000, guid: 1788f47f05e5efd43b7c7159712ed38f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   effectText: {fileID: 0}
   effectDuration: 5
+  Timer: 0
