@@ -18,6 +18,8 @@ public class EffectManager : MonoBehaviour
     poison poisonScript;
     overclock clockScript;
     slowed slowScript;
+    PlayerHealth playerHealth;
+    Splitgun splitgunScript;
     #endregion
 
     public void ApplyEffect(int type)
@@ -38,7 +40,7 @@ public class EffectManager : MonoBehaviour
             case 1:
                 if (effects[1].Triggered == false)
                 {
-                    GameObject overClock = Instantiate(effects[0].effect);
+                    GameObject overClock = Instantiate(effects[1].effect);
                     clockScript = overClock.GetComponent<overclock>();
                     effects[1].Triggered = true;
                 }
@@ -59,6 +61,22 @@ public class EffectManager : MonoBehaviour
                     slowScript.Timer = slowScript.effectDuration;
                 }
                 break;
+                case 3:
+                playerHealth = GameObject.FindFirstObjectByType<PlayerHealth>();
+                playerHealth.HealPlayer(30);
+                break;
+                case 4:
+                if (effects[4].Triggered == false)
+                {
+                    GameObject splitgun = Instantiate(effects[4].effect);
+                    splitgunScript = splitgun.GetComponent<Splitgun>();
+                    effects[4].Triggered = true;            
+                }
+                else
+                {
+                    splitgunScript.Timer = splitgunScript.effectDuration;
+                }
+                break;
         }
     }
 
@@ -75,6 +93,10 @@ public class EffectManager : MonoBehaviour
             case 2:
                 slowScript = null;
                 break;
+            case 4:
+                splitgunScript = null;
+                break;
         }
+        effects[type].Triggered = false;
     }
 }
