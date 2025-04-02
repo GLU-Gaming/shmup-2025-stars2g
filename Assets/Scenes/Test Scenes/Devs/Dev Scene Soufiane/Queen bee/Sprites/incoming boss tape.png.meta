@@ -1,0 +1,1510 @@
+fileFormatVersion: 2
+guid: 0cae0e943afa1914993c1be450675f54
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: incoming boss tape_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 5061
+        width: 808
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc87e18984f18a47aaea8368b3d99ef
+      internalID: -1473851511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_1
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 5061
+        width: 806
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f702d0f0c06524193cefc9f2d62ff9
+      internalID: 1465557847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_2
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 5061
+        width: 808
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753a8750ef976e94dab4138935614d2f
+      internalID: 1579693663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_3
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 5061
+        width: 806
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f32ec595a3d544fbb2e6692903e3fc
+      internalID: -1445121447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_4
+      rect:
+        serializedVersion: 2
+        x: 3241
+        y: 5061
+        width: 808
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4eb1e16a8118c14a9e347b4d041b1a5
+      internalID: -2045083399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 4602
+        width: 808
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37eed615a8f51a4c88834405421fbe9
+      internalID: 2075103488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_6
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 4602
+        width: 806
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d209bdae6c845449a0b4eeb2b9b0e7
+      internalID: -240663974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_7
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 4602
+        width: 808
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a0ce037a53e1d45baab0e2a66e94ba
+      internalID: 748819315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_8
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 4602
+        width: 806
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75da0fc50d104fe42a281291819e2f38
+      internalID: -672996191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_9
+      rect:
+        serializedVersion: 2
+        x: 3241
+        y: 4602
+        width: 808
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dfbef8c5f32c414a8f2b44214395961
+      internalID: -948991717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 4141
+        width: 808
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1089f141288c9cf4b953a89630770b82
+      internalID: -1342714629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_11
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 4141
+        width: 806
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff05d0b2d6322e43aeb655e8577aa0a
+      internalID: 592559056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_12
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 4141
+        width: 808
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e116c79bbe871394f9452963dcf5eb70
+      internalID: -727899309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_13
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 4141
+        width: 806
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f4172b56533494bb92ec1e9b46cba0
+      internalID: -1339474313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_14
+      rect:
+        serializedVersion: 2
+        x: 3241
+        y: 4141
+        width: 808
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37f36f8629a892e4c84e4ebc75520adb
+      internalID: 1577492862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3681
+        width: 808
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ded99ef35d7034d8f20837ca774054
+      internalID: -1621050032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_16
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 3681
+        width: 806
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de9675298a72c54abb09ccc0d781678
+      internalID: -2025221913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_17
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 3681
+        width: 808
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4203074a1084c4b891098155f232db
+      internalID: 994771780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_18
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 3681
+        width: 806
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2593f2c82aeebe842acd9176ddec6cf3
+      internalID: -1535208417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_19
+      rect:
+        serializedVersion: 2
+        x: 3241
+        y: 3681
+        width: 808
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09976eb0b25442344b50010756aa7aba
+      internalID: 1429761386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3222
+        width: 808
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34dfd8148f66ef4795f75c8b5188a0e
+      internalID: 793971661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_21
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 3222
+        width: 806
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6803bdaafce6946ad86903692d0e2f
+      internalID: -870480151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_22
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 3222
+        width: 808
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a0c08d13fe39b4698d7b554c195a8a
+      internalID: 984409468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_23
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 3222
+        width: 806
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 857c4fd5ebc4215429fdfb4610e851fb
+      internalID: 938076397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_24
+      rect:
+        serializedVersion: 2
+        x: 3241
+        y: 3222
+        width: 808
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f32910c27d990a448d69c680086fafe
+      internalID: 781508050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_25
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2761
+        width: 808
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91cfeb8f330a69241a794230e046169b
+      internalID: -2008502819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_26
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 2761
+        width: 806
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 490302de270cf3a4e9ffe2aca1ecf557
+      internalID: 336942714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_27
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 2761
+        width: 808
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b62ba2677166814abf6d91849fecbd4
+      internalID: 584498365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_28
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 2761
+        width: 806
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f6e1df5ef38774c92be013488fc862
+      internalID: -985020341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_29
+      rect:
+        serializedVersion: 2
+        x: 3241
+        y: 2761
+        width: 808
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e9c7fd6b05ed5146b6c398d76ecd3bf
+      internalID: -719629214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_30
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2301
+        width: 808
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9adda8bd8f80ea4eb00d8f3cfe27e80
+      internalID: 1249202177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_31
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 2301
+        width: 806
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae9469b3eb930c6428d38c802aec4b93
+      internalID: 1367628532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_32
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 2301
+        width: 808
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43386348de22a6a40a03381027058604
+      internalID: 1282531683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_33
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 2301
+        width: 806
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea4a33cd64b75848aa2d9a88e29a781
+      internalID: -293533219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_34
+      rect:
+        serializedVersion: 2
+        x: 3241
+        y: 2301
+        width: 808
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d59d8573714c3447a5c1364571b5b61
+      internalID: 169538569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_35
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1842
+        width: 808
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34165f4dcf97ecd4083abeeea645491b
+      internalID: -931994567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_36
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 1842
+        width: 806
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f51fd82e721244799bf246f4c0d454
+      internalID: 906140000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_37
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 1842
+        width: 808
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0b3b46fdfc6ba47936b6d3ddc72bbe
+      internalID: 510296634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_38
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 1842
+        width: 806
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2d27a6afc678340ab0ee417cb51fdf
+      internalID: 660861567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_39
+      rect:
+        serializedVersion: 2
+        x: 3241
+        y: 1842
+        width: 808
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1137989bc45764eb3af122e8853035
+      internalID: 557060404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_40
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1381
+        width: 808
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6d7dca22b18fe4a976bb11add151ea
+      internalID: -1471704795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_41
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 1381
+        width: 806
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7296344aec7854dadfb6ac2797552d
+      internalID: -771706001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_42
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 1381
+        width: 808
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88e83d657a61b94eb1742f363dfcccb
+      internalID: -1580221645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_43
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 1381
+        width: 806
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38fe21541b651764abb84392b56fe70f
+      internalID: -468619121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_44
+      rect:
+        serializedVersion: 2
+        x: 3241
+        y: 1381
+        width: 808
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b912f0d2a16d0bd4c84f7a3382b76706
+      internalID: 2030775169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_45
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 921
+        width: 808
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb7b63f317bc4a4d9ef41680c2fba86
+      internalID: 1473393085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_46
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 921
+        width: 806
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccea53993b065a04381c9736599c4a99
+      internalID: 2022589237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_47
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 921
+        width: 808
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6212d3932ef2ccb4db213d192c93863d
+      internalID: 452494063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_48
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 921
+        width: 806
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf48fc0982beb04fb1ee8ca90b93ae0
+      internalID: -1751412295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_49
+      rect:
+        serializedVersion: 2
+        x: 3241
+        y: 921
+        width: 808
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db616ab27ee7ec45916a0aec379e155
+      internalID: 1438243130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_50
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 462
+        width: 808
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6d059f112c0b04babfa2e2d1c7ca1a
+      internalID: 108938344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_51
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 462
+        width: 806
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15ca54bd43df5d4a80ff624b524f553
+      internalID: 520856635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_52
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 462
+        width: 808
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8fd84bd63ccff4db90d9fef6d97371
+      internalID: -1888315800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_53
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 462
+        width: 806
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9fd769dd40129a4998c4dedd12fd28c
+      internalID: -853910369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_54
+      rect:
+        serializedVersion: 2
+        x: 3241
+        y: 462
+        width: 808
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff3a4d26dd12a144940fd3121f9986f
+      internalID: -1436970909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_55
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 808
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6960f4698fd51e44bd9b2e6540d5f83
+      internalID: 1092677188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_56
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 1
+        width: 806
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd3db7c79e5e6c4093495bad8dcb5bc
+      internalID: 1978078990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_57
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 1
+        width: 808
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 679ee73e062d71f46a0bd938f4bc66ea
+      internalID: -1139674769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_58
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 1
+        width: 806
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 686b3215138cf71448080ebf27c1f1b2
+      internalID: 438929273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: incoming boss tape_59
+      rect:
+        serializedVersion: 2
+        x: 3241
+        y: 1
+        width: 808
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6d2d357a675be43b7ed42a0053f03b
+      internalID: 1877815257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c8cc0c3f89523be40b0d601d59f5db59
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      incoming boss tape_0: -1473851511
+      incoming boss tape_1: 1465557847
+      incoming boss tape_10: -1342714629
+      incoming boss tape_11: 592559056
+      incoming boss tape_12: -727899309
+      incoming boss tape_13: -1339474313
+      incoming boss tape_14: 1577492862
+      incoming boss tape_15: -1621050032
+      incoming boss tape_16: -2025221913
+      incoming boss tape_17: 994771780
+      incoming boss tape_18: -1535208417
+      incoming boss tape_19: 1429761386
+      incoming boss tape_2: 1579693663
+      incoming boss tape_20: 793971661
+      incoming boss tape_21: -870480151
+      incoming boss tape_22: 984409468
+      incoming boss tape_23: 938076397
+      incoming boss tape_24: 781508050
+      incoming boss tape_25: -2008502819
+      incoming boss tape_26: 336942714
+      incoming boss tape_27: 584498365
+      incoming boss tape_28: -985020341
+      incoming boss tape_29: -719629214
+      incoming boss tape_3: -1445121447
+      incoming boss tape_30: 1249202177
+      incoming boss tape_31: 1367628532
+      incoming boss tape_32: 1282531683
+      incoming boss tape_33: -293533219
+      incoming boss tape_34: 169538569
+      incoming boss tape_35: -931994567
+      incoming boss tape_36: 906140000
+      incoming boss tape_37: 510296634
+      incoming boss tape_38: 660861567
+      incoming boss tape_39: 557060404
+      incoming boss tape_4: -2045083399
+      incoming boss tape_40: -1471704795
+      incoming boss tape_41: -771706001
+      incoming boss tape_42: -1580221645
+      incoming boss tape_43: -468619121
+      incoming boss tape_44: 2030775169
+      incoming boss tape_45: 1473393085
+      incoming boss tape_46: 2022589237
+      incoming boss tape_47: 452494063
+      incoming boss tape_48: -1751412295
+      incoming boss tape_49: 1438243130
+      incoming boss tape_5: 2075103488
+      incoming boss tape_50: 108938344
+      incoming boss tape_51: 520856635
+      incoming boss tape_52: -1888315800
+      incoming boss tape_53: -853910369
+      incoming boss tape_54: -1436970909
+      incoming boss tape_55: 1092677188
+      incoming boss tape_56: 1978078990
+      incoming boss tape_57: -1139674769
+      incoming boss tape_58: 438929273
+      incoming boss tape_59: 1877815257
+      incoming boss tape_6: -240663974
+      incoming boss tape_7: 748819315
+      incoming boss tape_8: -672996191
+      incoming boss tape_9: -948991717
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -12,22 +12,11 @@ public class QueenBeeHeadAnimation : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-    }
-
-    public void AssignBoss(QueenBeebehaviour boss)
-    {
-        queenBeebehaviour = boss;
+        queenBeebehaviour = FindFirstObjectByType<QueenBeebehaviour>();
     }
 
     void FixedUpdate()
     {
-        if (queenBeebehaviour == null) return; // Prevent errors if boss isn't found yet
-
-        if (queenBeebehaviour.IsDying())
-        {
-            PerformScreech();
-            return;
-        }
 
         if ((queenBeebehaviour.state == "Summoning" || queenBeebehaviour.state == "EnragedSummoning") && !hasAttacked && !queenBeebehaviour.isDying)
         {

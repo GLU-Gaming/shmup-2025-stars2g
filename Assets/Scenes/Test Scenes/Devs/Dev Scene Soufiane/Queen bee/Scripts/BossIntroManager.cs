@@ -64,12 +64,5 @@ public class BossIntroManager : MonoBehaviour
         {
             bossBehavior.state = "Idle"; // Start boss logic
         }
-
-        // Assign boss reference to QueenBeeHeadAnimation
-        QueenBeeHeadAnimation headAnimation = FindFirstObjectByType<QueenBeeHeadAnimation>();
-        if (headAnimation != null)
-        {
-            headAnimation.AssignBoss(bossBehavior);
-        }
     }
 }

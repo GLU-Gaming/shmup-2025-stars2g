@@ -68,6 +68,7 @@ public class QueenBeeHealth : MonoBehaviour
         }
         else
         {
+            healthBar.DOFillAmount(displayedHealth / maxHealth, 0.5f);
             ghostBar.DOFillAmount(displayedHealth / maxHealth, 0.5f);
         }
 
@@ -94,33 +95,27 @@ public class QueenBeeHealth : MonoBehaviour
         displayedHealth = Mathf.Clamp(displayedHealth, 0, maxHealth);
     }
 
-public void DamageEnemy(float amount)
-{
-        if (ghostTimer > 0)
-        {
-            ghostTimer -= Time.deltaTime;
-        }
-        else
-        {
-            ghostBar.DOFillAmount(displayedHealth / maxHealth, 0.5f);
-        }
-
-        healthBar.DOFillAmount(displayedHealth / maxHealth, 0.5f);
-
-    if (!invincible)
+    public void DamageEnemy(float amount)
     {
-        ghostTimer = 0.3f;
-        displayedHealth -= amount;
-        displayedHealth = Mathf.Clamp(displayedHealth, 0, maxHealth);
-        InstantiateSparks();
-        hit = true;
-
-        if (displayedHealth <= 0)
+        if (!invincible)
         {
-            EnemyDeath();
+            ghostTimer = 0.3f;
+            displayedHealth -= amount;
+            displayedHealth = Mathf.Clamp(displayedHealth, 0, maxHealth);
+            InstantiateSparks();
+            hit = true;
+
+            // Move UI updates here, after modifying displayedHealth
+            healthBar.DOFillAmount(displayedHealth / maxHealth, 0.5f);
+            ghostBar.DOFillAmount(displayedHealth / maxHealth, 0.5f);
+
+            if (displayedHealth <= 0)
+            {
+                EnemyDeath();
+            }
         }
     }
-}
+
     void EnemyDeath()
     {
         // NEW: Tell QueenBeeBehaviour to stop attacks
@@ -145,7 +140,7 @@ public void DamageEnemy(float amount)
         float elapsed = 0f;
 
         // Move the boss down slowly
-        bossModel.transform.DOMoveY(bossModel.transform.position.y - 20f, duration);
+        bossModel.transform.DOMoveY(bossModel.transform.position.y - 35f, duration);
 
         // Add shaking effect
         bossModel.transform.DOShakePosition(duration, 0.5f, 10, 90, false, true);

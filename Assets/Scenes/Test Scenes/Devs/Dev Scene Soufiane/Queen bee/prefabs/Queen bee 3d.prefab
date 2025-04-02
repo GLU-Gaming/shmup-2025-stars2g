@@ -20639,7 +20639,7 @@ MonoBehaviour:
   scoreValue: 1500
   Multiplier: 2
   invincible: 0
-  displayedHealth: 1250
+  displayedHealth: 2500
   DEBUGGING: 0
   DEBUG_Value: 0
   DEBUG_Heal: 0
@@ -21514,7 +21514,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2533875555195613214, guid: 1192936bbafb4c04485391bdbb8df0ff, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13.57473
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2533875555195613214, guid: 1192936bbafb4c04485391bdbb8df0ff, type: 3}
       propertyPath: m_LocalRotation.w

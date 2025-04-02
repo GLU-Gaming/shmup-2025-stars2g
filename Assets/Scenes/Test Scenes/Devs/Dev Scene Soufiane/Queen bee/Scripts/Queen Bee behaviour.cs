@@ -45,7 +45,11 @@ public class QueenBeebehaviour : MonoBehaviour
 
     void Update()
     {
-        if (isDying) return; // NEW: Stop movement when dying
+        if (isDying)
+        {
+            state = null;
+            enragedStates = null;
+        }; // NEW: Stop movement when dying
 
         Vector3 currentPosition = transform.position;
         float newY = baseY + Mathf.Sin(Time.time * (isEnraged ? 4f : floatSpeed)) * (isEnraged ? 0.2f : floatAmount);
