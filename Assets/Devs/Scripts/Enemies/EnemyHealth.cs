@@ -14,6 +14,7 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] GameObject explosionPrefab; //Used on Death
 
     [SerializeField] PowerupRegist Powerups;
+    public bool RegisterKilled;
 
     [Header("Score System")]
     [SerializeField] int scoreValue = 100; //score to give
@@ -45,7 +46,10 @@ public class EnemyHealth : MonoBehaviour
         displayedHealth = maxHealth;
         root = transform.root.gameObject;
         scoreSystem = GameObject.FindFirstObjectByType<ScoreSystem>();
-        waveReader = GameObject.FindFirstObjectByType<WaveReader>();
+        if (RegisterKilled)
+        {
+            waveReader = GameObject.FindFirstObjectByType<WaveReader>();
+        }
     }
 
     private void Update()
@@ -120,7 +124,10 @@ public class EnemyHealth : MonoBehaviour
         }
         scoreSystem.AddScore((int)(scoreValue * Multiplier));
         Instantiate(explosionPrefab, enemyModel.transform.position, Quaternion.identity);
-        waveReader.enemiesToKill--;
+        if (RegisterKilled)
+        {
+            waveReader.enemiesToKill--;
+        }
         Destroy(root);
     }
 

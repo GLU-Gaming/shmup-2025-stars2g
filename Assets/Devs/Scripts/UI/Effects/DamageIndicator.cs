@@ -20,6 +20,6 @@ public class DamageIndicator : MonoBehaviour
 
     public void Damaged()
     {
-        alpha = .1f;
+        alpha = .3f;
     }
 }
