@@ -5,23 +5,45 @@ public class BossIntroManager : MonoBehaviour
 {
     public GameObject introPrefab;  // The intro animation prefab
     public GameObject bossPrefab;   // The final boss prefab
+    public GameObject warningPrefab;
     public GameObject[] objectsToHide; // Objects to hide during intro
-    public float introCooldown = 10f;
+    public float introCooldown = 0.2f;
+    public float warningCooldown = 4.5f;
     public float appearCooldown = 5f;
     private bool hasStartedIntro = false;
+    private bool hasStartedWarning = false;
 
     void Update()
     {
         if (!hasStartedIntro)
         {
-            introCooldown -= Time.deltaTime;  // Reduce cooldown over time
-
+            if(warningCooldown >= 0f)
+            {
+                warningCooldown -= Time.deltaTime;
+            }
+            if (warningCooldown <= 0f)
+            {
+                introCooldown -= Time.deltaTime;
+            }
             if (introCooldown <= 0f)
             {
                 hasStartedIntro = true;  // Prevent multiple calls
                 StartCoroutine(PlayIntro());
             }
         }
+        if (!hasStartedWarning)
+        {
+            hasStartedWarning = true;
+            StartCoroutine(PlayWarning());
+        }
+    }
+    IEnumerator PlayWarning()
+    {
+        // Spawn intro animation
+        GameObject warningInstance = Instantiate(warningPrefab, transform.position + new Vector3(-7.9f, 8.2f ,4.5f ), Quaternion.identity);
+
+        // Wait for a few seconds
+        yield return new WaitForSeconds(5f);
     }
 
     IEnumerator PlayIntro()
@@ -34,7 +56,7 @@ public class BossIntroManager : MonoBehaviour
         }
 
         // Spawn intro animation
-        GameObject introInstance = Instantiate(introPrefab, transform.position, Quaternion.identity);
+        GameObject introInstance = Instantiate(introPrefab, transform.position + new Vector3(23.5f, 0.4f, 0), Quaternion.identity);
 
         // Wait for a few seconds
         yield return new WaitForSeconds(5f);
@@ -57,7 +79,7 @@ public class BossIntroManager : MonoBehaviour
         }
 
         // Spawn boss
-        GameObject boss = Instantiate(bossPrefab, transform.position, Quaternion.identity);
+        GameObject boss = Instantiate(bossPrefab, transform.position + new Vector3(23.5f, 0.4f, 0), Quaternion.identity);
         QueenBeebehaviour bossBehavior = boss.GetComponent<QueenBeebehaviour>();
 
         if (bossBehavior != null)
