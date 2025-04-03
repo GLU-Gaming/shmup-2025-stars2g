@@ -14,7 +14,7 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] GameObject explosionPrefab; //Used on Death
 
     [SerializeField] PowerupRegist Powerups;
-    public bool RegisterKilled;
+    public bool RegisterKilled = true;
 
     [Header("Score System")]
     [SerializeField] int scoreValue = 100; //score to give
