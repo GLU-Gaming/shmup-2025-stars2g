@@ -1785,22 +1785,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 525163996067305420, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 525163996067305420, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
-      propertyPath: m_Color.b
-      value: 0.24741183
-      objectReference: {fileID: 0}
-    - target: {fileID: 525163996067305420, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
-      propertyPath: m_Color.g
-      value: 0.24741183
-      objectReference: {fileID: 0}
-    - target: {fileID: 525163996067305420, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
-      propertyPath: m_Color.r
-      value: 0.5396226
-      objectReference: {fileID: 0}
     - target: {fileID: 1288056218527214108, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1841,6 +1825,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1654234356370369224, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
+      propertyPath: m_SortingOrder
+      value: -21
+      objectReference: {fileID: 0}
     - target: {fileID: 2277735925278694846, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
       propertyPath: player
       value: 
@@ -1849,21 +1837,13 @@ PrefabInstance:
       propertyPath: deathUI
       value: 
       objectReference: {fileID: 191574299}
-    - target: {fileID: 4227749294684231947, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
-      propertyPath: effects.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4227749294684231947, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
-      propertyPath: effects.Array.data[3].effect
-      value: 
-      objectReference: {fileID: 3430380478287261684, guid: 9db2b9bf074f4ae4fbdbb463b288ba31, type: 3}
-    - target: {fileID: 4227749294684231947, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
-      propertyPath: effects.Array.data[4].effect
-      value: 
-      objectReference: {fileID: 4337934907743265050, guid: 8d3297ed8929a6646833d0c8b7d9e254, type: 3}
     - target: {fileID: 5316724414076798844, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
       propertyPath: m_Name
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763412016233080391, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
+      propertyPath: m_SortingOrder
+      value: -11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

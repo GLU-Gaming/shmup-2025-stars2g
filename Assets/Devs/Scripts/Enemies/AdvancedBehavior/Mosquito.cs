@@ -86,11 +86,11 @@ public class Mosquito : MonoBehaviour
             chargeParts.Play();
             IndicatorTrans.DOScaleX(0.01f, 1f);
             yield return new WaitForSeconds(Random.Range(2f, 4f) -1);
-            IndicatorSprite.color = new Color(1, 0.05747497f, 0, 0.2117647f);
-            IndicatorSprite.DOColor(new Color(0.01886177f, 1, 0, 0.2117647f), 0.5f);
+            IndicatorSprite.color = new Color(1, 0.05747497f, 0, 0.6196079f);
+            IndicatorSprite.DOColor(new Color(0.01886177f, 1, 0, 0.6196079f), 0.5f);
             yield return new WaitForSeconds(.5f);
-            IndicatorSprite.color = new Color(1, 0.05747497f, 0, 0.2117647f);
-            IndicatorSprite.DOColor(new Color(0.01886177f, 1, 0, 0.2117647f), 0.5f);
+            IndicatorSprite.color = new Color(1, 0.05747497f, 0, 0.6196079f);
+            IndicatorSprite.DOColor(new Color(0.01886177f, 1, 0, 0.6196079f), 0.5f);
             yield return new WaitForSeconds(.5f);
             actualSpeed = 1;
             chargeParts.Stop();

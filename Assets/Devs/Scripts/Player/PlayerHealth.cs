@@ -5,7 +5,7 @@ using DG.Tweening;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] float maxHealth = 100;
+    public float maxHealth = 100;
     [SerializeField] Image healthBar;
     [SerializeField] Image ghostBar;
 
@@ -14,7 +14,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] GameObject player; //Used for the Death
     [SerializeField] GameObject deathUI; //UI to enable on Death
 
-    float displayedHealth;
+    public float displayedHealth;
 
     float ghostTimer; //Timer for the ghost bar to disappear
 
