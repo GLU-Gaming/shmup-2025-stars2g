@@ -5,14 +5,15 @@ using UnityEngine;
 
 public class ScoreSystem : MonoBehaviour
 {
-
-    /*
-     NOG TOE TE VOEGEN:
-    POWERUPS DIE WORDEN OPGESLAGEN OM AAN DE SCORE TOE TE VOEGEN MAAR IS NU NOG NIET NODIG
-     */
     public int Score;
     [SerializeField] TMP_Text scoreText;
     [SerializeField] string scorePrefix = "Score";
+
+    int S_score;
+    int A_score;
+    int B_score;
+    int C_score;
+    int D_score;
 
 
     public void AddScore(int ScoreToAdd)
