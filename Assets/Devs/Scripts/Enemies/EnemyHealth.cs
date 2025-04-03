@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
-using System.Net.Sockets;
+using System;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -46,9 +46,13 @@ public class EnemyHealth : MonoBehaviour
         displayedHealth = maxHealth;
         root = transform.root.gameObject;
         scoreSystem = GameObject.FindFirstObjectByType<ScoreSystem>();
-        if (RegisterKilled)
+        try
         {
             waveReader = GameObject.FindFirstObjectByType<WaveReader>();
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError("WaveReader not found. if the kill isn't registered, this is no problem.");
         }
     }
 
@@ -118,14 +122,16 @@ public class EnemyHealth : MonoBehaviour
 
     void EnemyDeath()
     {
-        if (Random.Range(0, 100) < 7)
+        if (UnityEngine.Random.Range(0, 100) < 7)
         {
             Instantiate(Powerup(), enemyModel.transform.position, Quaternion.identity);
         }
         scoreSystem.AddScore((int)(scoreValue * Multiplier));
         Instantiate(explosionPrefab, enemyModel.transform.position, Quaternion.identity);
+        print(RegisterKilled);
         if (RegisterKilled)
         {
+            print("YAY");
             waveReader.enemiesToKill--;
         }
         Destroy(root);
@@ -143,6 +149,6 @@ public class EnemyHealth : MonoBehaviour
 
     GameObject Powerup()
     {
-        return Powerups.powerups[Random.Range(0, Powerups.powerups.Length)];
+        return Powerups.powerups[UnityEngine.Random.Range(0, Powerups.powerups.Length)];
     }
 }
