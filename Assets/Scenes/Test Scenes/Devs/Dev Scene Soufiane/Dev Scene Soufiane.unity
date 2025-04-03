@@ -1199,6 +1199,10 @@ PrefabInstance:
       value: Boss Intro Manager
       objectReference: {fileID: 0}
     - target: {fileID: 3344198436386827104, guid: 1dc30afdb5aeddc44b7a6aa7178bb7f7, type: 3}
+      propertyPath: bossPrefab
+      value: 
+      objectReference: {fileID: 6438523239578805916, guid: 27f044a973a05ee4880a8ad019d573bd, type: 3}
+    - target: {fileID: 3344198436386827104, guid: 1dc30afdb5aeddc44b7a6aa7178bb7f7, type: 3}
       propertyPath: appearDelay
       value: 0.1
       objectReference: {fileID: 0}

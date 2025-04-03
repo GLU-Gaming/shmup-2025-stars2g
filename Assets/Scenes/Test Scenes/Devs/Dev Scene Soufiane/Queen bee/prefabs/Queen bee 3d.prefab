@@ -21996,7 +21996,7 @@ MonoBehaviour:
   explosionPrefab: {fileID: 6998340264914040977, guid: 18d9605a8935a0944a45bd78720c80d1, type: 3}
   bigexplosionPrefab: {fileID: 211520614464008616, guid: b01501ccce79d224093ec95be1fa5840, type: 3}
   scoreValue: 2500
-  Multiplier: 2
+  Multiplier: 3
   invincible: 0
   displayedHealth: 1250
   DEBUGGING: 0
