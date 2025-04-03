@@ -109,6 +109,8 @@ public class WaveReader : MonoBehaviour
         yield return new WaitForSeconds(delay);
         GameObject newEnemy = Instantiate(registry.Enemies[type], new Vector3(100, 100, 0), Quaternion.identity);
         enemiesToKill++;
+        EnemyHealth health = newEnemy.transform.Find("HealthUI").GetComponent<EnemyHealth>();
+        health.RegisterKilled = true;
         switch (type)
         {
             case 0: // Bee

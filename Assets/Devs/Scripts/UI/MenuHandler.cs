@@ -20,6 +20,6 @@ public class MenuHandler : MonoBehaviour
     {
         Transitions.SetTransition(true);
         yield return new WaitForSeconds(0.5f);
-        SceneManager.LoadScene("Dev Scene Thoams");
+        SceneManager.LoadScene("RegularLevel");
     }
 }
