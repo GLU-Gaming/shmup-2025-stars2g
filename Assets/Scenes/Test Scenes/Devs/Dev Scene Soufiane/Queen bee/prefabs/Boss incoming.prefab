@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 94865566, guid: 258481a824cb55948b0f1f5c2653cb1b, type: 3}
+  m_Sprite: {fileID: -1483251638, guid: c160dcff5eb99ce48a8db69f5f6d720d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,7 +98,7 @@ Animator:
   m_GameObject: {fileID: 126171146911908680}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 06dde43408c52f545b5feae754e79883, type: 2}
+  m_Controller: {fileID: 9100000, guid: b62ad22917232304daa26ed3f44500e2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 3717702740746685343}
   - component: {fileID: 2829565003173007507}
   - component: {fileID: 9182154094357660478}
-  - component: {fileID: 7585094892821265325}
+  - component: {fileID: 9058633590006912539}
   m_Layer: 0
   m_Name: Boss incoming
   m_TagString: Untagged
@@ -249,8 +249,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.9, y: 8.2, z: 4.5}
-  m_LocalScale: {x: 0.86, y: 0.86, z: 0.1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.04651163}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3205943494428519022}
   - {fileID: 1848262728612603107}
@@ -450,7 +450,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &7585094892821265325
+--- !u!114 &9058633590006912539
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -459,7 +459,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 9118217062222186300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: faa78c1972e46094184f1fb2612356de, type: 3}
+  m_Script: {fileID: 11500000, guid: 87378152bdb36e845a93122eeb051dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DestroyTime: 4.5
+  fadeDuration: 0.3
+  visibleDuration: 4.2
+  destroyDelay: 1

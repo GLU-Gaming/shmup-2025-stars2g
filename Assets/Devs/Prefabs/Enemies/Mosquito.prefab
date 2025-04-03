@@ -5441,8 +5441,9 @@ MonoBehaviour:
   ghostBar: {fileID: 2979107514345674426}
   enemyModel: {fileID: 3041876308624217199}
   sparksPrefab: {fileID: 1005145827766128761, guid: 675a2c07be0c9cf46a6b1b9b2c8bb258, type: 3}
-  explosionPrefab: {fileID: 1005145827766128761, guid: c4d264d7b8cdcb04396006345b24b000, type: 3}
+  explosionPrefab: {fileID: 6998340264914040977, guid: 18d9605a8935a0944a45bd78720c80d1, type: 3}
   Powerups: {fileID: 11400000, guid: 281f1c76ef088bf4187dfadf632700de, type: 2}
+  RegisterKilled: 0
   scoreValue: 100
   Multiplier: 0
   invincible: 0

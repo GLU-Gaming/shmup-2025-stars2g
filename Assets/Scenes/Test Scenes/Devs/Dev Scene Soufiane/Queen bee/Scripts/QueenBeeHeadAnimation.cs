@@ -60,13 +60,15 @@ public class QueenBeeHeadAnimation : MonoBehaviour
     {
         if (queenBeebehaviour.state == "Summoning" && hasAttacked == false && queenBeebehaviour.isDying != true)
         {
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 2; i++)
             {
                 GameObject Bee = Instantiate(objectToSpawn, transform.position, transform.rotation);
                 Bee beeScript = Bee.GetComponent<Bee>();
                 if (beeScript != null)
                 {
-                    beeScript.entryType = global::EntryType.onTheSpot;
+                    beeScript.entryType = EntryType.onTheSpot;
+                    EnemyHealth beeHealth = Bee.transform.Find("HealthUI").GetComponent<EnemyHealth>();
+                    beeHealth.RegisterKilled = false;
                 }
             }
         }
@@ -75,13 +77,15 @@ public class QueenBeeHeadAnimation : MonoBehaviour
     {
         if (queenBeebehaviour.state == "EnragedSummoning" && hasAttacked == false && queenBeebehaviour.isDying != true)
         {
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 3; i++)
             {
                 GameObject Bee = Instantiate(objectToSpawn, transform.position, transform.rotation);
                 Bee beeScript = Bee.GetComponent<Bee>();
                 if (beeScript != null)
                 {
-                    beeScript.entryType = global::EntryType.onTheSpot;
+                    beeScript.entryType = EntryType.onTheSpot;
+                    EnemyHealth beeHealth = Bee.transform.Find("HealthUI").GetComponent<EnemyHealth>();
+                    beeHealth.RegisterKilled = false;
                 }
             }
         }

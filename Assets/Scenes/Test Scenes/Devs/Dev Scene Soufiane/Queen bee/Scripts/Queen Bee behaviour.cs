@@ -49,13 +49,14 @@ public class QueenBeebehaviour : MonoBehaviour
         {
             state = null;
             enragedStates = null;
+            TriggerDeath();
         }; // NEW: Stop movement when dying
 
         Vector3 currentPosition = transform.position;
         float newY = baseY + Mathf.Sin(Time.time * (isEnraged ? 4f : floatSpeed)) * (isEnraged ? 0.2f : floatAmount);
         transform.position = new Vector3(currentPosition.x, newY, 0);
 
-        if (!isEnraged && queenBeeHealth.displayedHealth < 1250)
+        if (!isEnraged && queenBeeHealth.displayedHealth < queenBeeHealth.maxHealth / 2)
         {
             isEnraged = true;
             Debug.Log("Boss is now enraged!");

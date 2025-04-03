@@ -267,6 +267,10 @@ PrefabInstance:
       propertyPath: enemyModel
       value: 
       objectReference: {fileID: 376575493152921331}
+    - target: {fileID: 6143225143235213495, guid: b68030b893d34e347871568d734b3070, type: 3}
+      propertyPath: explosionPrefab
+      value: 
+      objectReference: {fileID: 6998340264914040977, guid: 18d9605a8935a0944a45bd78720c80d1, type: 3}
     - target: {fileID: 6899199783979754825, guid: b68030b893d34e347871568d734b3070, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

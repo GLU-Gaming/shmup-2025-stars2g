@@ -1,0 +1,682 @@
+fileFormatVersion: 2
+guid: c160dcff5eb99ce48a8db69f5f6d720d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: danger caution spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1842
+        width: 805
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73fb375204d863c4e8f132bc741d6cc4
+      internalID: -1483251638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: danger caution spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 1842
+        width: 805
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97673d516b8ab0f4d9abc3fc4fb95ac4
+      internalID: -1784434410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: danger caution spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 1842
+        width: 804
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d31c5cd9f830bb6449a5cffbe7911aa8
+      internalID: -426958980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: danger caution spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 2433
+        y: 1842
+        width: 805
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5805be8adcd56704da9ad9aa63e8c217
+      internalID: 684960075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: danger caution spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 3242
+        y: 1842
+        width: 805
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6906ebe02ccb1e44483fd897509fd6e3
+      internalID: -1250250227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: danger caution spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1383
+        width: 805
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1fe85a7a6cf7de4e99796051dd1eaa5
+      internalID: -1467926207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: danger caution spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 1383
+        width: 805
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b691541abfac13145830a89f961cb77e
+      internalID: 1104352612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: danger caution spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 1383
+        width: 804
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f241e9cf24941449a152657f316be8b
+      internalID: -331204708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: danger caution spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 2433
+        y: 1383
+        width: 805
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b771263380cb04a4787f5670af9cf798
+      internalID: -1028973274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: danger caution spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 3242
+        y: 1383
+        width: 805
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf7abca059c96545971107d5174bb53
+      internalID: 145329081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: danger caution spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 923
+        width: 805
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a3d02ded7bfb5647ac2f0e3fdedc81f
+      internalID: 713158273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: danger caution spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 923
+        width: 805
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e01973638f66f48a91ce3cdd0f3136
+      internalID: 1460722178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: danger caution spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 923
+        width: 804
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b61c31cb2270343822322db02881f9
+      internalID: 1672760191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: danger caution spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 2433
+        y: 923
+        width: 805
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ce6a07b6402744190d72b76ab82064
+      internalID: 1836860267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: danger caution spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 3242
+        y: 923
+        width: 805
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50662f9c01e9af14a979aa659e964cf7
+      internalID: -1779692366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: danger caution spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 462
+        width: 805
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f0ded688946e547a9a9942a21813a4
+      internalID: -1611543226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: danger caution spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 462
+        width: 805
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6fdb3ec61b21b749b96d580e4c2b948
+      internalID: -755634901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: danger caution spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 462
+        width: 804
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a7916d7b5345b4784b161694d53542
+      internalID: 1377284585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: danger caution spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 2433
+        y: 462
+        width: 805
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2afc91d6c47ec1e40adc13b921bcba25
+      internalID: -1570175788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: danger caution spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 3242
+        y: 462
+        width: 805
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48dcb719b66e7b3428e9819a3ee64e2a
+      internalID: -1871913602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: danger caution spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3
+        width: 805
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c46914d29ad0d15498d4696ef216b85c
+      internalID: 2037063607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: danger caution spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 3
+        width: 805
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264ca52eb8a2cc7499b231bfb91d8417
+      internalID: 1153980623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: danger caution spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 3
+        width: 804
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e326ec6fbcd2c478e88691d40e0ddf
+      internalID: 1206963233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: danger caution spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 2433
+        y: 3
+        width: 805
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7c497fcf28cc44cbdb309e2c92c6eb
+      internalID: 1725147746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 74c558911a9586e459acec91aba97fd4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      danger caution spritesheet_0: -1483251638
+      danger caution spritesheet_1: -1784434410
+      danger caution spritesheet_10: 713158273
+      danger caution spritesheet_11: 1460722178
+      danger caution spritesheet_12: 1672760191
+      danger caution spritesheet_13: 1836860267
+      danger caution spritesheet_14: -1779692366
+      danger caution spritesheet_15: -1611543226
+      danger caution spritesheet_16: -755634901
+      danger caution spritesheet_17: 1377284585
+      danger caution spritesheet_18: -1570175788
+      danger caution spritesheet_19: -1871913602
+      danger caution spritesheet_2: -426958980
+      danger caution spritesheet_20: 2037063607
+      danger caution spritesheet_21: 1153980623
+      danger caution spritesheet_22: 1206963233
+      danger caution spritesheet_23: 1725147746
+      danger caution spritesheet_3: 684960075
+      danger caution spritesheet_4: -1250250227
+      danger caution spritesheet_5: -1467926207
+      danger caution spritesheet_6: 1104352612
+      danger caution spritesheet_7: -331204708
+      danger caution spritesheet_8: -1028973274
+      danger caution spritesheet_9: 145329081
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

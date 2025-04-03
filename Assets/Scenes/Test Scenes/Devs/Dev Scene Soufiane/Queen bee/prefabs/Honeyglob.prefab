@@ -288,7 +288,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.029573545, z: -1.9280956}
-  m_LocalScale: {x: 4.34, y: 4.34, z: 4.34}
+  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2358959211688281886}
@@ -375,6 +375,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isContinuous: 0
-  damageToDeal: 2
+  damageToDeal: 1
   ApplyDebuff: 1
   DebuffType: 2

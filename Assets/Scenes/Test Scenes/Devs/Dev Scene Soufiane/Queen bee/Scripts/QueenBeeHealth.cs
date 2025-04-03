@@ -140,7 +140,7 @@ public class QueenBeeHealth : MonoBehaviour
         float elapsed = 0f;
 
         // Move the boss down slowly
-        bossModel.transform.DOMoveY(bossModel.transform.position.y - 35f, duration);
+        bossModel.transform.DOMoveY(bossModel.transform.position.y - 105f, duration);
 
         // Add shaking effect
         bossModel.transform.DOShakePosition(duration, 0.5f, 10, 90, false, true);

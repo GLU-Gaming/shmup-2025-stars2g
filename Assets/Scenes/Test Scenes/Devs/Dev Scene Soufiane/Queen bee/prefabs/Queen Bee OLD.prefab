@@ -10,10 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2533875555195613214}
   - component: {fileID: 4317526759207457030}
-  - component: {fileID: 5982035567309232472}
-  - component: {fileID: 4424263177940044018}
   m_Layer: 0
-  m_Name: Queen Bee
+  m_Name: Queen Bee OLD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +27,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.06, y: 2.1, z: 0}
-  m_LocalScale: {x: 0.48, y: 0.48, z: 0.48}
+  m_LocalScale: {x: 1.6, y: 1.6, z: 1.6}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7756542321861685174}
@@ -52,32 +50,9 @@ MonoBehaviour:
   stateChangeInterval: 3
   floatSpeed: 1
   floatAmount: 0.2
-  moveSpeed: 0.5
-  moveAmount: 0.1
---- !u!114 &5982035567309232472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 858084067811754942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d393e863a1c4a484c967deb468d06910, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &4424263177940044018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 858084067811754942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d393e863a1c4a484c967deb468d06910, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  queenBeeHealth: {fileID: 0}
+  isEnraged: 0
+  isDying: 0
 --- !u!1 &867322242733442993
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,7 +155,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eb6335035146064c9a231fee8f23042, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LaserPrefab: {fileID: 729807390283649553, guid: 74c25e35a9e958c49a8ca31193794170, type: 3}
+  laserPrefab: {fileID: 0}
+  laserIndicator: {fileID: 0}
+  laserPrefab2: {fileID: 0}
+  laserIndicator2: {fileID: 0}
+  laserPrefab3: {fileID: 0}
+  laserIndicator3: {fileID: 0}
   LaserCharge: {fileID: 2020261586536861260}
   spawnPoint: {fileID: 6328891922198113037}
 --- !u!82 &8925837547743864554
@@ -5449,7 +5429,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ea79cfe9f2032d346af3e344cdb432dc, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: ea79cfe9f2032d346af3e344cdb432dc, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -15735,7 +15715,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc7784ab24406074aafb3c87ccd20470, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasAttacked: 0
   queenBeeScreech: {fileID: 6487274552776859042}
+  objectToSpawn: {fileID: 9123173730103583373, guid: 9090b3990f05046499f66e1ff635f6dd, type: 3}
+  spawnPoint: {fileID: 8656595010538668413}
 --- !u!1 &8544966661533225636
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,0 +1,1510 @@
+fileFormatVersion: 2
+guid: 2a5e832be3db0eb46a6ff27a7d591195
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tape different_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1761
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 178858c61a6ccfa4a990b27208a3d88e
+      internalID: -1151980674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_1
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 1761
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da929c77d3c40e4d883485828e0e82a
+      internalID: -489867419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_2
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 1761
+        width: 279
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 414f1568c7cab294691852091df06b71
+      internalID: 761939943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_3
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1761
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a1adf0835180342b487ea8f6192b57
+      internalID: 84835402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_4
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 1761
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f5a5d29452e6d44955bc50d3c465b2
+      internalID: 2084431382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1601
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc846c68d0d5884fa4925feb1737cb9
+      internalID: -1610246207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_6
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 1601
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d9c6ec33058ee4ba7bd8bbc7f7a3ca
+      internalID: -1087724659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_7
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 1601
+        width: 279
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc5bab70e72f6d44b2ee20a51597534
+      internalID: -1885575280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_8
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1601
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e886fcfab172b7a4db8997a078e0f59a
+      internalID: -896231069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_9
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 1601
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3928600b924b54a8133c237b4ea066
+      internalID: 1633478225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1441
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df4cbf096c67564cbdc68b15a316a00
+      internalID: 1476002481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_11
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 1441
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07bb8aaf5ccf4664480c187ab52358e3
+      internalID: -270201174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_12
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 1441
+        width: 279
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb22e27b61b95e9488db22ed7522e4e2
+      internalID: -732530450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_13
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 1441
+        width: 279
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef22b85f849d65a4fa28f95cd5add605
+      internalID: -346542344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_14
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 1441
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d84998e82d0424893a349896a43f07
+      internalID: -319745367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1281
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2937030a2167209489338accbffc46c2
+      internalID: 24294267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_16
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 1281
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce46928b85ee0cf4d9b91a9644a45f8f
+      internalID: -620370959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_17
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 1281
+        width: 279
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f58d14a33f92fa4d8b9311998c805d8
+      internalID: 561092637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_18
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1281
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71104295ae9ec9f4db9681361a2b287d
+      internalID: -428269807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_19
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 1281
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3cf15c47b661ab4f8589612b9c9e94e
+      internalID: -1164911699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1121
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ec15ac3e4909049a5752b1892c8001
+      internalID: -1503712625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_21
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 1121
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c74ed99a949c04796bc50d5f219de0
+      internalID: -133717644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_22
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 1121
+        width: 279
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5db5545046d0db64883534ad9ab71960
+      internalID: 101725260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_23
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1121
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa461cf6c22b864cb2b1ac504225258
+      internalID: -666171790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_24
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 1121
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28edd855faab26540a329cd69014901b
+      internalID: 195805652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_25
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 961
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 304de9e2f30ae9d438595be4c01fcf4f
+      internalID: 748697715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_26
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 961
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0d0f4f23d77eb41ab850b4a5fb5718
+      internalID: 1079901701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_27
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 961
+        width: 279
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc779f1b1410d54c93d8f573b92187f
+      internalID: -2048088875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_28
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 961
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901856b80675b5247afda7b452832d33
+      internalID: 774169883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_29
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 961
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e241c2440187b05469007fcf93680223
+      internalID: -1468806655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_30
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 801
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bcb69ac12195db4ab2cf21fb7fd7c65
+      internalID: 1841640558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_31
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 801
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b07a719c7ebb046b0c74f9663518df
+      internalID: -313657370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_32
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 801
+        width: 279
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0f481ab431e9e48ae1ff6ec2a4789d
+      internalID: -1935342457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_33
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 801
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a758687120912349afa8b483c2cc257
+      internalID: -705430213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_34
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 801
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca3460adbe9ea44b868ec47791cbc13
+      internalID: -2067991875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_35
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 641
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c71260021e50ff4085a0049a0d9ee64
+      internalID: 1577657896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_36
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 641
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8f30d3ce0056540975de99d1eda952
+      internalID: -423267354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_37
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 641
+        width: 279
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450625578a422bd4689350b21e93907d
+      internalID: -466768173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_38
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 641
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42382a4599c20ee428ad6e037efe0181
+      internalID: -24828792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_39
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 641
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff448a5250100448838ae073a2887b8
+      internalID: -1992437911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_40
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 481
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd4651c49df44b469b6f76297019c75
+      internalID: -1081369122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_41
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 481
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d698480ae78ef174596004627f936b89
+      internalID: -1472157839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_42
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 481
+        width: 279
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e9d2e78dbdb81b41afdb3e26e2e59f5
+      internalID: -196280421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_43
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 481
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b4ef42a3a629c14aa705d80ad83a6c8
+      internalID: 2014190883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_44
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 481
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a5bee6fa2f14144bc5f268945382ee
+      internalID: 626651977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_45
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 321
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f03a776639a631c419b1e7701ff7d279
+      internalID: -568941188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_46
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 321
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 470df00150a13424dba927e3a975e89d
+      internalID: 2137386122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_47
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 321
+        width: 279
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f487ede58da0c459ed1433b04d985c
+      internalID: 289133440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_48
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 321
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d1650fc8211cd4b9bcff26bd212ab6
+      internalID: -783226012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_49
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 321
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9c4a3405a8cfb42a559c08c8607de7
+      internalID: -767991728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_50
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 161
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517855a0f3517f149a559d67319067bb
+      internalID: -316060704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_51
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 161
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e0459deee81f34f854594ac8dd2261
+      internalID: -1660941288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_52
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 161
+        width: 279
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed6a930aaa6e544eb3b07e5a3cbb8b1
+      internalID: 2049294628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_53
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 161
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf58e5ad0b759a46ae7dc003d0a3d53
+      internalID: -393088780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_54
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 161
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01034fe8f64579644bc2ce85db183678
+      internalID: -842635034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_55
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c7eaf1e1ee56749b5d46ea76b32a9a
+      internalID: 1923036598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_56
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 1
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a539b97fa588c4791252ab6b5b05bc
+      internalID: 325947924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_57
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 1
+        width: 279
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ed2d1158cc85a49951dcff29e47352
+      internalID: 979497478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_58
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e71e4a001abfdc49ac498de9e6b4cd8
+      internalID: -1309390349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tape different_59
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 1
+        width: 280
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca60b240e5b7ecc4b867e445532dab35
+      internalID: -1814135160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0fa4b3c1d525a2f48994b63d1fbbbb92
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tape different_0: -1151980674
+      tape different_1: -489867419
+      tape different_10: 1476002481
+      tape different_11: -270201174
+      tape different_12: -732530450
+      tape different_13: -346542344
+      tape different_14: -319745367
+      tape different_15: 24294267
+      tape different_16: -620370959
+      tape different_17: 561092637
+      tape different_18: -428269807
+      tape different_19: -1164911699
+      tape different_2: 761939943
+      tape different_20: -1503712625
+      tape different_21: -133717644
+      tape different_22: 101725260
+      tape different_23: -666171790
+      tape different_24: 195805652
+      tape different_25: 748697715
+      tape different_26: 1079901701
+      tape different_27: -2048088875
+      tape different_28: 774169883
+      tape different_29: -1468806655
+      tape different_3: 84835402
+      tape different_30: 1841640558
+      tape different_31: -313657370
+      tape different_32: -1935342457
+      tape different_33: -705430213
+      tape different_34: -2067991875
+      tape different_35: 1577657896
+      tape different_36: -423267354
+      tape different_37: -466768173
+      tape different_38: -24828792
+      tape different_39: -1992437911
+      tape different_4: 2084431382
+      tape different_40: -1081369122
+      tape different_41: -1472157839
+      tape different_42: -196280421
+      tape different_43: 2014190883
+      tape different_44: 626651977
+      tape different_45: -568941188
+      tape different_46: 2137386122
+      tape different_47: 289133440
+      tape different_48: -783226012
+      tape different_49: -767991728
+      tape different_5: -1610246207
+      tape different_50: -316060704
+      tape different_51: -1660941288
+      tape different_52: 2049294628
+      tape different_53: -393088780
+      tape different_54: -842635034
+      tape different_55: 1923036598
+      tape different_56: 325947924
+      tape different_57: 979497478
+      tape different_58: -1309390349
+      tape different_59: -1814135160
+      tape different_6: -1087724659
+      tape different_7: -1885575280
+      tape different_8: -896231069
+      tape different_9: 1633478225
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

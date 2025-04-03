@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class mapScroll : MonoBehaviour
 {
-    [SerializeField] float scrollSpeed = 0.5f;
+    [SerializeField] public float scrollSpeed = 0.5f;
 
     private void Update()
     {
