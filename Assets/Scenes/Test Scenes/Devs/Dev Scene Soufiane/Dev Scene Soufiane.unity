@@ -1893,12 +1893,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3121796930611253518, guid: 1dc30afdb5aeddc44b7a6aa7178bb7f7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3344198436386827104, guid: 1dc30afdb5aeddc44b7a6aa7178bb7f7, type: 3}
       propertyPath: bossPrefab
       value: 
-      objectReference: {fileID: 7215532394962578001, guid: 27f044a973a05ee4880a8ad019d573bd, type: 3}
+      objectReference: {fileID: 4034149720343632901, guid: cdeb3fa2309891e4ba8d05e2e478eced, type: 3}
     - target: {fileID: 3344198436386827104, guid: 1dc30afdb5aeddc44b7a6aa7178bb7f7, type: 3}
       propertyPath: appearDelay
       value: 0.1
@@ -1982,7 +1982,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8468594817791042867, guid: e1a375f3d9861974187c0124f7c94a72, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9137151302283198345, guid: e1a375f3d9861974187c0124f7c94a72, type: 3}
       propertyPath: m_LocalPosition.x
