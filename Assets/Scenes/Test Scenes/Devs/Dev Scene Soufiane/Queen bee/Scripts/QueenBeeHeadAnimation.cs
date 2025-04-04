@@ -6,13 +6,25 @@ public class QueenBeeHeadAnimation : MonoBehaviour
     public bool hasScreamed = false;
     private QueenBeebehaviour queenBeebehaviour;
     public ParticleSystem queenBeeScreech;
-    private AudioSource audioSource;
+    private AudioSource[] audioSources;
+    private AudioSource deathScreechSource;
+    private AudioSource normalScreechSource;
     public GameObject objectToSpawn; //dependant on bee coding
     public Transform spawnPoint;
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        audioSources = GetComponents<AudioSource>();
+        if (audioSources.Length >= 2)
+        {
+            normalScreechSource = audioSources[0];
+            deathScreechSource = audioSources[1];
+        }
+        else
+        {
+            Debug.LogWarning("Not enough AudioSources attached to QueenBeeHeadAnimation GameObject.");
+        }
+
         queenBeebehaviour = FindFirstObjectByType<QueenBeebehaviour>();
     }
 
@@ -43,7 +55,7 @@ public class QueenBeeHeadAnimation : MonoBehaviour
 
     void PerformScreech()
     {
-        audioSource.Play();
+        deathScreechSource.Play();
         if (queenBeeScreech != null)
         {
             queenBeeScreech.Play();
@@ -52,7 +64,7 @@ public class QueenBeeHeadAnimation : MonoBehaviour
 
     void Screech()
     {
-        audioSource.Play();
+        normalScreechSource.Play();
         if (queenBeeScreech != null)
         {
             queenBeeScreech.Play();
