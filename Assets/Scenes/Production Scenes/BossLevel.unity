@@ -1363,6 +1363,8 @@ MonoBehaviour:
   waveCollection: {fileID: 11400000, guid: 3cff5c58b8f07e242a84597b3d9d6650, type: 2}
   registry: {fileID: 11400000, guid: 8c47284159e830b4c9817cae661b0918, type: 2}
   finishline: {fileID: 475126210283226532, guid: 9abb615e26ed8e24ab5137021e80ce8b, type: 3}
+  BossSpawner: {fileID: 3121796930611253518, guid: 1dc30afdb5aeddc44b7a6aa7178bb7f7, type: 3}
+  EndwithBoss: 0
   enemiesToKill: 0
 --- !u!1 &1794855752
 GameObject:
