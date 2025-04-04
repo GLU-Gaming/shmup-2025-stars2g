@@ -11,12 +11,17 @@ public class QueenBeebehaviour : MonoBehaviour
     public float floatAmount = 0.2f;
     private float baseY;
 
+    [SerializeField] private mapScroll mapScroll;
     [SerializeField] private QueenBeeHealth queenBeeHealth;
     public bool isEnraged = false;
     public bool isDying = false;  // NEW: Stops behavior when dying
 
     void Start()
     {
+        {
+            if (mapScroll == null)
+                mapScroll = FindAnyObjectByType<mapScroll>();
+        }
         queenBeeHealth = FindAnyObjectByType<QueenBeeHealth>();
         baseY = transform.position.y;
         InvokeRepeating(nameof(ChangeState), stateChangeInterval, stateChangeInterval);
@@ -24,7 +29,7 @@ public class QueenBeebehaviour : MonoBehaviour
 
     void ChangeState()
     {
-        if (isDying) return; // NEW: Stop state changes when dying
+        if (isDying == true) return; // NEW: Stop state changes when dying
 
         string[] statePool = isEnraged ? enragedStates : states;
         string newState;
@@ -45,35 +50,40 @@ public class QueenBeebehaviour : MonoBehaviour
 
     void Update()
     {
-        if (isDying)
-        {
-            state = null;
-            enragedStates = null;
+        if (queenBeeHealth.displayedHealth <= 0)
+        { 
             TriggerDeath();
-        }; // NEW: Stop movement when dying
-
-        Vector3 currentPosition = transform.position;
-        float newY = baseY + Mathf.Sin(Time.time * (isEnraged ? 4f : floatSpeed)) * (isEnraged ? 0.2f : floatAmount);
-        transform.position = new Vector3(currentPosition.x, newY, 0);
-
-        if (!isEnraged && queenBeeHealth.displayedHealth < queenBeeHealth.maxHealth / 2)
-        {
-            isEnraged = true;
-            Debug.Log("Boss is now enraged!");
         }
-    }
+            if (isDying == true) return;
+
+            // Floating logic (only if not dying)
+            Vector3 currentPosition = transform.position;
+            float newY = baseY + Mathf.Sin(Time.time * (isEnraged ? 4f : floatSpeed)) * (isEnraged ? 0.2f : floatAmount);
+            transform.position = new Vector3(currentPosition.x, newY, 0);
+
+            // Enrage logic
+            if (!isEnraged && queenBeeHealth.displayedHealth < queenBeeHealth.maxHealth / 2)
+            {
+                isEnraged = true;
+                mapScroll.ScrollSpeed = mapScroll.ScrollSpeed + mapScroll.ScrollSpeed;
+                Debug.Log("Boss is now enraged!");
+            }
+        }
 
     // NEW: Called when the boss starts dying
     public void TriggerDeath()
     {
-        isDying = true;
-        isEnraged = false;
-        state = "cancelattacks";
-        CancelInvoke(nameof(ChangeState));
-    }
-    public bool IsDying()
-    {
-        return isDying;
+        if (isDying == false)
+        {
+            isDying = true;
+            isEnraged = false;
+            state = null;
+            enragedStates = null;
+            mapScroll.ScrollSpeed = mapScroll.ScrollSpeed / 2;
+            CancelInvoke(); // Cancel everything
+        }
+        Debug.Log("Queen Bee is dying. All behaviors stopped.");
+        // Optionally: this.enabled = false;
     }
 
 }

@@ -23,15 +23,4 @@ public class HoneyglobProjectile : MonoBehaviour
             Destroy(gameObject, 0.2f);
         }
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            GameObject root = other.transform.root.gameObject;
-            GameObject playerMovement = root.transform.Find("playerMovement").gameObject;
-            PlayerMovement playerSpeed = playerMovement.GetComponent<PlayerMovement>();
-            if (playerSpeed != null) { }
-        }
-    }
 }

@@ -10883,7 +10883,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     startSize:
       serializedVersion: 2
-      minMaxState: 3
+      minMaxState: 0
       scalar: 3
       minScalar: 3
       maxCurve:
@@ -10936,7 +10936,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startSizeY:
       serializedVersion: 2
-      minMaxState: 3
+      minMaxState: 0
       scalar: 1
       minScalar: 1
       maxCurve:
@@ -10989,7 +10989,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startSizeZ:
       serializedVersion: 2
-      minMaxState: 3
+      minMaxState: 0
       scalar: 1
       minScalar: 1
       maxCurve:
@@ -11204,7 +11204,7 @@ ParticleSystem:
     maxNumParticles: 1000
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
-    rotation3D: 0
+    rotation3D: 1
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
@@ -11341,8 +11341,8 @@ ParticleSystem:
     m_TextureClipChannel: 3
     m_TextureClipThreshold: 0
     m_TextureUVChannel: 0
-    m_TextureColorAffectsParticles: 1
-    m_TextureAlphaAffectsParticles: 1
+    m_TextureColorAffectsParticles: 0
+    m_TextureAlphaAffectsParticles: 0
     m_TextureBilinearFiltering: 0
     randomDirectionAmount: 0
     sphericalDirectionAmount: 0
@@ -21535,11 +21535,11 @@ PrefabInstance:
     - target: {fileID: 4632319849838169668, guid: 1192936bbafb4c04485391bdbb8df0ff, type: 3}
       propertyPath: m_Resource
       value: 
-      objectReference: {fileID: 8300000, guid: 1712488260db610409767e9cf0f49e3d, type: 3}
+      objectReference: {fileID: 8300000, guid: 06b6fa58085c8a84daea2369037bc8e6, type: 3}
     - target: {fileID: 4632319849838169668, guid: 1192936bbafb4c04485391bdbb8df0ff, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 1712488260db610409767e9cf0f49e3d, type: 3}
+      objectReference: {fileID: 8300000, guid: 06b6fa58085c8a84daea2369037bc8e6, type: 3}
     - target: {fileID: 4869589522507993193, guid: 1192936bbafb4c04485391bdbb8df0ff, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.79

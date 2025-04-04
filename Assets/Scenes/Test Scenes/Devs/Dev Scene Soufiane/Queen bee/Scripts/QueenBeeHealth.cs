@@ -32,6 +32,8 @@ public class QueenBeeHealth : MonoBehaviour
 
     bool hit = false; //Used to check if the enemy has been hit
 
+    private QueenBeebehaviour queenBeebehaviour;
+
     [Header("DEBUG ONLY")]
     [SerializeField] bool DEBUGGING = false;
     [SerializeField] float DEBUG_Value;
@@ -43,6 +45,7 @@ public class QueenBeeHealth : MonoBehaviour
         displayedHealth = maxHealth;
         root = transform.root.gameObject;
         scoreSystem = GameObject.FindFirstObjectByType<ScoreSystem>();
+        queenBeebehaviour = FindFirstObjectByType<QueenBeebehaviour>();
     }
 
 
@@ -81,6 +84,16 @@ public class QueenBeeHealth : MonoBehaviour
         {
             DecreaseMultiplier(); //Slowly Decreases the amount of score you get based on how long you take to kill the enemy
         }
+
+        if (displayedHealth <= 0 && queenBeebehaviour.isDying)
+        {
+            queenBeebehaviour.TriggerDeath();
+        }
+
+        if (maxHealth <= 0 && queenBeebehaviour.isDying)
+        {
+            queenBeebehaviour.TriggerDeath();
+        }
     }
 
     void DecreaseMultiplier()
@@ -118,12 +131,8 @@ public class QueenBeeHealth : MonoBehaviour
 
     void EnemyDeath()
     {
-        // NEW: Tell QueenBeeBehaviour to stop attacks
-        QueenBeebehaviour behavior = GetComponent<QueenBeebehaviour>();
-        if (behavior != null)
-        {
-            behavior.TriggerDeath();
-        }
+        // NEW: Tell QueenBeeBehaviour to stop 
+        queenBeebehaviour.TriggerDeath();
 
         // Add Score Immediately
         scoreSystem.AddScore((int)(scoreValue * Multiplier));
