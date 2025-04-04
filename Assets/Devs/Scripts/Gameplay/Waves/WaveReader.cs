@@ -7,6 +7,8 @@ public class WaveReader : MonoBehaviour
     [SerializeField] AdvancedWave waveCollection;
     [SerializeField] EnemyRegistry registry;
     [SerializeField] GameObject finishline;
+    [SerializeField] GameObject BossSpawner;
+    [SerializeField] bool EndwithBoss;
 
     Transitions Transitions;
 
