@@ -26,7 +26,11 @@ public class QueenBeeBottomAnimation : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (queenBeebehaviour != null && queenBeebehaviour.state == "HoneyAttack" && !hasAttacked && queenBeebehaviour.isDying == false)
+        if (queenBeebehaviour.isDying == true)
+        {
+            hasAttacked = true;
+        }
+            if (queenBeebehaviour != null && queenBeebehaviour.state == "HoneyAttack" && !hasAttacked && queenBeebehaviour.isDying == false)
         {
             if (!positionChanged)
             {

@@ -15288,7 +15288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26494d5155b7f21498b6c932e6a9d36f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 3661462036926336833, guid: 0cbf8ed5f6bc8ac498759d486b17d539, type: 3}
+  objectToSpawn: {fileID: 2049203865855430238, guid: 6865b112199ab6b47b17bc5569e3e766, type: 3}
   movementInterval: 0.00001
 --- !u!1 &5516020588275921313
 GameObject:

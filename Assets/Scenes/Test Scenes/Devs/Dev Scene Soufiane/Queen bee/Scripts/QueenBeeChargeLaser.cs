@@ -55,7 +55,11 @@ public class QueenBeeChargeLaser : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (queenBeebehaviour.state == "Laser" && !hasAttacked && queenBeebehaviour.isDying == false)
+        if (queenBeebehaviour.isDying == true)
+        {
+            hasAttacked = true;
+        }
+            if (queenBeebehaviour.state == "Laser" && !hasAttacked && queenBeebehaviour.isDying == false)
         {
             fireTimer -= Time.fixedDeltaTime;
             StartCoroutine(LaserIndicator());

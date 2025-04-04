@@ -3,20 +3,40 @@ using UnityEngine;
 public class QueenBeeHeadAnimation : MonoBehaviour
 {
     public bool hasAttacked = false;
+    public bool hasScreamed = false;
     private QueenBeebehaviour queenBeebehaviour;
     public ParticleSystem queenBeeScreech;
-    private AudioSource audioSource;
+    private AudioSource[] audioSources;
+    private AudioSource deathScreechSource;
+    private AudioSource normalScreechSource;
     public GameObject objectToSpawn; //dependant on bee coding
     public Transform spawnPoint;
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        audioSources = GetComponents<AudioSource>();
+        if (audioSources.Length >= 2)
+        {
+            normalScreechSource = audioSources[0];
+            deathScreechSource = audioSources[1];
+        }
+        else
+        {
+            Debug.LogWarning("Not enough AudioSources attached to QueenBeeHeadAnimation GameObject.");
+        }
+
         queenBeebehaviour = FindFirstObjectByType<QueenBeebehaviour>();
     }
 
     void FixedUpdate()
     {
+        if (queenBeebehaviour.isDying == true && !hasScreamed)
+        {
+            transform.localRotation = Quaternion.Euler(0, 0, -20.56f);
+            transform.localPosition = new Vector3(1.62f, 3.38f, 0);
+            PerformScreech();
+            hasScreamed = true;
+        }
 
         if ((queenBeebehaviour.state == "Summoning" || queenBeebehaviour.state == "EnragedSummoning") && !hasAttacked && !queenBeebehaviour.isDying)
         {
@@ -35,14 +55,16 @@ public class QueenBeeHeadAnimation : MonoBehaviour
 
     void PerformScreech()
     {
-        transform.localRotation = Quaternion.Euler(0, 0, -20.56f);
-        transform.localPosition = new Vector3(1.62f, 3.38f, 0);
-        Screech();
+        deathScreechSource.Play();
+        if (queenBeeScreech != null)
+        {
+            queenBeeScreech.Play();
+        }
     }
 
     void Screech()
     {
-        audioSource.Play();
+        normalScreechSource.Play();
         if (queenBeeScreech != null)
         {
             queenBeeScreech.Play();
