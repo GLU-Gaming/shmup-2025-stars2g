@@ -807,7 +807,13 @@ MonoBehaviour:
     Queen bee:
     Mees
 
-    Moth: Kami'
+    Moth: Kami
+
+    Menu Background: Kami
+
+    Bee: Kami
+
+    Music: Thomas'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9de0e32d5301a0a4fb69444cc62308b0, type: 2}
   m_sharedMaterial: {fileID: -7203772268703769880, guid: 9de0e32d5301a0a4fb69444cc62308b0, type: 2}
