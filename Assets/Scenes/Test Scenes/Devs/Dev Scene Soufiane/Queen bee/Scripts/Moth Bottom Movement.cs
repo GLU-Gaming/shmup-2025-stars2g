@@ -45,19 +45,24 @@ public class MothBottomMovement : MonoBehaviour
 
         for (int i = 0; i < 2; i++)
         {
-            shootSilkblob(i);
+            shootSilkblob(Random.Range(0, 0)); // pass in -1, 0, or 1 for left/center/right
         }
+
     }
     void shootSilkblob(int index)
     {
         audioSource.Play();
         if (SilkblobPrefab == null || spawnPoint == null) return;
+
         GameObject Silkblob = Instantiate(SilkblobPrefab, spawnPoint.position, Quaternion.identity);
         Rigidbody rb = Silkblob.GetComponent<Rigidbody>();
 
         if (rb != null)
         {
-            float angleOffset = ((index - 1) * spreadAngle) / 2f;
+            float angleOffset = index * spreadAngle;
+            Vector3 shootDirection = Quaternion.Euler(0, angleOffset, 0) * transform.forward;
+            rb.linearVelocity = shootDirection * 1.5f; // 5f is just an example speed
         }
     }
+
 }
