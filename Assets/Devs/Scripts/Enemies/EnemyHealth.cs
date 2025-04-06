@@ -94,7 +94,7 @@ public class EnemyHealth : MonoBehaviour
 
     void DecreaseMultiplier()
     {
-        Multiplier -= 0.0001f;
+        Multiplier -= 0.001f;
         Multiplier = Mathf.Clamp(Multiplier, .2f, 1);
     }
 
@@ -128,10 +128,8 @@ public class EnemyHealth : MonoBehaviour
         }
         scoreSystem.AddScore((int)(scoreValue * Multiplier));
         Instantiate(explosionPrefab, enemyModel.transform.position, Quaternion.identity);
-        print(RegisterKilled);
         if (RegisterKilled)
         {
-            print("YAY");
             waveReader.enemiesToKill--;
         }
         Destroy(root);

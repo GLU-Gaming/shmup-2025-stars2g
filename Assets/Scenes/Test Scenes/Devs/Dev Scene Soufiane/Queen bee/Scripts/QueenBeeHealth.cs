@@ -10,6 +10,8 @@ public class QueenBeeHealth : MonoBehaviour
     [SerializeField] Image healthBar;
     [SerializeField] Image ghostBar;
 
+    WaveReader waveReader; //to make sure the game can end
+
     [SerializeField] GameObject bossModel; //Used for the Death
     [SerializeField] GameObject sparksPrefab; //Prefab of the ParticleSystem
     [SerializeField] GameObject explosionPrefab; //Used on Death
@@ -46,6 +48,7 @@ public class QueenBeeHealth : MonoBehaviour
         root = transform.root.gameObject;
         scoreSystem = GameObject.FindFirstObjectByType<ScoreSystem>();
         queenBeebehaviour = FindFirstObjectByType<QueenBeebehaviour>();
+        waveReader = FindFirstObjectByType<WaveReader>();
     }
 
 
@@ -173,6 +176,7 @@ public class QueenBeeHealth : MonoBehaviour
 
         // Destroy the boss
         Destroy(root);
+        waveReader.EndLevelEarly();
     }
 
     void InstantiateSparks()

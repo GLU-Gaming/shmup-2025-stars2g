@@ -15,7 +15,7 @@ public class Moth : MonoBehaviour
     [SerializeField] float lookSpeed;
 
     float actualSpeed;
-    GameObject offset;
+    [SerializeField] GameObject offset;
     GameObject player;
 
     // Base Data for locations
@@ -26,7 +26,6 @@ public class Moth : MonoBehaviour
 
     private void Start()
     {
-        offset = transform.Find("Offset").gameObject;
         player = GameObject.FindGameObjectWithTag("Player");
         StartCoroutine(Animate());
     }
@@ -76,8 +75,8 @@ public class Moth : MonoBehaviour
             actualSpeed = lookSpeed;
             mothBottomMovement.performSilkAttack();
             yield return new WaitForSeconds(1f);
-            transform.DOMove(new Vector3(Random.Range(hozAxes.x, hozAxes.y), Random.Range(verticalAxes.x, verticalAxes.y), 0), 0.5f).SetEase(Ease.OutQuad);
-            yield return new WaitForSeconds(0.5f);
+            transform.DOMove(new Vector3(Random.Range(hozAxes.x, hozAxes.y), Random.Range(verticalAxes.x, verticalAxes.y), 0), 1f).SetEase(Ease.OutQuad);
+            yield return new WaitForSeconds(1f);
         }
     }
 

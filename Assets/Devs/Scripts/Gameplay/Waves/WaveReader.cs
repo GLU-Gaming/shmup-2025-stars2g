@@ -20,6 +20,11 @@ public class WaveReader : MonoBehaviour
 
     int expectedEnemies = 0;
 
+    public void EndLevelEarly()
+    {
+        StartCoroutine(EndFinishline());
+    }
+
     private void Start()
     {
         StartCoroutine(InitWaves());
@@ -72,7 +77,16 @@ public class WaveReader : MonoBehaviour
         print("Loading Wave: " + wave + " out of " + waveCollection.waveCollection.Count);
         if (wave >= waveCollection.waveCollection.Count)
         {
-            StartCoroutine(EndFinishline());
+            if (EndwithBoss)
+            {
+                Instantiate(BossSpawner, Vector3.zero, Quaternion.identity);
+                //Will rely on the boss to end the level
+            }
+            else
+            {
+                StartCoroutine(EndFinishline());
+            }
+                
         }
         else
         {

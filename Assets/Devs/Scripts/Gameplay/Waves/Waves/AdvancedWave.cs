@@ -28,7 +28,7 @@ public class AdvancedWave : ScriptableObject
     [System.Serializable]
     public class Enemy
     {
-        [Range(0, 2)] public int Type;
+        [Range(0, 3)] public int Type;
         public EntryType entryType;
         public float SpawnDelay;
     }

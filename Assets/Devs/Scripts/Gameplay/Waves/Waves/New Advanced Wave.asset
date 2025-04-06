@@ -68,12 +68,21 @@ MonoBehaviour:
     waveType: 0
     waveDelay: 0.76
   - enemies:
-    - Type: 0
+    - Type: 3
       entryType: 2
       SpawnDelay: 0
-    - Type: 0
+    - Type: 3
       entryType: 2
       SpawnDelay: 0.1
+    waveType: 0
+    waveDelay: 0.76
+  - enemies:
+    - Type: 0
+      entryType: 1
+      SpawnDelay: 0
+    - Type: 0
+      entryType: 0
+      SpawnDelay: 1
     - Type: 0
       entryType: 2
       SpawnDelay: 0.2
