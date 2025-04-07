@@ -100,8 +100,8 @@ RectTransform:
   m_GameObject: {fileID: 3389297652256901738}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5921307530976941808}
   - {fileID: 4018833191798757263}
@@ -509,7 +509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d393e863a1c4a484c967deb468d06910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 50
+  maxHealth: 5000
   healthBar: {fileID: 1910456350436583203}
   ghostBar: {fileID: 9009705934380545023}
   bossModel: {fileID: 0}

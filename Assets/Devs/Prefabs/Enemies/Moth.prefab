@@ -1510,8 +1510,8 @@ Transform:
   m_GameObject: {fileID: 3499874459714982373}
   serializedVersion: 2
   m_LocalRotation: {x: 0.27553296, y: 0.6512155, z: -0.27553296, w: 0.6512155}
-  m_LocalPosition: {x: -1.79, y: -2.19, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalPosition: {x: -2.03, y: -2.19, z: 0}
+  m_LocalScale: {x: 0.96, y: 0.96, z: 0.96}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2333773978935808192}
@@ -7261,6 +7261,7 @@ GameObject:
   - component: {fileID: 206530236081723318}
   - component: {fileID: 6203952607882630547}
   - component: {fileID: 8113320535545966608}
+  - component: {fileID: 6031958593591846630}
   m_Layer: 0
   m_Name: Back Body
   m_TagString: Untagged
@@ -7277,7 +7278,7 @@ Transform:
   m_GameObject: {fileID: 7584332378767376616}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7358,13 +7359,110 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61ffa38d20d5e01429a947e161dd2e8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wiggleSpeed: 0.4
-  wiggleAngle: 0.3
-  spreadAngle: 30
+  wiggleSpeed: 5
+  wiggleAngle: 2
+  spreadAngle: 25
   silkBlastAttack: {fileID: 7170578081043934825}
   SilkblobPrefab: {fileID: 6897410362303039572, guid: f60c1cfd3b3ab5145b3620357a062c67, type: 3}
   spawnPoint: {fileID: 4124754328698996684}
 --- !u!82 &8113320535545966608
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7584332378767376616}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 1903775033fabbb4a93fba3cac03cd38, type: 3}
+  m_Resource: {fileID: 8300000, guid: 1903775033fabbb4a93fba3cac03cd38, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.353
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &6031958593591846630
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7823,8 +7921,9 @@ MonoBehaviour:
   entryType: 0
   aimOffsetZ: 0
   health: {fileID: 5669616284715057376}
-  lookSpeed: 5
+  lookSpeed: 3
   offset: {fileID: 815024466371447354}
+  currentState: 0
 --- !u!1 &8855698381525889154
 GameObject:
   m_ObjectHideFlags: 0
