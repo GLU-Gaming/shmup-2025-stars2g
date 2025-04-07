@@ -2033,10 +2033,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeathUI_Barebones
       objectReference: {fileID: 0}
-    - target: {fileID: 2879032452446162350, guid: a81995bbf15cc87489c39d0f45fee55b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

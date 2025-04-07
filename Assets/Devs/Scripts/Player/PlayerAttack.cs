@@ -15,9 +15,12 @@ public class PlayerAttack : MonoBehaviour
 
     public bool canShoot = true;
 
+    AudioSource FireSound;
+
     private void Start()
     {
         SwitchBullet(0); //Default bullet
+        FireSound = GetComponent<AudioSource>();
     }
     void FixedUpdate()
     {
@@ -58,5 +61,7 @@ public class PlayerAttack : MonoBehaviour
                 break;
                 //cases should be lowercase
         }
+        FireSound.Stop();
+        FireSound.Play();
     }
 }
