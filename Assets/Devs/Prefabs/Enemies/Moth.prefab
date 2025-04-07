@@ -7278,7 +7278,7 @@ Transform:
   m_GameObject: {fileID: 7584332378767376616}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7359,9 +7359,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61ffa38d20d5e01429a947e161dd2e8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wiggleSpeed: 0.2
-  wiggleAngle: 0.4
-  spreadAngle: 30
+  wiggleSpeed: 5
+  wiggleAngle: 2
+  spreadAngle: 15
   silkBlastAttack: {fileID: 7170578081043934825}
   SilkblobPrefab: {fileID: 6897410362303039572, guid: f60c1cfd3b3ab5145b3620357a062c67, type: 3}
   spawnPoint: {fileID: 4124754328698996684}
@@ -8380,7 +8380,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 281f1c76ef088bf4187dfadf632700de, type: 2}
     - target: {fileID: 6143225143235213495, guid: b68030b893d34e347871568d734b3070, type: 3}
       propertyPath: maxHealth
-      value: 300
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 6143225143235213495, guid: b68030b893d34e347871568d734b3070, type: 3}
       propertyPath: enemyModel

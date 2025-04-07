@@ -34,7 +34,7 @@ public class MothBottomMovement : MonoBehaviour
             // Debug here too
             Debug.Log("Idle movement happening.");
             wiggleTime += Time.deltaTime * wiggleSpeed;
-            float angle = Mathf.Sin(wiggleTime) * 1f;
+            float angle = Mathf.Sin(wiggleTime) * 2f;
             transform.localRotation = Quaternion.Euler(0, 0, angle);
             transform.localPosition = new Vector3(0f, 0f, 0);
         }
@@ -54,7 +54,7 @@ public class MothBottomMovement : MonoBehaviour
             silkBlastAttack.Play();
         }
 
-        for (int i = 0; i < 2; i++)
+        for (int i = 0; i < 3; i++)
         {
             shootSilkblob(0); // still hardcoded, could be -1, 0, or 1 if needed
         }

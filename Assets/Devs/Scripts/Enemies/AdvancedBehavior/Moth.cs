@@ -3,6 +3,7 @@ using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
 using UnityEngine.Audio;
+using System.Buffers.Text;
 
 public class Moth : MonoBehaviour
 {
@@ -85,11 +86,13 @@ public class Moth : MonoBehaviour
                 if (currentState == MothState.SilkAttack)
                 {
                     mothBottomMovement.performSilkAttack();
+                    yield return new WaitForSeconds(1f);
+                    currentState = MothState.Idle;
                 }
 
                 transform.DOMove(new Vector3(Random.Range(hozAxes.x -1, hozAxes.y -1), Random.Range(verticalAxes.x -1, verticalAxes.y - 1), 0), 3f).SetEase(Ease.OutQuad);
 
-                yield return new WaitForSeconds(2.5f);
+                yield return new WaitForSeconds(2f);
             }
         }
     }
