@@ -1891,6 +1891,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Explosion
       objectReference: {fileID: 0}
+    - target: {fileID: 6998340264914040977, guid: 18d9605a8935a0944a45bd78720c80d1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8167124220853029210, guid: 18d9605a8935a0944a45bd78720c80d1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2039,7 +2043,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8468594817791042867, guid: e1a375f3d9861974187c0124f7c94a72, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9137151302283198345, guid: e1a375f3d9861974187c0124f7c94a72, type: 3}
       propertyPath: m_LocalPosition.x
