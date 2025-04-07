@@ -86,13 +86,13 @@ public class Moth : MonoBehaviour
                 if (currentState == MothState.SilkAttack)
                 {
                     mothBottomMovement.performSilkAttack();
-                    yield return new WaitForSeconds(1f);
+                    yield return new WaitForSeconds(0.8f);
                     currentState = MothState.Idle;
                 }
 
                 transform.DOMove(new Vector3(Random.Range(hozAxes.x -1, hozAxes.y -1), Random.Range(verticalAxes.x -1, verticalAxes.y - 1), 0), 3f).SetEase(Ease.OutQuad);
 
-                yield return new WaitForSeconds(2f);
+                yield return new WaitForSeconds(1.5f);
             }
         }
     }

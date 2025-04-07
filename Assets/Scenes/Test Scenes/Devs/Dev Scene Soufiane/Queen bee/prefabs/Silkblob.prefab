@@ -290,8 +290,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   direction: {x: 0, y: 0, z: 0}
-  movespeed: -1.5
-  jumppower: 2
+  movespeed: -5.5
+  jumppower: 5
 --- !u!1 &7648798117721180110
 GameObject:
   m_ObjectHideFlags: 0

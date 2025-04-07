@@ -7361,7 +7361,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wiggleSpeed: 5
   wiggleAngle: 2
-  spreadAngle: 15
+  spreadAngle: 25
   silkBlastAttack: {fileID: 7170578081043934825}
   SilkblobPrefab: {fileID: 6897410362303039572, guid: f60c1cfd3b3ab5145b3620357a062c67, type: 3}
   spawnPoint: {fileID: 4124754328698996684}

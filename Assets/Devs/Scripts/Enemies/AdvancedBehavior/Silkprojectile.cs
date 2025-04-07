@@ -10,8 +10,8 @@ public class Silkprojectile : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        movespeed = Random.Range(-3f, -10f);
-        jumppower = Random.Range(4f, 15f);
+        movespeed = Random.Range(-6f, -20f);
+        jumppower = Random.Range(5f, 20f);
         rb.AddForce(new Vector3(movespeed, jumppower, 0f), ForceMode.Impulse);
     }
 

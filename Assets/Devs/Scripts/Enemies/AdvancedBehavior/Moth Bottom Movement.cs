@@ -6,7 +6,7 @@ public class MothBottomMovement : MonoBehaviour
     public float wiggleSpeed = 0.7f;
     public float wiggleAngle = 2f;
     private float wiggleTime;
-    public float spreadAngle = 10f;
+    public float spreadAngle = 25f;
     public ParticleSystem silkBlastAttack;
     public GameObject SilkblobPrefab;
     public Transform spawnPoint;
@@ -54,7 +54,7 @@ public class MothBottomMovement : MonoBehaviour
             silkBlastAttack.Play();
         }
 
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < Random.Range(2, 4); i++)
         {
             shootSilkblob(0); // still hardcoded, could be -1, 0, or 1 if needed
         }
