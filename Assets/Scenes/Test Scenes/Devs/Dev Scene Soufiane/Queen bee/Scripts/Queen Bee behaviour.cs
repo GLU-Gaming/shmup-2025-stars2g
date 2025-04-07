@@ -82,7 +82,7 @@ public class QueenBeebehaviour : MonoBehaviour
             mapScroll.ScrollSpeed = mapScroll.ScrollSpeed / 2;
             CancelInvoke(); // Cancel everything
         }
-        Debug.Log("Queen Bee is dying. All behaviors stopped.");
+        //Debug.Log("Queen Bee is dying. All behaviors stopped.");
         // Optionally: this.enabled = false;
     }
 

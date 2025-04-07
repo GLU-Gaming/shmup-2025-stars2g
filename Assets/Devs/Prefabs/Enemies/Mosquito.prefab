@@ -5445,7 +5445,7 @@ MonoBehaviour:
   Powerups: {fileID: 11400000, guid: 281f1c76ef088bf4187dfadf632700de, type: 2}
   RegisterKilled: 0
   scoreValue: 100
-  Multiplier: 0
+  Multiplier: 1
   invincible: 0
   DEBUGGING: 0
   DEBUG_Value: 0

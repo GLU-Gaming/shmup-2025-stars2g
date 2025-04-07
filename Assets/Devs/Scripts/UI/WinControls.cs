@@ -11,31 +11,37 @@ public class WinControls : MonoBehaviour
     {
         Transitions = GameObject.FindWithTag("Transitionmanager").GetComponent<Transitions>();
     }
-    public void Restartlevel()
+
+    public void LoadScene(string SceneName)
     {
         Time.timeScale = 1f;
-        StartCoroutine(DoTransit());
-        
+        StartCoroutine(DoTransit(SceneName));
+
     }
-    IEnumerator DoTransit()
+
+    public void LoadNextLeveL()
+    {
+        Time.timeScale = 1f;
+        switch(SceneManager.GetActiveScene().name)
+        {
+            case "RegularLevel":
+                StartCoroutine(DoTransit("BossLevel"));
+                break;
+            case "BossLevel":
+                StartCoroutine(DoTransit("RegularLevel"));
+                break;
+        }
+    }
+
+    public void Reload()
+    {
+        Time.timeScale = 1f;
+        StartCoroutine(DoTransit(SceneManager.GetActiveScene().name));
+    }
+    IEnumerator DoTransit(string SceneName)
     {
         Transitions.SetTransition(true);
         yield return new WaitForSeconds(0.5f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-
-    IEnumerator DoTransit2()
-    {
-        Transitions.SetTransition(true);
-        yield return new WaitForSeconds(0.5f);
-        SceneManager.LoadScene("Menu");
-    }
-
-
-    public void LoadMenu()
-    {
-        Time.timeScale = 1f;
-        StartCoroutine(DoTransit2());
-        
+        SceneManager.LoadScene(SceneName);
     }
 }

@@ -9,13 +9,6 @@ public class ScoreSystem : MonoBehaviour
     [SerializeField] TMP_Text scoreText;
     [SerializeField] string scorePrefix = "Score";
 
-    int S_score;
-    int A_score;
-    int B_score;
-    int C_score;
-    int D_score;
-
-
     public void AddScore(int ScoreToAdd)
     {
         Score += ScoreToAdd;

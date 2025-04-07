@@ -7470,7 +7470,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8268529756032964577}
-  - component: {fileID: 1806804954644545897}
   m_Layer: 0
   m_Name: Moth
   m_TagString: Untagged
@@ -7515,24 +7514,6 @@ Transform:
   - {fileID: 3493130163661125527}
   m_Father: {fileID: 3999050433682156277}
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
---- !u!114 &1806804954644545897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8028699465400828489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46b38595ac9548f4b9c0d47e521baaaf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mothBottomMovement: {fileID: 0}
-  entryType: 0
-  aimOffsetZ: 0
-  health: {fileID: 5669616284715057376}
-  lookSpeed: 0
-  offset: {fileID: 0}
 --- !u!1 &8031175289852146836
 GameObject:
   m_ObjectHideFlags: 0
@@ -8306,6 +8287,10 @@ PrefabInstance:
       propertyPath: enemyModel
       value: 
       objectReference: {fileID: 947160141989062117}
+    - target: {fileID: 6143225143235213495, guid: b68030b893d34e347871568d734b3070, type: 3}
+      propertyPath: scoreValue
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 6143225143235213495, guid: b68030b893d34e347871568d734b3070, type: 3}
       propertyPath: explosionPrefab
       value: 
