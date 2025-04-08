@@ -417,3 +417,4 @@ MonoBehaviour:
   HazardBottom: {fileID: 6387388424035802127}
   incomingText: {fileID: 1118456289371502850}
   Offset: {fileID: 5808249392379514099}
+  clip: {fileID: 8300000, guid: da443c63e59ff8b4eaef2dd3fc9652c6, type: 3}

@@ -244,6 +244,10 @@ PrefabInstance:
       value: HealthUI
       objectReference: {fileID: 0}
     - target: {fileID: 6143225143235213495, guid: b68030b893d34e347871568d734b3070, type: 3}
+      propertyPath: maxHealth
+      value: 110
+      objectReference: {fileID: 0}
+    - target: {fileID: 6143225143235213495, guid: b68030b893d34e347871568d734b3070, type: 3}
       propertyPath: enemyModel
       value: 
       objectReference: {fileID: 8681352595573860563}

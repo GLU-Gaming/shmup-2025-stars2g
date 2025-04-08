@@ -25,8 +25,7 @@ public class FadeAndDestroy : MonoBehaviour
     [SerializeField] Image HazardBottom;
     [SerializeField] Image incomingText;
     [SerializeField] RectTransform Offset;
-    MusicHandler handler;
-    [SerializeField] AudioClip clip;
+    AudioSource Music;
     //--------------------------------------
 
     private void Start()
@@ -36,11 +35,8 @@ public class FadeAndDestroy : MonoBehaviour
 
         // Find all renderers in this object and its children
         renderers.AddRange(GetComponentsInChildren<Renderer>());
-        handler = FindFirstObjectByType<MusicHandler>();
-        AudioSource Source = handler.GetComponent<AudioSource>();
-        Source.volume = 0.7f;
-        Source.clip = clip;
-        Source.Play();
+        Music = GameObject.Find("BossMusic").GetComponent<AudioSource>();
+        Music.Play();
 
         StartCoroutine(DoSequence());
     }
