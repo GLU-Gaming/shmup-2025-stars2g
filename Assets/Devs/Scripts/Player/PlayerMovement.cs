@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     //Hidden Requirements
     Rigidbody rb;
-
+    PlayerAttack Attack;
 
     //Variables to actually apply changes to the player
     float AppliedSpeed;
@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        Attack = GetComponent<PlayerAttack>();
     }
 
     public void EndAnim()
@@ -35,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator EndNumerator()
     {
+        Attack.canShoot = false; //Disables shooting
         objectToRotate.DOLocalRotate(new Vector3(360, 0, 0), 1f).SetEase(Ease.InSine);
         objectToRotate.DOLocalMoveX(50, 1).SetEase(Ease.InSine);
         yield return new WaitForSeconds(0.5f);

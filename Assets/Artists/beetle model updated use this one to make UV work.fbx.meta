@@ -3,7 +3,47 @@ guid: ec9f5bfe8a55b55419cdba86d1deea46
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black Metal
+    second: {fileID: 2100000, guid: da66f10cd5ffe5d4692fa2f7adac2b52, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Horn
+    second: {fileID: 2100000, guid: 268d2c9d420f8c24983751d44be923ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 2865cfd8e755bf043b32886b0477737a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: 6151f97de9c89594a925136bc0798772, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Purple
+    second: {fileID: 2100000, guid: 91d8440bb305b804db5e68c7871b65b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rings
+    second: {fileID: 2100000, guid: d34b8432f78ad9e499600163aa965d92, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sharp Metal
+    second: {fileID: 2100000, guid: cbbfba145c27c59438f1a3c770968775, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eyes
+    second: {fileID: 2100000, guid: 909b14111df2f5d4d97529f3866b6ca9, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

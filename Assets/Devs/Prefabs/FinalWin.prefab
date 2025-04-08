@@ -49,6 +49,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: finish line
       objectReference: {fileID: 0}
+    - target: {fileID: 4232413181205460445, guid: 7d315e07821a7e14a96143e315f67b2a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4640878303424560313, guid: 7d315e07821a7e14a96143e315f67b2a, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.4599999

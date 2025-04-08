@@ -8362,9 +8362,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9137151302283198345}
     m_Modifications:
+    - target: {fileID: 511671365598745890, guid: b68030b893d34e347871568d734b3070, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3232815874249064263, guid: b68030b893d34e347871568d734b3070, type: 3}
       propertyPath: m_Name
       value: HealthUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 6143225143235213495, guid: b68030b893d34e347871568d734b3070, type: 3}
+      propertyPath: maxHealth
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 6143225143235213495, guid: b68030b893d34e347871568d734b3070, type: 3}
       propertyPath: enemyModel
