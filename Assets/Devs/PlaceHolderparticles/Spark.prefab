@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6926262229192923090}
   - component: {fileID: 673177659149591141}
   - component: {fileID: 995901006724022168}
+  - component: {fileID: 6352137042115521366}
   m_Layer: 0
   m_Name: Spark
   m_TagString: Untagged
@@ -4920,8 +4921,8 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.344
+  m_Pitch: 1.44
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -5004,3 +5005,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6352137042115521366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005145827766128761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b54792a2be67d75408a0122511c3b3ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  metalHitSounds:
+  - {fileID: 8300000, guid: 6d18d90dfc0ed8741a3ffc20f413fcd6, type: 3}
+  - {fileID: 8300000, guid: 2cdf755627f5f0043a99524a57337953, type: 3}
+  - {fileID: 8300000, guid: 33dc938957c3cb543a86de79febb5e22, type: 3}
+  - {fileID: 8300000, guid: f33bf014ae3834b43867bffd191ddcd2, type: 3}

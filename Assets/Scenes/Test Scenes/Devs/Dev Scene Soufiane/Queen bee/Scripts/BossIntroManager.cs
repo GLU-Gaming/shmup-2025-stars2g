@@ -14,6 +14,14 @@ public class BossIntroManager : MonoBehaviour
     private bool hasStartedIntro = false;
     private bool hasStartedWarning = false;
 
+    MusicHandler musicHandler; // Reference to the MusicHandler script
+
+    private void Start()
+    {
+        musicHandler = FindFirstObjectByType<MusicHandler>();
+        musicHandler.SetVolume(0f);
+    }
+
     void Update()
     {
         if (!hasStartedIntro)

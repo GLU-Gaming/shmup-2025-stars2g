@@ -176,7 +176,7 @@ public class QueenBeeHealth : MonoBehaviour
 
         // Destroy the boss
         Destroy(root);
-        waveReader.EndLevelEarly();
+        waveReader.EndLevelEarly(true);
     }
 
     void InstantiateSparks()

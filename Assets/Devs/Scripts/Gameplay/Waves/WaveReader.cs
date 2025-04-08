@@ -20,9 +20,9 @@ public class WaveReader : MonoBehaviour
 
     int expectedEnemies = 0;
 
-    public void EndLevelEarly()
+    public void EndLevelEarly(bool Toggle)
     {
-        StartCoroutine(EndFinishline());
+        StartCoroutine(EndFinishline(Toggle));
     }
 
     private void Start()
@@ -110,14 +110,20 @@ public class WaveReader : MonoBehaviour
         }
     }
 
-    IEnumerator EndFinishline()
+    IEnumerator EndFinishline(bool Instant = false)
     {
         GameObject line = Instantiate(finishline, Vector3.zero, Quaternion.identity);
         Transform lineTrans = line.transform.Find("finish line");
         lineTrans.gameObject.SetActive(true);
-        lineTrans.transform.localScale = new Vector3(1.46f, 1, 1);
-        lineTrans.transform.DOMoveX(-25, 10);
-        yield return null;
+        if (!Instant)
+        {
+            lineTrans.transform.localScale = new Vector3(1.46f, 1, 1);
+            lineTrans.transform.DOMoveX(-25, 4f);
+            yield return null;
+        } else
+        {
+            lineTrans.GetComponent<Finish>().PlayerWin();
+        }
     }
 
     IEnumerator SpawnEnemy(int type, float delay, EntryType entry)

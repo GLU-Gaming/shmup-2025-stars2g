@@ -2,7 +2,6 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
-using UnityEngine.Rendering.Universal.Internal;
 public class MenuHandler : MonoBehaviour
 {
     Transitions Transitions;
@@ -15,7 +14,19 @@ public class MenuHandler : MonoBehaviour
     {
         Transitions = GameObject.FindWithTag("Transitionmanager").GetComponent<Transitions>();
         Transitions.SetTransition(false);
+        Logo.localPosition = new Vector3(0, 900, 0);
+        StartPanel.localPosition = new Vector3(0, -700, 0);
+        StartCoroutine(Init());
     }
+
+    IEnumerator Init()
+    {
+        yield return new WaitForSeconds(3f);
+        Logo.DOLocalMoveY(130.1f, 1f).SetEase(Ease.InOutSine);
+        StartPanel.DOLocalMoveY(-261.29f, 1f).SetEase(Ease.InOutSine);
+
+    }
+
     public void LoadLevel(string SceneName)
     {
         StartCoroutine(DoTransit(SceneName));

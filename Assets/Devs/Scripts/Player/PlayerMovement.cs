@@ -1,5 +1,6 @@
 using UnityEngine;
 using DG.Tweening;
+using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -20,9 +21,23 @@ public class PlayerMovement : MonoBehaviour
 
     //Variables to actually apply changes to the player
     float AppliedSpeed;
+    bool InputActive = true;
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+    }
+
+    public void EndAnim()
+    {
+        InputActive = false;
+        StartCoroutine(EndNumerator());
+    }
+
+    IEnumerator EndNumerator()
+    {
+        objectToRotate.DOLocalRotate(new Vector3(360, 0, 0), 1f).SetEase(Ease.InSine);
+        objectToRotate.DOLocalMoveX(50, 1).SetEase(Ease.InSine);
+        yield return new WaitForSeconds(0.5f);
     }
 
     private void Update()

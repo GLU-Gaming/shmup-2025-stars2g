@@ -239,38 +239,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7465736624787748486}
     m_Modifications:
-    - target: {fileID: 1316241704672530876, guid: b68030b893d34e347871568d734b3070, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: b88a35a0089c0384794fcaef1df9c2a9, type: 3}
+    - target: {fileID: 511671365598745890, guid: b68030b893d34e347871568d734b3070, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3232815874249064263, guid: b68030b893d34e347871568d734b3070, type: 3}
       propertyPath: m_Name
       value: HealthUI
       objectReference: {fileID: 0}
-    - target: {fileID: 5450983367755764425, guid: b68030b893d34e347871568d734b3070, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: b88a35a0089c0384794fcaef1df9c2a9, type: 3}
-    - target: {fileID: 6143225143235213495, guid: b68030b893d34e347871568d734b3070, type: 3}
-      propertyPath: Powerups
-      value: 
-      objectReference: {fileID: 11400000, guid: 281f1c76ef088bf4187dfadf632700de, type: 2}
-    - target: {fileID: 6143225143235213495, guid: b68030b893d34e347871568d734b3070, type: 3}
-      propertyPath: maxHealth
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 6143225143235213495, guid: b68030b893d34e347871568d734b3070, type: 3}
-      propertyPath: Multiplier
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6143225143235213495, guid: b68030b893d34e347871568d734b3070, type: 3}
       propertyPath: enemyModel
       value: 
-      objectReference: {fileID: 376575493152921331}
-    - target: {fileID: 6143225143235213495, guid: b68030b893d34e347871568d734b3070, type: 3}
-      propertyPath: explosionPrefab
-      value: 
-      objectReference: {fileID: 6998340264914040977, guid: 18d9605a8935a0944a45bd78720c80d1, type: 3}
+      objectReference: {fileID: 4075706274767420434}
     - target: {fileID: 6899199783979754825, guid: b68030b893d34e347871568d734b3070, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -351,10 +331,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8714327830928137981, guid: b68030b893d34e347871568d734b3070, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: b88a35a0089c0384794fcaef1df9c2a9, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

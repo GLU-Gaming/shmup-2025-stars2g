@@ -19,7 +19,7 @@ public class MusicHandler : MonoBehaviour
 
     IEnumerator SetVolumeIE(float TargetVol)
     {
-        audioSource.DOFade(TargetVol, 1f);
-        yield return new WaitForSeconds(1f);
+        audioSource.DOFade(TargetVol, 1f).SetUpdate(true);
+        yield return new WaitForSecondsRealtime(1f);
     }
 }
