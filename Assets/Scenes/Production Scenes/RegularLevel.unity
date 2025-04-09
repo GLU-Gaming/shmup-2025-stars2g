@@ -1599,6 +1599,10 @@ PrefabInstance:
       propertyPath: deathUI
       value: 
       objectReference: {fileID: 191574299}
+    - target: {fileID: 2277735925278694846, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
+      propertyPath: explosionPrefab
+      value: 
+      objectReference: {fileID: 6998340264914040977, guid: 18d9605a8935a0944a45bd78720c80d1, type: 3}
     - target: {fileID: 5316724414076798844, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
       propertyPath: m_Name
       value: UI
