@@ -124,20 +124,22 @@ public class QueenBeeChargeLaser : MonoBehaviour
             laserCollider.enabled = true; // Enable the collider
 
         laserPrefab.transform.localScale = new Vector3(0, 0.2f, 0);
-        laserPrefab.transform.DOScale(new Vector3(0.025f, 0.2f, 0.005f), .3f);
+        laserPrefab.transform.DOScale(new Vector3(0.025f, 0.2f, 0.005f), .1f);
 
         if (blastAudioSource != null)
             blastAudioSource.Play();
+        chargeAudioSource.Stop();
 
         yield return new WaitForSeconds(1.4f);
 
-        laserPrefab.transform.DOScale(new Vector3(0, 0.2f, 0), .3f);
+        laserPrefab.transform.DOScale(new Vector3(0, 0.2f, 0), .5f);
 
         yield return new WaitForSeconds(0.3f);
 
         if (laserCollider != null)
             laserCollider.enabled = false;
 
+        yield return new WaitForSeconds(0.2f);
         laserPrefab.SetActive(false);
     }
     IEnumerator EnragedFireLaser()

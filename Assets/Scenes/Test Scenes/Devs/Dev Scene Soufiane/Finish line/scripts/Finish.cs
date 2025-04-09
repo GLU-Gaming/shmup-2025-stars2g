@@ -7,6 +7,7 @@ public class Finish : MonoBehaviour
 {
     public GameObject winUI;
     public GameObject player;
+    PlayerMovement playerMovement;
 
     MusicHandler MusicHandler;
 
@@ -16,7 +17,8 @@ public class Finish : MonoBehaviour
     private void Start()
     {
         MusicHandler = FindFirstObjectByType<MusicHandler>();
-        player = GameObject.FindGameObjectWithTag("Player");
+        playerMovement = FindFirstObjectByType<PlayerMovement>();
+
         scoller = FindFirstObjectByType<mapScroll>();
     }
 
@@ -39,7 +41,10 @@ public class Finish : MonoBehaviour
 
     IEnumerator AnimateFinish()
     {
-        player.GetComponent<PlayerMovement>().EndAnim();
+        scoller = FindFirstObjectByType<mapScroll>();
+        MusicHandler = FindFirstObjectByType<MusicHandler>();
+        playerMovement = FindFirstObjectByType<PlayerMovement>();
+        playerMovement.EndAnim();
         MusicHandler.SetVolume(0f);
         yield return DOTween.To(() => scoller.ScrollSpeed, x => scoller.ScrollSpeed = x, 0f, 1f);
         yield return DOTween.To(() => Time.timeScale, x => Time.timeScale = x, 0, 3f).SetUpdate(true);

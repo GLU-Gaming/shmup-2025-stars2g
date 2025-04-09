@@ -1406,7 +1406,7 @@ PrefabInstance:
     - target: {fileID: 8725975429916168873, guid: 7aa8f127ea71ae048a2615187685afa6, type: 3}
       propertyPath: waveCollection
       value: 
-      objectReference: {fileID: 11400000, guid: 0a987fcbc37f31b42809928c76532479, type: 2}
+      objectReference: {fileID: 11400000, guid: 93a75b4e4ce77904ab68397dde1dc3fd, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
