@@ -13,6 +13,7 @@ public class PlayerHealth : MonoBehaviour
 
     [SerializeField] GameObject player; //Used for the Death
     [SerializeField] GameObject deathUI; //UI to enable on Death
+    [SerializeField] GameObject explosionPrefab; //same as enemy and boss explosion on death
 
     public float displayedHealth;
 
@@ -72,6 +73,7 @@ public class PlayerHealth : MonoBehaviour
         if(displayedHealth <= 0 && deathUI.activeInHierarchy == false)
         {
             PlayerDeath();
+            Instantiate(explosionPrefab, player.transform.position, Quaternion.identity);
         }
     }
 

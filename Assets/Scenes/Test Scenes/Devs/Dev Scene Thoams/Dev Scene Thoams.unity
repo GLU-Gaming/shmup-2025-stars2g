@@ -1363,6 +1363,8 @@ MonoBehaviour:
   waveCollection: {fileID: 11400000, guid: 3cff5c58b8f07e242a84597b3d9d6650, type: 2}
   registry: {fileID: 11400000, guid: 8c47284159e830b4c9817cae661b0918, type: 2}
   finishline: {fileID: 475126210283226532, guid: 9abb615e26ed8e24ab5137021e80ce8b, type: 3}
+  BossSpawner: {fileID: 0}
+  EndwithBoss: 0
   enemiesToKill: 0
 --- !u!1 &1794855752
 GameObject:
@@ -1413,6 +1415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollSpeed: 20
+  BackgroundImage: {fileID: 0}
 --- !u!1 &1992241812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1837,6 +1840,10 @@ PrefabInstance:
       propertyPath: deathUI
       value: 
       objectReference: {fileID: 191574299}
+    - target: {fileID: 2277735925278694846, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
+      propertyPath: explosionPrefab
+      value: 
+      objectReference: {fileID: 6998340264914040977, guid: 18d9605a8935a0944a45bd78720c80d1, type: 3}
     - target: {fileID: 5316724414076798844, guid: 29480a27f1d9e934b89f5e5a7e4b86b4, type: 3}
       propertyPath: m_Name
       value: UI
