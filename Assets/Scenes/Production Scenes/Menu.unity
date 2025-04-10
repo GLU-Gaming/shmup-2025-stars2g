@@ -1526,14 +1526,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Concept art: Kami
+  m_text: 'Concept art: Kami, Koen, Mees
 
     Logo: Kami
 
     Mosquito: Jarno
 
-    Queen bee:
-    Mees
+    Queen
+    bee: Mees
 
     Moth: Jelle
 
@@ -1551,11 +1551,13 @@ MonoBehaviour:
     Backgound
     Textures: every artist
 
+    UI: Koen, Kami
+
 
     Boss music: Thomas
 
-    Sounds: Thomas (using Pixabay
-    & Sound Resrouce
+    Sounds:
+    Thomas (using Pixabay & Sound Resrouce
 
 
     Menu Music: whvle (on Pixabay)'
@@ -2014,20 +2016,24 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Finish line: Soufiane
+  m_text: 'Player: Thomas
 
-    Boss battle: Soufiane
+    Effects: Thomas
 
-    UI: Thomas
+    Code refining: Thomas
 
     Enemies:
     Thomas
+
+    Moth: Soufiane
 
     Player: Thomas
 
     Effects: Thomas
 
-    Code refining: Thomas'
+
+    Code
+    refining: Thomas'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9de0e32d5301a0a4fb69444cc62308b0, type: 2}
   m_sharedMaterial: {fileID: -7203772268703769880, guid: 9de0e32d5301a0a4fb69444cc62308b0, type: 2}
