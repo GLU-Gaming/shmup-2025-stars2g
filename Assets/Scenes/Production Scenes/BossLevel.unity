@@ -1399,6 +1399,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5224391419917903685, guid: 7aa8f127ea71ae048a2615187685afa6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8725975429916168873, guid: 7aa8f127ea71ae048a2615187685afa6, type: 3}
       propertyPath: EndwithBoss
       value: 1
